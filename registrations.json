@@ -1,0 +1,6949 @@
+[
+  {
+    "studentName": "Abhinav Ramesh",
+    "email": "abhinav.ramesh@example.edu",
+    "event": "Cultural Night",
+    "eventId": "E03",
+    "year": 3,
+    "age": 21,
+    "department": "CSE",
+    "city": "Kochi",
+    "interests": [
+      "Data Science",
+      "Robotics",
+      "Cloud"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": true
+    },
+    "status": "cancelled",
+    "registered": false,
+    "feePaid": 0,
+    "createdAt": {
+      "$date": "2026-09-01T14:40:44.000Z"
+    }
+  },
+  {
+    "studentName": "Dhruv Reddy",
+    "email": "dhruv.reddy@example.edu",
+    "event": "Hack Night",
+    "eventId": "E08",
+    "year": 1,
+    "age": 18,
+    "department": "ECE",
+    "city": "Mysuru",
+    "interests": [
+      "Public Speaking"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": true
+    },
+    "status": "confirmed",
+    "registered": true,
+    "feePaid": 100,
+    "createdAt": {
+      "$date": "2026-09-01T20:35:41.000Z"
+    }
+  },
+  {
+    "studentName": "Pranav Naidu",
+    "email": "pranav.naidu@example.edu",
+    "event": "Robotics Workshop",
+    "eventId": "E02",
+    "year": 4,
+    "age": 21,
+    "department": "AI & DS",
+    "city": "Thiruvananthapuram",
+    "interests": [
+      "Design",
+      "Entrepreneurship",
+      "Music"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": true
+    },
+    "status": "confirmed",
+    "registered": true,
+    "feePaid": 150,
+    "createdAt": {
+      "$date": "2026-09-02T03:26:15.000Z"
+    }
+  },
+  {
+    "studentName": "Sreya Hegde",
+    "email": "sreya.hegde@example.edu",
+    "event": "Cultural Night",
+    "eventId": "E03",
+    "year": 2,
+    "age": 19,
+    "department": "IT",
+    "city": "Chennai",
+    "interests": [
+      "Robotics"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": false
+    },
+    "status": "confirmed",
+    "registered": true,
+    "feePaid": 100,
+    "createdAt": {
+      "$date": "2026-09-02T05:09:16.000Z"
+    }
+  },
+  {
+    "studentName": "Sanjay Pillai",
+    "email": "sanjay.pillai@example.edu",
+    "event": "Orientation Mixer",
+    "eventId": "E01",
+    "year": 1,
+    "age": 18,
+    "department": "Mechanical",
+    "city": "Bengaluru",
+    "interests": [
+      "Photography",
+      "Gaming",
+      "AI"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": true
+    },
+    "status": "cancelled",
+    "registered": false,
+    "feePaid": 0,
+    "createdAt": {
+      "$date": "2026-09-02T07:10:39.000Z"
+    }
+  },
+  {
+    "studentName": "Aishwarya Iyer",
+    "email": "aishwarya.iyer@example.edu",
+    "event": "Hack Night",
+    "eventId": "E08",
+    "year": 2,
+    "age": 20,
+    "department": "CSE",
+    "city": "Bengaluru",
+    "interests": [
+      "Gaming",
+      "Music"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": false
+    },
+    "status": "confirmed",
+    "registered": true,
+    "feePaid": 100,
+    "createdAt": {
+      "$date": "2026-09-02T07:49:32.000Z"
+    }
+  },
+  {
+    "studentName": "Ananya Varma",
+    "email": "ananya.varma@example.edu",
+    "event": "Cultural Night",
+    "eventId": "E03",
+    "year": 1,
+    "age": 19,
+    "department": "CSE",
+    "city": "Thiruvananthapuram",
+    "interests": [
+      "Web"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": false
+    },
+    "status": "confirmed",
+    "registered": true,
+    "feePaid": 100,
+    "createdAt": {
+      "$date": "2026-09-02T16:01:16.000Z"
+    }
+  },
+  {
+    "studentName": "Thomas Kumar",
+    "email": "thomas.kumar@example.edu",
+    "event": "Hack Night",
+    "eventId": "E08",
+    "year": 2,
+    "age": 20,
+    "department": "Mechanical",
+    "city": "Kochi",
+    "interests": [
+      "Gaming",
+      "Music",
+      "Public Speaking"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": true
+    },
+    "status": "confirmed",
+    "registered": true,
+    "feePaid": 100,
+    "createdAt": {
+      "$date": "2026-09-02T16:03:56.000Z"
+    }
+  },
+  {
+    "studentName": "Mithun Thomas",
+    "email": "mithun.thomas@example.edu",
+    "event": "Hack Night",
+    "eventId": "E08",
+    "year": 2,
+    "age": 19,
+    "department": "AI & DS",
+    "city": "Kochi",
+    "interests": [
+      "IoT",
+      "Photography"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": true
+    },
+    "status": "confirmed",
+    "registered": true,
+    "feePaid": 100,
+    "createdAt": {
+      "$date": "2026-09-02T18:56:17.000Z"
+    }
+  },
+  {
+    "studentName": "Nikhil Thomas",
+    "email": "nikhil.thomas@example.edu",
+    "event": "Orientation Mixer",
+    "eventId": "E01",
+    "year": 1,
+    "age": 19,
+    "department": "ECE",
+    "city": "Bengaluru",
+    "interests": [
+      "AI",
+      "Gaming"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": false
+    },
+    "status": "cancelled",
+    "registered": false,
+    "feePaid": 0,
+    "createdAt": {
+      "$date": "2026-09-03T00:41:15.000Z"
+    }
+  },
+  {
+    "studentName": "Keerthana Das",
+    "email": "keerthana.das@example.edu",
+    "event": "Hack Night",
+    "eventId": "E08",
+    "year": 3,
+    "age": 21,
+    "department": "CSE",
+    "city": "Chennai",
+    "interests": [
+      "Data Science",
+      "Entrepreneurship"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": false
+    },
+    "status": "confirmed",
+    "registered": true,
+    "feePaid": 100,
+    "createdAt": {
+      "$date": "2026-09-03T14:05:56.000Z"
+    }
+  },
+  {
+    "studentName": "Gayathri Rao",
+    "email": "gayathri.rao@example.edu",
+    "event": "Hack Night",
+    "eventId": "E08",
+    "year": 3,
+    "age": 20,
+    "department": "Civil",
+    "city": "Kochi",
+    "interests": [
+      "Entrepreneurship"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": true
+    },
+    "status": "confirmed",
+    "registered": true,
+    "feePaid": 100,
+    "createdAt": {
+      "$date": "2026-09-03T18:09:43.000Z"
+    }
+  },
+  {
+    "studentName": "Hari Ramesh",
+    "email": "hari.ramesh@example.edu",
+    "event": "Robotics Workshop",
+    "eventId": "E02",
+    "year": 2,
+    "age": 19,
+    "department": "ECE",
+    "city": "Kochi",
+    "interests": [
+      "Cybersecurity",
+      "Design"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": true
+    },
+    "status": "confirmed",
+    "registered": true,
+    "feePaid": 150,
+    "createdAt": {
+      "$date": "2026-09-03T18:15:14.000Z"
+    }
+  },
+  {
+    "studentName": "Anna Shetty",
+    "email": "anna.shetty@example.edu",
+    "event": "Data Science Bootcamp",
+    "eventId": "E05",
+    "year": 4,
+    "age": 21,
+    "department": "CSE",
+    "city": "Hyderabad",
+    "interests": [
+      "Data Science",
+      "Photography",
+      "Design"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": true
+    },
+    "status": "pending",
+    "registered": true,
+    "feePaid": 0,
+    "createdAt": {
+      "$date": "2026-09-03T23:08:01.000Z"
+    }
+  },
+  {
+    "studentName": "Joseph Philip",
+    "email": "joseph.philip@example.edu",
+    "event": "TechFest",
+    "eventId": "E07",
+    "year": 4,
+    "age": 22,
+    "department": "CSE",
+    "city": "Madurai",
+    "interests": [
+      "Data Science",
+      "IoT"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": true,
+      "allergies": [
+        "Gluten"
+      ]
+    },
+    "status": "pending",
+    "registered": true,
+    "feePaid": 0,
+    "createdAt": {
+      "$date": "2026-09-04T01:10:47.000Z"
+    }
+  },
+  {
+    "studentName": "Sanjay Philip",
+    "email": "sanjay.philip@example.edu",
+    "event": "Orientation Mixer",
+    "eventId": "E01",
+    "year": 1,
+    "age": 19,
+    "department": "CSE",
+    "city": "Thiruvananthapuram",
+    "interests": [
+      "Mobile Apps",
+      "Data Science"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": true
+    },
+    "status": "waitlisted",
+    "registered": true,
+    "feePaid": 0,
+    "createdAt": {
+      "$date": "2026-09-04T02:39:34.000Z"
+    }
+  },
+  {
+    "studentName": "Devika Naidu",
+    "email": "devika.naidu@example.edu",
+    "event": "TechFest",
+    "eventId": "E07",
+    "year": 1,
+    "age": 18,
+    "department": "Mechanical",
+    "city": "Thiruvananthapuram",
+    "interests": [
+      "Gaming",
+      "Entrepreneurship",
+      "Music"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": false
+    },
+    "status": "cancelled",
+    "registered": false,
+    "feePaid": 0,
+    "createdAt": {
+      "$date": "2026-09-04T03:45:10.000Z"
+    }
+  },
+  {
+    "studentName": "Keerthana Thomas",
+    "email": "keerthana.thomas@example.edu",
+    "event": "Orientation Mixer",
+    "eventId": "E01",
+    "year": 2,
+    "age": 20,
+    "department": "EEE",
+    "city": "Kochi",
+    "interests": [
+      "Music",
+      "AI",
+      "Design"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": false
+    },
+    "status": "pending",
+    "registered": true,
+    "feePaid": 0,
+    "createdAt": {
+      "$date": "2026-09-04T13:57:19.000Z"
+    }
+  },
+  {
+    "studentName": "Gayathri Patel",
+    "email": "gayathri.patel@example.edu",
+    "event": "TechFest",
+    "eventId": "E07",
+    "year": 2,
+    "age": 19,
+    "department": "Mechanical",
+    "city": "Bengaluru",
+    "interests": [
+      "Gaming"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": true
+    },
+    "status": "waitlisted",
+    "registered": true,
+    "feePaid": 0,
+    "createdAt": {
+      "$date": "2026-09-04T17:04:32.000Z"
+    }
+  },
+  {
+    "studentName": "Manoj Reddy",
+    "email": "manoj.reddy@example.edu",
+    "event": "Hack Night",
+    "eventId": "E08",
+    "year": 2,
+    "age": 20,
+    "department": "ECE",
+    "city": "Madurai",
+    "interests": [
+      "Data Science",
+      "Music",
+      "Robotics"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": true
+    },
+    "status": "confirmed",
+    "registered": true,
+    "feePaid": 100,
+    "createdAt": {
+      "$date": "2026-09-04T17:35:59.000Z"
+    }
+  },
+  {
+    "studentName": "Manoj Pillai",
+    "email": "manoj.pillai@example.edu",
+    "event": "Robotics Workshop",
+    "eventId": "E02",
+    "year": 2,
+    "age": 19,
+    "department": "CSE",
+    "city": "Chennai",
+    "interests": [
+      "AI",
+      "Robotics",
+      "Design"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": false
+    },
+    "status": "confirmed",
+    "registered": true,
+    "feePaid": 150,
+    "createdAt": {
+      "$date": "2026-09-05T01:03:30.000Z"
+    }
+  },
+  {
+    "studentName": "Sanjay Menon",
+    "email": "sanjay.menon@example.edu",
+    "event": "Data Science Bootcamp",
+    "eventId": "E05",
+    "year": 4,
+    "age": 22,
+    "department": "Mechanical",
+    "city": "Kochi",
+    "interests": [
+      "Web",
+      "Cloud",
+      "Design"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": false
+    },
+    "status": "confirmed",
+    "registered": true,
+    "feePaid": 300,
+    "createdAt": {
+      "$date": "2026-09-05T01:43:26.000Z"
+    }
+  },
+  {
+    "studentName": "Arun Menon",
+    "email": "arun.menon@example.edu",
+    "event": "TechFest",
+    "eventId": "E07",
+    "year": 1,
+    "age": 19,
+    "department": "CSE",
+    "city": "Kochi",
+    "interests": [
+      "Data Science"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": true
+    },
+    "status": "confirmed",
+    "registered": true,
+    "feePaid": 200,
+    "createdAt": {
+      "$date": "2026-09-05T10:49:05.000Z"
+    }
+  },
+  {
+    "studentName": "Vignesh Mathew",
+    "email": "vignesh.mathew@example.edu",
+    "event": "Cultural Night",
+    "eventId": "E03",
+    "year": 2,
+    "age": 19,
+    "department": "ECE",
+    "city": "Kochi",
+    "interests": [
+      "Design"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": false
+    },
+    "status": "confirmed",
+    "registered": true,
+    "feePaid": 100,
+    "createdAt": {
+      "$date": "2026-09-05T15:09:56.000Z"
+    }
+  },
+  {
+    "studentName": "Thomas Rao",
+    "email": "thomas.rao@example.edu",
+    "event": "Cultural Night",
+    "eventId": "E03",
+    "year": 2,
+    "age": 19,
+    "department": "CSE",
+    "city": "Chennai",
+    "interests": [
+      "Public Speaking",
+      "Cybersecurity"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": false
+    },
+    "status": "confirmed",
+    "registered": true,
+    "feePaid": 100,
+    "createdAt": {
+      "$date": "2026-09-05T16:48:44.000Z"
+    }
+  },
+  {
+    "studentName": "Thomas Joseph",
+    "email": "thomas.joseph@example.edu",
+    "event": "Hack Night",
+    "eventId": "E08",
+    "year": 1,
+    "age": 18,
+    "department": "ECE",
+    "city": "Chennai",
+    "interests": [
+      "Robotics",
+      "Public Speaking"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": true
+    },
+    "status": "confirmed",
+    "registered": true,
+    "feePaid": 100,
+    "createdAt": {
+      "$date": "2026-09-05T18:28:25.000Z"
+    }
+  },
+  {
+    "studentName": "Arjun Mathew",
+    "email": "arjun.mathew@example.edu",
+    "event": "Cultural Night",
+    "eventId": "E03",
+    "year": 4,
+    "age": 22,
+    "department": "AI & DS",
+    "city": "Bengaluru",
+    "interests": [
+      "Photography",
+      "Design",
+      "Data Science"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": false
+    },
+    "status": "confirmed",
+    "registered": true,
+    "feePaid": 100,
+    "createdAt": {
+      "$date": "2026-09-05T18:44:13.000Z"
+    }
+  },
+  {
+    "studentName": "Abhinav Ramesh",
+    "email": "abhinav.ramesh@example.edu",
+    "event": "TechFest",
+    "eventId": "E07",
+    "year": 3,
+    "age": 21,
+    "department": "CSE",
+    "city": "Kochi",
+    "interests": [
+      "Data Science",
+      "Robotics",
+      "Cloud"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": true
+    },
+    "status": "pending",
+    "registered": true,
+    "feePaid": 0,
+    "createdAt": {
+      "$date": "2026-09-05T19:48:59.000Z"
+    }
+  },
+  {
+    "studentName": "Sherin Thomas",
+    "email": "sherin.thomas@example.edu",
+    "event": "Orientation Mixer",
+    "eventId": "E01",
+    "year": 2,
+    "age": 20,
+    "department": "CSE",
+    "city": "Kochi",
+    "interests": [
+      "Robotics",
+      "Data Science"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": false
+    },
+    "status": "cancelled",
+    "registered": false,
+    "feePaid": 0,
+    "createdAt": {
+      "$date": "2026-09-05T23:25:10.000Z"
+    }
+  },
+  {
+    "studentName": "Aishwarya Thomas",
+    "email": "aishwarya.thomas@example.edu",
+    "event": "Hack Night",
+    "eventId": "E08",
+    "year": 2,
+    "age": 19,
+    "department": "IT",
+    "city": "Coimbatore",
+    "interests": [
+      "Photography"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": false
+    },
+    "status": "confirmed",
+    "registered": true,
+    "feePaid": 100,
+    "createdAt": {
+      "$date": "2026-09-06T19:01:34.000Z"
+    }
+  },
+  {
+    "studentName": "Arun Kurian",
+    "email": "arun.kurian@example.edu",
+    "event": "Orientation Mixer",
+    "eventId": "E01",
+    "year": 2,
+    "age": 20,
+    "department": "IT",
+    "city": "Chennai",
+    "interests": [
+      "Data Science",
+      "Music",
+      "Cloud"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": false,
+      "allergies": [
+        "Lactose"
+      ]
+    },
+    "status": "confirmed",
+    "registered": true,
+    "feePaid": 0,
+    "createdAt": {
+      "$date": "2026-09-06T20:48:17.000Z"
+    }
+  },
+  {
+    "studentName": "Sreya George",
+    "email": "sreya.george@example.edu",
+    "event": "TechFest",
+    "eventId": "E07",
+    "year": 3,
+    "age": 21,
+    "department": "ECE",
+    "city": "Kochi",
+    "interests": [
+      "Public Speaking"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": true
+    },
+    "status": "pending",
+    "registered": true,
+    "feePaid": 0,
+    "createdAt": {
+      "$date": "2026-09-07T01:27:49.000Z"
+    }
+  },
+  {
+    "studentName": "Aditi George",
+    "email": "aditi.george@example.edu",
+    "event": "Hack Night",
+    "eventId": "E08",
+    "year": 2,
+    "age": 19,
+    "department": "Civil",
+    "city": "Mysuru",
+    "interests": [
+      "Photography",
+      "Gaming",
+      "AI"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": false
+    },
+    "status": "pending",
+    "registered": true,
+    "feePaid": 0,
+    "createdAt": {
+      "$date": "2026-09-07T02:06:49.000Z"
+    }
+  },
+  {
+    "studentName": "Anjali Rao",
+    "email": "anjali.rao@example.edu",
+    "event": "TechFest",
+    "eventId": "E07",
+    "year": 2,
+    "age": 20,
+    "department": "CSE",
+    "city": "Hyderabad",
+    "interests": [
+      "Design",
+      "AI",
+      "Web"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": true
+    },
+    "status": "confirmed",
+    "registered": true,
+    "feePaid": 200,
+    "createdAt": {
+      "$date": "2026-09-07T05:10:50.000Z"
+    }
+  },
+  {
+    "studentName": "Bhavna Pillai",
+    "email": "bhavna.pillai@example.edu",
+    "event": "Cultural Night",
+    "eventId": "E03",
+    "year": 1,
+    "age": 18,
+    "department": "EEE",
+    "city": "Chennai",
+    "interests": [
+      "Mobile Apps"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": false
+    },
+    "status": "pending",
+    "registered": true,
+    "feePaid": 0,
+    "createdAt": {
+      "$date": "2026-09-07T10:02:54.000Z"
+    }
+  },
+  {
+    "studentName": "Hari Bhat",
+    "email": "hari.bhat@example.edu",
+    "event": "TechFest",
+    "eventId": "E07",
+    "year": 3,
+    "age": 20,
+    "department": "CSE",
+    "city": "Kochi",
+    "interests": [
+      "Photography",
+      "AI"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": false,
+      "allergies": [
+        "Peanuts"
+      ]
+    },
+    "status": "confirmed",
+    "registered": true,
+    "feePaid": 200,
+    "createdAt": {
+      "$date": "2026-09-07T16:02:22.000Z"
+    }
+  },
+  {
+    "studentName": "Aishwarya Ahmed",
+    "email": "aishwarya.ahmed@example.edu",
+    "event": "Orientation Mixer",
+    "eventId": "E01",
+    "year": 1,
+    "age": 19,
+    "department": "IT",
+    "city": "Hyderabad",
+    "interests": [
+      "Cloud",
+      "Robotics"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": true
+    },
+    "status": "confirmed",
+    "registered": true,
+    "feePaid": 0,
+    "createdAt": {
+      "$date": "2026-09-07T21:15:33.000Z"
+    }
+  },
+  {
+    "studentName": "Anirudh Iyer",
+    "email": "anirudh.iyer@example.edu",
+    "event": "Cultural Night",
+    "eventId": "E03",
+    "year": 2,
+    "age": 20,
+    "department": "ECE",
+    "city": "Mysuru",
+    "interests": [
+      "Cloud",
+      "Music"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": true
+    },
+    "status": "pending",
+    "registered": true,
+    "feePaid": 0,
+    "createdAt": {
+      "$date": "2026-09-08T10:13:37.000Z"
+    }
+  },
+  {
+    "studentName": "Aarav Thomas",
+    "email": "aarav.thomas@example.edu",
+    "event": "Hack Night",
+    "eventId": "E08",
+    "year": 2,
+    "age": 19,
+    "department": "IT",
+    "city": "Kochi",
+    "interests": [
+      "Data Science",
+      "Web"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": true
+    },
+    "status": "pending",
+    "registered": true,
+    "feePaid": 0,
+    "createdAt": {
+      "$date": "2026-09-08T10:24:51.000Z"
+    }
+  },
+  {
+    "studentName": "Zoya Menon",
+    "email": "zoya.menon@example.edu",
+    "event": "Hack Night",
+    "eventId": "E08",
+    "year": 3,
+    "age": 21,
+    "department": "Mechanical",
+    "city": "Thiruvananthapuram",
+    "interests": [
+      "AI",
+      "Cloud"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": false
+    },
+    "status": "confirmed",
+    "registered": true,
+    "feePaid": 100,
+    "createdAt": {
+      "$date": "2026-09-08T11:36:46.000Z"
+    }
+  },
+  {
+    "studentName": "Thomas Kumar",
+    "email": "thomas.kumar@example.edu",
+    "event": "Orientation Mixer",
+    "eventId": "E01",
+    "year": 2,
+    "age": 20,
+    "department": "Mechanical",
+    "city": "Kochi",
+    "interests": [
+      "Gaming",
+      "Music",
+      "Public Speaking"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": true
+    },
+    "status": "cancelled",
+    "registered": false,
+    "feePaid": 0,
+    "createdAt": {
+      "$date": "2026-09-08T19:07:18.000Z"
+    }
+  },
+  {
+    "studentName": "Sreya Joseph",
+    "email": "sreya.joseph@example.edu",
+    "event": "Data Science Bootcamp",
+    "eventId": "E05",
+    "year": 4,
+    "age": 22,
+    "department": "EEE",
+    "city": "Kochi",
+    "interests": [
+      "Cybersecurity",
+      "Robotics"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": true
+    },
+    "status": "confirmed",
+    "registered": true,
+    "feePaid": 300,
+    "createdAt": {
+      "$date": "2026-09-09T03:10:14.000Z"
+    }
+  },
+  {
+    "studentName": "Joseph Nair",
+    "email": "joseph.nair@example.edu",
+    "event": "TechFest",
+    "eventId": "E07",
+    "year": 2,
+    "age": 20,
+    "department": "CSE",
+    "city": "Kochi",
+    "interests": [
+      "Robotics"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": false
+    },
+    "status": "confirmed",
+    "registered": true,
+    "feePaid": 200,
+    "createdAt": {
+      "$date": "2026-09-09T05:26:55.000Z"
+    }
+  },
+  {
+    "studentName": "Kavya Narayan",
+    "email": "kavya.narayan@example.edu",
+    "event": "Hack Night",
+    "eventId": "E08",
+    "year": 4,
+    "age": 22,
+    "department": "CSE",
+    "city": "Thiruvananthapuram",
+    "interests": [
+      "Cloud",
+      "Robotics"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": false
+    },
+    "status": "pending",
+    "registered": true,
+    "feePaid": 0,
+    "createdAt": {
+      "$date": "2026-09-09T07:05:07.000Z"
+    }
+  },
+  {
+    "studentName": "Vignesh Bhat",
+    "email": "vignesh.bhat@example.edu",
+    "event": "Cultural Night",
+    "eventId": "E03",
+    "year": 3,
+    "age": 21,
+    "department": "CSE",
+    "city": "Bengaluru",
+    "interests": [
+      "Mobile Apps"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": false
+    },
+    "status": "pending",
+    "registered": true,
+    "feePaid": 0,
+    "createdAt": {
+      "$date": "2026-09-09T09:55:58.000Z"
+    }
+  },
+  {
+    "studentName": "Bhavna Shetty",
+    "email": "bhavna.shetty@example.edu",
+    "event": "TechFest",
+    "eventId": "E07",
+    "year": 3,
+    "age": 21,
+    "department": "Civil",
+    "city": "Hyderabad",
+    "interests": [
+      "AI",
+      "Web"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": false
+    },
+    "status": "confirmed",
+    "registered": true,
+    "feePaid": 200,
+    "createdAt": {
+      "$date": "2026-09-09T11:16:12.000Z"
+    }
+  },
+  {
+    "studentName": "Manoj Naidu",
+    "email": "manoj.naidu@example.edu",
+    "event": "Orientation Mixer",
+    "eventId": "E01",
+    "year": 2,
+    "age": 19,
+    "department": "ECE",
+    "city": "Bengaluru",
+    "interests": [
+      "Robotics",
+      "Entrepreneurship"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": false
+    },
+    "status": "confirmed",
+    "registered": true,
+    "feePaid": 0,
+    "createdAt": {
+      "$date": "2026-09-09T15:38:03.000Z"
+    }
+  },
+  {
+    "studentName": "Maria Varma",
+    "email": "maria.varma@example.edu",
+    "event": "Startup Pitch Day",
+    "eventId": "E04",
+    "year": 1,
+    "age": 19,
+    "department": "ECE",
+    "city": "Coimbatore",
+    "interests": [
+      "Cybersecurity"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": true
+    },
+    "status": "confirmed",
+    "registered": true,
+    "feePaid": 50,
+    "createdAt": {
+      "$date": "2026-09-09T19:19:58.000Z"
+    }
+  },
+  {
+    "studentName": "Bhavna Reddy",
+    "email": "bhavna.reddy@example.edu",
+    "event": "TechFest",
+    "eventId": "E07",
+    "year": 4,
+    "age": 22,
+    "department": "Mechanical",
+    "city": "Bengaluru",
+    "interests": [
+      "Gaming",
+      "AI"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": false
+    },
+    "status": "pending",
+    "registered": true,
+    "feePaid": 0,
+    "createdAt": {
+      "$date": "2026-09-10T00:43:42.000Z"
+    }
+  },
+  {
+    "studentName": "Sneha Chandran",
+    "email": "sneha.chandran@example.edu",
+    "event": "Cultural Night",
+    "eventId": "E03",
+    "year": 3,
+    "age": 20,
+    "department": "AI & DS",
+    "city": "Kochi",
+    "interests": [
+      "IoT",
+      "Photography"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": true
+    },
+    "status": "confirmed",
+    "registered": true,
+    "feePaid": 100,
+    "createdAt": {
+      "$date": "2026-09-10T01:29:54.000Z"
+    }
+  },
+  {
+    "studentName": "Sana Subramanian",
+    "email": "sana.subramanian@example.edu",
+    "event": "Cultural Night",
+    "eventId": "E03",
+    "year": 4,
+    "age": 22,
+    "department": "CSE",
+    "city": "Kochi",
+    "interests": [
+      "Robotics",
+      "Photography"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": false,
+      "allergies": [
+        "Gluten"
+      ]
+    },
+    "status": "pending",
+    "registered": true,
+    "feePaid": 0,
+    "createdAt": {
+      "$date": "2026-09-10T11:51:14.000Z"
+    }
+  },
+  {
+    "studentName": "Anna Shetty",
+    "email": "anna.shetty@example.edu",
+    "event": "TechFest",
+    "eventId": "E07",
+    "year": 4,
+    "age": 21,
+    "department": "CSE",
+    "city": "Hyderabad",
+    "interests": [
+      "Data Science",
+      "Photography",
+      "Design"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": true
+    },
+    "status": "confirmed",
+    "registered": true,
+    "feePaid": 200,
+    "createdAt": {
+      "$date": "2026-09-10T14:16:51.000Z"
+    }
+  },
+  {
+    "studentName": "Zoya Iyengar",
+    "email": "zoya.iyengar@example.edu",
+    "event": "TechFest",
+    "eventId": "E07",
+    "year": 4,
+    "age": 22,
+    "department": "IT",
+    "city": "Madurai",
+    "interests": [
+      "AI",
+      "IoT"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": true
+    },
+    "status": "confirmed",
+    "registered": true,
+    "feePaid": 200,
+    "createdAt": {
+      "$date": "2026-09-10T14:49:51.000Z"
+    }
+  },
+  {
+    "studentName": "Deepika Narayan",
+    "email": "deepika.narayan@example.edu",
+    "event": "Cultural Night",
+    "eventId": "E03",
+    "year": 2,
+    "age": 20,
+    "department": "IT",
+    "city": "Chennai",
+    "interests": [
+      "Web"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": true
+    },
+    "status": "pending",
+    "registered": true,
+    "feePaid": 0,
+    "createdAt": {
+      "$date": "2026-09-10T19:35:04.000Z"
+    }
+  },
+  {
+    "studentName": "Sanjay Menon",
+    "email": "sanjay.menon@example.edu",
+    "event": "Orientation Mixer",
+    "eventId": "E01",
+    "year": 4,
+    "age": 22,
+    "department": "Mechanical",
+    "city": "Kochi",
+    "interests": [
+      "Web",
+      "Cloud",
+      "Design"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": false
+    },
+    "status": "confirmed",
+    "registered": true,
+    "feePaid": 0,
+    "createdAt": {
+      "$date": "2026-09-10T21:56:10.000Z"
+    }
+  },
+  {
+    "studentName": "Akhil Kumar",
+    "email": "akhil.kumar@example.edu",
+    "event": "Startup Pitch Day",
+    "eventId": "E04",
+    "year": 1,
+    "age": 19,
+    "department": "ECE",
+    "city": "Bengaluru",
+    "interests": [
+      "Photography"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": false
+    },
+    "status": "cancelled",
+    "registered": false,
+    "feePaid": 0,
+    "createdAt": {
+      "$date": "2026-09-11T00:14:26.000Z"
+    }
+  },
+  {
+    "studentName": "Keerthana Rao",
+    "email": "keerthana.rao@example.edu",
+    "event": "Hack Night",
+    "eventId": "E08",
+    "year": 3,
+    "age": 20,
+    "department": "AI & DS",
+    "city": "Bengaluru",
+    "interests": [
+      "Music",
+      "Photography"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": false
+    },
+    "status": "confirmed",
+    "registered": true,
+    "feePaid": 100,
+    "createdAt": {
+      "$date": "2026-09-11T00:59:35.000Z"
+    }
+  },
+  {
+    "studentName": "Priya Kurian",
+    "email": "priya.kurian@example.edu",
+    "event": "Robotics Workshop",
+    "eventId": "E02",
+    "year": 1,
+    "age": 18,
+    "department": "ECE",
+    "city": "Bengaluru",
+    "interests": [
+      "Entrepreneurship"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": false
+    },
+    "status": "cancelled",
+    "registered": false,
+    "feePaid": 0,
+    "createdAt": {
+      "$date": "2026-09-11T01:45:11.000Z"
+    }
+  },
+  {
+    "studentName": "Priya Bhat",
+    "email": "priya.bhat@example.edu",
+    "event": "TechFest",
+    "eventId": "E07",
+    "year": 3,
+    "age": 20,
+    "department": "ECE",
+    "city": "Thiruvananthapuram",
+    "interests": [
+      "Robotics"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": false
+    },
+    "status": "confirmed",
+    "registered": true,
+    "feePaid": 200,
+    "createdAt": {
+      "$date": "2026-09-11T06:45:19.000Z"
+    }
+  },
+  {
+    "studentName": "Akhil Shetty",
+    "email": "akhil.shetty@example.edu",
+    "event": "Hack Night",
+    "eventId": "E08",
+    "year": 3,
+    "age": 20,
+    "department": "Mechanical",
+    "city": "Hyderabad",
+    "interests": [
+      "Music",
+      "AI",
+      "Cloud"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": false
+    },
+    "status": "confirmed",
+    "registered": true,
+    "feePaid": 100,
+    "createdAt": {
+      "$date": "2026-09-11T09:33:42.000Z"
+    }
+  },
+  {
+    "studentName": "Farhan Fernandez",
+    "email": "farhan.fernandez@example.edu",
+    "event": "Hack Night",
+    "eventId": "E08",
+    "year": 3,
+    "age": 20,
+    "department": "CSE",
+    "city": "Hyderabad",
+    "interests": [
+      "IoT"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": false
+    },
+    "status": "waitlisted",
+    "registered": true,
+    "feePaid": 0,
+    "createdAt": {
+      "$date": "2026-09-11T20:21:04.000Z"
+    }
+  },
+  {
+    "studentName": "Gayathri George",
+    "email": "gayathri.george@example.edu",
+    "event": "Robotics Workshop",
+    "eventId": "E02",
+    "year": 2,
+    "age": 19,
+    "department": "AI & DS",
+    "city": "Kochi",
+    "interests": [
+      "IoT",
+      "Entrepreneurship"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": false
+    },
+    "status": "pending",
+    "registered": true,
+    "feePaid": 0,
+    "createdAt": {
+      "$date": "2026-09-12T02:37:32.000Z"
+    }
+  },
+  {
+    "studentName": "Irfan Rao",
+    "email": "irfan.rao@example.edu",
+    "event": "Cultural Night",
+    "eventId": "E03",
+    "year": 4,
+    "age": 22,
+    "department": "IT",
+    "city": "Madurai",
+    "interests": [
+      "Web"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": true
+    },
+    "status": "confirmed",
+    "registered": true,
+    "feePaid": 100,
+    "createdAt": {
+      "$date": "2026-09-12T08:51:24.000Z"
+    }
+  },
+  {
+    "studentName": "Deepika Joseph",
+    "email": "deepika.joseph@example.edu",
+    "event": "Data Science Bootcamp",
+    "eventId": "E05",
+    "year": 2,
+    "age": 20,
+    "department": "IT",
+    "city": "Bengaluru",
+    "interests": [
+      "Photography"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": true
+    },
+    "status": "pending",
+    "registered": true,
+    "feePaid": 0,
+    "createdAt": {
+      "$date": "2026-09-12T16:06:35.000Z"
+    }
+  },
+  {
+    "studentName": "Anjali Menon",
+    "email": "anjali.menon@example.edu",
+    "event": "Orientation Mixer",
+    "eventId": "E01",
+    "year": 4,
+    "age": 21,
+    "department": "EEE",
+    "city": "Thiruvananthapuram",
+    "interests": [
+      "AI"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": false
+    },
+    "status": "confirmed",
+    "registered": true,
+    "feePaid": 0,
+    "createdAt": {
+      "$date": "2026-09-12T23:46:08.000Z"
+    }
+  },
+  {
+    "studentName": "Tanvi Pillai",
+    "email": "tanvi.pillai@example.edu",
+    "event": "Hack Night",
+    "eventId": "E08",
+    "year": 4,
+    "age": 22,
+    "department": "CSE",
+    "city": "Bengaluru",
+    "interests": [
+      "IoT",
+      "Mobile Apps"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": true
+    },
+    "status": "confirmed",
+    "registered": true,
+    "feePaid": 100,
+    "createdAt": {
+      "$date": "2026-09-13T00:10:59.000Z"
+    }
+  },
+  {
+    "studentName": "Akhil Pillai",
+    "email": "akhil.pillai@example.edu",
+    "event": "TechFest",
+    "eventId": "E07",
+    "year": 1,
+    "age": 19,
+    "department": "CSE",
+    "city": "Coimbatore",
+    "interests": [
+      "Photography"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": true
+    },
+    "status": "confirmed",
+    "registered": true,
+    "feePaid": 200,
+    "createdAt": {
+      "$date": "2026-09-13T12:01:05.000Z"
+    }
+  },
+  {
+    "studentName": "Anna Pillai",
+    "email": "anna.pillai@example.edu",
+    "event": "Startup Pitch Day",
+    "eventId": "E04",
+    "year": 3,
+    "age": 20,
+    "department": "CSE",
+    "city": "Thiruvananthapuram",
+    "interests": [
+      "Gaming",
+      "Photography"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": false
+    },
+    "status": "confirmed",
+    "registered": true,
+    "feePaid": 50,
+    "createdAt": {
+      "$date": "2026-09-13T12:20:06.000Z"
+    }
+  },
+  {
+    "studentName": "Mohammed Mathew",
+    "email": "mohammed.mathew@example.edu",
+    "event": "Cultural Night",
+    "eventId": "E03",
+    "year": 1,
+    "age": 18,
+    "department": "ECE",
+    "city": "Kochi",
+    "interests": [
+      "IoT"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": false
+    },
+    "status": "pending",
+    "registered": true,
+    "feePaid": 0,
+    "createdAt": {
+      "$date": "2026-09-13T21:14:40.000Z"
+    }
+  },
+  {
+    "studentName": "Pranav Patel",
+    "email": "pranav.patel@example.edu",
+    "event": "Robotics Workshop",
+    "eventId": "E02",
+    "year": 2,
+    "age": 20,
+    "department": "ECE",
+    "city": "Kochi",
+    "interests": [
+      "Web",
+      "IoT"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": true
+    },
+    "status": "confirmed",
+    "registered": true,
+    "feePaid": 150,
+    "createdAt": {
+      "$date": "2026-09-13T21:37:54.000Z"
+    }
+  },
+  {
+    "studentName": "Farhan Philip",
+    "email": "farhan.philip@example.edu",
+    "event": "Startup Pitch Day",
+    "eventId": "E04",
+    "year": 2,
+    "age": 20,
+    "department": "AI & DS",
+    "city": "Thiruvananthapuram",
+    "interests": [
+      "Cloud",
+      "Web",
+      "Cybersecurity"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": false
+    },
+    "status": "confirmed",
+    "registered": true,
+    "feePaid": 50,
+    "createdAt": {
+      "$date": "2026-09-14T08:23:14.000Z"
+    }
+  },
+  {
+    "studentName": "Asha",
+    "email": "asha@example.edu",
+    "event": "TechFest",
+    "eventId": "E07",
+    "year": 2,
+    "age": 19,
+    "department": "CSE",
+    "city": "Kochi",
+    "interests": [
+      "AI",
+      "Web"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": true
+    },
+    "status": "pending",
+    "registered": true,
+    "feePaid": 0,
+    "createdAt": {
+      "$date": "2026-09-14T08:42:10.000Z"
+    }
+  },
+  {
+    "studentName": "Pooja Ahmed",
+    "email": "pooja.ahmed@example.edu",
+    "event": "TechFest",
+    "eventId": "E07",
+    "year": 2,
+    "age": 19,
+    "department": "EEE",
+    "city": "Thiruvananthapuram",
+    "interests": [
+      "Web",
+      "Music"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": false
+    },
+    "status": "pending",
+    "registered": true,
+    "feePaid": 0,
+    "createdAt": {
+      "$date": "2026-09-14T10:07:10.000Z"
+    }
+  },
+  {
+    "studentName": "Suresh Joseph",
+    "email": "suresh.joseph@example.edu",
+    "event": "Data Science Bootcamp",
+    "eventId": "E05",
+    "year": 3,
+    "age": 20,
+    "department": "Mechanical",
+    "city": "Bengaluru",
+    "interests": [
+      "Data Science",
+      "IoT",
+      "Public Speaking"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": true
+    },
+    "status": "confirmed",
+    "registered": true,
+    "feePaid": 300,
+    "createdAt": {
+      "$date": "2026-09-14T19:52:56.000Z"
+    }
+  },
+  {
+    "studentName": "Aarav Khan",
+    "email": "aarav.khan@example.edu",
+    "event": "Cultural Night",
+    "eventId": "E03",
+    "year": 3,
+    "age": 21,
+    "department": "IT",
+    "city": "Chennai",
+    "interests": [
+      "Mobile Apps",
+      "AI"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": false
+    },
+    "status": "confirmed",
+    "registered": true,
+    "feePaid": 100,
+    "createdAt": {
+      "$date": "2026-09-15T06:54:48.000Z"
+    }
+  },
+  {
+    "studentName": "Aishwarya Fernandez",
+    "email": "aishwarya.fernandez@example.edu",
+    "event": "Cultural Night",
+    "eventId": "E03",
+    "year": 1,
+    "age": 18,
+    "department": "IT",
+    "city": "Coimbatore",
+    "interests": [
+      "Web",
+      "Design"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": true
+    },
+    "status": "confirmed",
+    "registered": true,
+    "feePaid": 100,
+    "createdAt": {
+      "$date": "2026-09-15T18:36:39.000Z"
+    }
+  },
+  {
+    "studentName": "Mohammed Kumar",
+    "email": "mohammed.kumar@example.edu",
+    "event": "Data Science Bootcamp",
+    "eventId": "E05",
+    "year": 1,
+    "age": 18,
+    "department": "IT",
+    "city": "Chennai",
+    "interests": [
+      "Web",
+      "Music",
+      "Mobile Apps"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": true
+    },
+    "status": "confirmed",
+    "registered": true,
+    "feePaid": 300,
+    "createdAt": {
+      "$date": "2026-09-15T22:29:44.000Z"
+    }
+  },
+  {
+    "studentName": "Keerthana Kumar",
+    "email": "keerthana.kumar@example.edu",
+    "event": "Cultural Night",
+    "eventId": "E03",
+    "year": 1,
+    "age": 18,
+    "department": "IT",
+    "city": "Thiruvananthapuram",
+    "interests": [
+      "Web",
+      "Robotics"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": true
+    },
+    "status": "cancelled",
+    "registered": false,
+    "feePaid": 0,
+    "createdAt": {
+      "$date": "2026-09-15T22:45:00.000Z"
+    }
+  },
+  {
+    "studentName": "Pooja Mathew",
+    "email": "pooja.mathew@example.edu",
+    "event": "Cultural Night",
+    "eventId": "E03",
+    "year": 4,
+    "age": 21,
+    "department": "CSE",
+    "city": "Chennai",
+    "interests": [
+      "Design",
+      "Data Science"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": false
+    },
+    "status": "confirmed",
+    "registered": true,
+    "feePaid": 100,
+    "createdAt": {
+      "$date": "2026-09-16T05:07:38.000Z"
+    }
+  },
+  {
+    "studentName": "Maria Menon",
+    "email": "maria.menon@example.edu",
+    "event": "TechFest",
+    "eventId": "E07",
+    "year": 4,
+    "age": 22,
+    "department": "ECE",
+    "city": "Hyderabad",
+    "interests": [
+      "IoT",
+      "Public Speaking",
+      "Design"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": true
+    },
+    "status": "confirmed",
+    "registered": true,
+    "feePaid": 200,
+    "createdAt": {
+      "$date": "2026-09-16T07:51:42.000Z"
+    }
+  },
+  {
+    "studentName": "Uma Narayan",
+    "email": "uma.narayan@example.edu",
+    "event": "Cultural Night",
+    "eventId": "E03",
+    "year": 1,
+    "age": 18,
+    "department": "Mechanical",
+    "city": "Bengaluru",
+    "interests": [
+      "Robotics",
+      "Design"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": false
+    },
+    "status": "confirmed",
+    "registered": true,
+    "feePaid": 100,
+    "createdAt": {
+      "$date": "2026-09-16T17:39:39.000Z"
+    }
+  },
+  {
+    "studentName": "Vignesh Bhat",
+    "email": "vignesh.bhat@example.edu",
+    "event": "Orientation Mixer",
+    "eventId": "E01",
+    "year": 3,
+    "age": 21,
+    "department": "CSE",
+    "city": "Bengaluru",
+    "interests": [
+      "Mobile Apps"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": false
+    },
+    "status": "confirmed",
+    "registered": true,
+    "feePaid": 0,
+    "createdAt": {
+      "$date": "2026-09-16T18:56:48.000Z"
+    }
+  },
+  {
+    "studentName": "Bhavna Iyengar",
+    "email": "bhavna.iyengar@example.edu",
+    "event": "TechFest",
+    "eventId": "E07",
+    "year": 1,
+    "age": 19,
+    "department": "CSE",
+    "city": "Thiruvananthapuram",
+    "interests": [
+      "Gaming",
+      "Entrepreneurship",
+      "Cloud"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": false
+    },
+    "status": "confirmed",
+    "registered": true,
+    "feePaid": 200,
+    "createdAt": {
+      "$date": "2026-09-17T02:29:47.000Z"
+    }
+  },
+  {
+    "studentName": "Divya Joseph",
+    "email": "divya.joseph@example.edu",
+    "event": "Orientation Mixer",
+    "eventId": "E01",
+    "year": 4,
+    "age": 21,
+    "department": "AI & DS",
+    "city": "Coimbatore",
+    "interests": [
+      "Mobile Apps"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": false
+    },
+    "status": "confirmed",
+    "registered": true,
+    "feePaid": 0,
+    "createdAt": {
+      "$date": "2026-09-17T08:22:35.000Z"
+    }
+  },
+  {
+    "studentName": "Pranav Naidu",
+    "email": "pranav.naidu@example.edu",
+    "event": "Data Science Bootcamp",
+    "eventId": "E05",
+    "year": 4,
+    "age": 21,
+    "department": "AI & DS",
+    "city": "Thiruvananthapuram",
+    "interests": [
+      "Design",
+      "Entrepreneurship",
+      "Music"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": true
+    },
+    "status": "confirmed",
+    "registered": true,
+    "feePaid": 300,
+    "createdAt": {
+      "$date": "2026-09-17T17:06:17.000Z"
+    }
+  },
+  {
+    "studentName": "Meera Ramesh",
+    "email": "meera.ramesh@example.edu",
+    "event": "TechFest",
+    "eventId": "E07",
+    "year": 4,
+    "age": 21,
+    "department": "Mechanical",
+    "city": "Chennai",
+    "interests": [
+      "Entrepreneurship",
+      "Music",
+      "Public Speaking"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": true
+    },
+    "status": "pending",
+    "registered": true,
+    "feePaid": 0,
+    "createdAt": {
+      "$date": "2026-09-17T20:08:38.000Z"
+    }
+  },
+  {
+    "studentName": "Sanjay Shetty",
+    "email": "sanjay.shetty@example.edu",
+    "event": "TechFest",
+    "eventId": "E07",
+    "year": 4,
+    "age": 22,
+    "department": "ECE",
+    "city": "Thiruvananthapuram",
+    "interests": [
+      "Cloud"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": false
+    },
+    "status": "pending",
+    "registered": true,
+    "feePaid": 0,
+    "createdAt": {
+      "$date": "2026-09-17T22:15:19.000Z"
+    }
+  },
+  {
+    "studentName": "Anjali Chandran",
+    "email": "anjali.chandran@example.edu",
+    "event": "TechFest",
+    "eventId": "E07",
+    "year": 3,
+    "age": 21,
+    "department": "CSE",
+    "city": "Coimbatore",
+    "interests": [
+      "Design"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": false
+    },
+    "status": "confirmed",
+    "registered": true,
+    "feePaid": 200,
+    "createdAt": {
+      "$date": "2026-09-18T05:47:13.000Z"
+    }
+  },
+  {
+    "studentName": "Aishwarya Iyer",
+    "email": "aishwarya.iyer@example.edu",
+    "event": "Photography Walk",
+    "eventId": "E06",
+    "year": 2,
+    "age": 20,
+    "department": "CSE",
+    "city": "Bengaluru",
+    "interests": [
+      "Gaming",
+      "Music"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": false
+    },
+    "status": "confirmed",
+    "registered": true,
+    "feePaid": 0,
+    "createdAt": {
+      "$date": "2026-09-18T15:32:05.000Z"
+    }
+  },
+  {
+    "studentName": "Zoya Mathew",
+    "email": "zoya.mathew@example.edu",
+    "event": "Orientation Mixer",
+    "eventId": "E01",
+    "year": 2,
+    "age": 19,
+    "department": "ECE",
+    "city": "Kochi",
+    "interests": [
+      "Design"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": true
+    },
+    "status": "confirmed",
+    "registered": true,
+    "feePaid": 0,
+    "createdAt": {
+      "$date": "2026-09-18T19:37:03.000Z"
+    }
+  },
+  {
+    "studentName": "Divya Ahmed",
+    "email": "divya.ahmed@example.edu",
+    "event": "TechFest",
+    "eventId": "E07",
+    "year": 1,
+    "age": 18,
+    "department": "CSE",
+    "city": "Thiruvananthapuram",
+    "interests": [
+      "Music"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": false
+    },
+    "status": "confirmed",
+    "registered": true,
+    "feePaid": 200,
+    "createdAt": {
+      "$date": "2026-09-18T20:13:01.000Z"
+    }
+  },
+  {
+    "studentName": "Keerthana Ahmed",
+    "email": "keerthana.ahmed@example.edu",
+    "event": "Cultural Night",
+    "eventId": "E03",
+    "year": 1,
+    "age": 19,
+    "department": "AI & DS",
+    "city": "Chennai",
+    "interests": [
+      "IoT",
+      "Design"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": true
+    },
+    "status": "confirmed",
+    "registered": true,
+    "feePaid": 100,
+    "createdAt": {
+      "$date": "2026-09-18T23:20:57.000Z"
+    }
+  },
+  {
+    "studentName": "Sanjay Subramanian",
+    "email": "sanjay.subramanian@example.edu",
+    "event": "TechFest",
+    "eventId": "E07",
+    "year": 3,
+    "age": 21,
+    "department": "CSE",
+    "city": "Thiruvananthapuram",
+    "interests": [
+      "Data Science"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": false
+    },
+    "status": "confirmed",
+    "registered": true,
+    "feePaid": 200,
+    "createdAt": {
+      "$date": "2026-09-19T01:16:20.000Z"
+    }
+  },
+  {
+    "studentName": "Varun Subramanian",
+    "email": "varun.subramanian@example.edu",
+    "event": "Robotics Workshop",
+    "eventId": "E02",
+    "year": 3,
+    "age": 21,
+    "department": "IT",
+    "city": "Chennai",
+    "interests": [
+      "IoT",
+      "Mobile Apps"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": false
+    },
+    "status": "confirmed",
+    "registered": true,
+    "feePaid": 150,
+    "createdAt": {
+      "$date": "2026-09-19T02:57:52.000Z"
+    }
+  },
+  {
+    "studentName": "Bhavna Krishnan",
+    "email": "bhavna.krishnan@example.edu",
+    "event": "Hack Night",
+    "eventId": "E08",
+    "year": 1,
+    "age": 19,
+    "department": "CSE",
+    "city": "Kochi",
+    "interests": [
+      "Music",
+      "Gaming"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": true,
+      "allergies": [
+        "Gluten"
+      ]
+    },
+    "status": "pending",
+    "registered": true,
+    "feePaid": 0,
+    "createdAt": {
+      "$date": "2026-09-19T09:21:55.000Z"
+    }
+  },
+  {
+    "studentName": "Arun Thomas",
+    "email": "arun.thomas@example.edu",
+    "event": "Startup Pitch Day",
+    "eventId": "E04",
+    "year": 3,
+    "age": 21,
+    "department": "Civil",
+    "city": "Thiruvananthapuram",
+    "interests": [
+      "Data Science"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": true
+    },
+    "status": "pending",
+    "registered": true,
+    "feePaid": 0,
+    "createdAt": {
+      "$date": "2026-09-19T11:40:25.000Z"
+    }
+  },
+  {
+    "studentName": "Alan George",
+    "email": "alan.george@example.edu",
+    "event": "Robotics Workshop",
+    "eventId": "E02",
+    "year": 3,
+    "age": 20,
+    "department": "EEE",
+    "city": "Kochi",
+    "interests": [
+      "IoT",
+      "Data Science"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": false
+    },
+    "status": "confirmed",
+    "registered": true,
+    "feePaid": 150,
+    "createdAt": {
+      "$date": "2026-09-19T19:19:26.000Z"
+    }
+  },
+  {
+    "studentName": "Priya Bhat",
+    "email": "priya.bhat@example.edu",
+    "event": "Photography Walk",
+    "eventId": "E06",
+    "year": 3,
+    "age": 20,
+    "department": "ECE",
+    "city": "Thiruvananthapuram",
+    "interests": [
+      "Robotics"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": false
+    },
+    "status": "confirmed",
+    "registered": true,
+    "feePaid": 0,
+    "createdAt": {
+      "$date": "2026-09-19T23:53:26.000Z"
+    }
+  },
+  {
+    "studentName": "Kavya Kumar",
+    "email": "kavya.kumar@example.edu",
+    "event": "Orientation Mixer",
+    "eventId": "E01",
+    "year": 4,
+    "age": 22,
+    "department": "AI & DS",
+    "city": "Coimbatore",
+    "interests": [
+      "Design"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": true
+    },
+    "status": "confirmed",
+    "registered": true,
+    "feePaid": 0,
+    "createdAt": {
+      "$date": "2026-09-20T03:16:01.000Z"
+    }
+  },
+  {
+    "studentName": "Arun Menon",
+    "email": "arun.menon@example.edu",
+    "event": "Hack Night",
+    "eventId": "E08",
+    "year": 1,
+    "age": 19,
+    "department": "CSE",
+    "city": "Kochi",
+    "interests": [
+      "Data Science"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": true
+    },
+    "status": "cancelled",
+    "registered": false,
+    "feePaid": 0,
+    "createdAt": {
+      "$date": "2026-09-20T03:54:11.000Z"
+    }
+  },
+  {
+    "studentName": "Lakshmi Philip",
+    "email": "lakshmi.philip@example.edu",
+    "event": "Startup Pitch Day",
+    "eventId": "E04",
+    "year": 1,
+    "age": 18,
+    "department": "ECE",
+    "city": "Kochi",
+    "interests": [
+      "Public Speaking",
+      "Cloud"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": true
+    },
+    "status": "confirmed",
+    "registered": true,
+    "feePaid": 50,
+    "createdAt": {
+      "$date": "2026-09-20T04:30:51.000Z"
+    }
+  },
+  {
+    "studentName": "Anjali Sharma",
+    "email": "anjali.sharma@example.edu",
+    "event": "TechFest",
+    "eventId": "E07",
+    "year": 1,
+    "age": 19,
+    "department": "AI & DS",
+    "city": "Madurai",
+    "interests": [
+      "Web",
+      "Gaming",
+      "Entrepreneurship"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": false
+    },
+    "status": "confirmed",
+    "registered": true,
+    "feePaid": 200,
+    "createdAt": {
+      "$date": "2026-09-20T08:59:28.000Z"
+    }
+  },
+  {
+    "studentName": "Anjali Naidu",
+    "email": "anjali.naidu@example.edu",
+    "event": "Orientation Mixer",
+    "eventId": "E01",
+    "year": 2,
+    "age": 20,
+    "department": "ECE",
+    "city": "Coimbatore",
+    "interests": [
+      "Photography"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": true
+    },
+    "status": "confirmed",
+    "registered": true,
+    "feePaid": 0,
+    "createdAt": {
+      "$date": "2026-09-20T12:03:53.000Z"
+    }
+  },
+  {
+    "studentName": "Uma Chandran",
+    "email": "uma.chandran@example.edu",
+    "event": "Cultural Night",
+    "eventId": "E03",
+    "year": 3,
+    "age": 20,
+    "department": "CSE",
+    "city": "Coimbatore",
+    "interests": [
+      "Photography",
+      "Data Science"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": true
+    },
+    "status": "cancelled",
+    "registered": false,
+    "feePaid": 0,
+    "createdAt": {
+      "$date": "2026-09-20T14:19:01.000Z"
+    }
+  },
+  {
+    "studentName": "Zoya Hegde",
+    "email": "zoya.hegde@example.edu",
+    "event": "Data Science Bootcamp",
+    "eventId": "E05",
+    "year": 4,
+    "age": 21,
+    "department": "ECE",
+    "city": "Chennai",
+    "interests": [
+      "Web"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": true
+    },
+    "status": "confirmed",
+    "registered": true,
+    "feePaid": 300,
+    "createdAt": {
+      "$date": "2026-09-20T17:57:40.000Z"
+    }
+  },
+  {
+    "studentName": "Karthik Patel",
+    "email": "karthik.patel@example.edu",
+    "event": "Robotics Workshop",
+    "eventId": "E02",
+    "year": 2,
+    "age": 19,
+    "department": "ECE",
+    "city": "Chennai",
+    "interests": [
+      "AI",
+      "Robotics"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": false
+    },
+    "status": "pending",
+    "registered": true,
+    "feePaid": 0,
+    "createdAt": {
+      "$date": "2026-09-21T01:21:12.000Z"
+    }
+  },
+  {
+    "studentName": "Mithun Varma",
+    "email": "mithun.varma@example.edu",
+    "event": "Data Science Bootcamp",
+    "eventId": "E05",
+    "year": 2,
+    "age": 20,
+    "department": "AI & DS",
+    "city": "Hyderabad",
+    "interests": [
+      "Cloud",
+      "IoT"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": false,
+      "allergies": [
+        "Lactose"
+      ]
+    },
+    "status": "pending",
+    "registered": true,
+    "feePaid": 0,
+    "createdAt": {
+      "$date": "2026-09-21T03:56:37.000Z"
+    }
+  },
+  {
+    "studentName": "Thomas Krishnan",
+    "email": "thomas.krishnan@example.edu",
+    "event": "Hack Night",
+    "eventId": "E08",
+    "year": 2,
+    "age": 20,
+    "department": "CSE",
+    "city": "Hyderabad",
+    "interests": [
+      "Music",
+      "AI"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": false
+    },
+    "status": "pending",
+    "registered": true,
+    "feePaid": 0,
+    "createdAt": {
+      "$date": "2026-09-21T23:09:24.000Z"
+    }
+  },
+  {
+    "studentName": "Joseph Kurian",
+    "email": "joseph.kurian@example.edu",
+    "event": "Startup Pitch Day",
+    "eventId": "E04",
+    "year": 1,
+    "age": 19,
+    "department": "ECE",
+    "city": "Kochi",
+    "interests": [
+      "Public Speaking",
+      "Design"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": true
+    },
+    "status": "confirmed",
+    "registered": true,
+    "feePaid": 50,
+    "createdAt": {
+      "$date": "2026-09-22T00:04:30.000Z"
+    }
+  },
+  {
+    "studentName": "Vignesh Shetty",
+    "email": "vignesh.shetty@example.edu",
+    "event": "Data Science Bootcamp",
+    "eventId": "E05",
+    "year": 1,
+    "age": 18,
+    "department": "ECE",
+    "city": "Chennai",
+    "interests": [
+      "Mobile Apps"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": false
+    },
+    "status": "pending",
+    "registered": true,
+    "feePaid": 0,
+    "createdAt": {
+      "$date": "2026-09-22T00:15:57.000Z"
+    }
+  },
+  {
+    "studentName": "Rahul",
+    "email": "rahul@example.edu",
+    "event": "TechFest",
+    "eventId": "E07",
+    "year": 3,
+    "age": 20,
+    "department": "ECE",
+    "city": "Chennai",
+    "interests": [
+      "Robotics",
+      "IoT"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": false
+    },
+    "status": "confirmed",
+    "registered": true,
+    "feePaid": 200,
+    "createdAt": {
+      "$date": "2026-09-22T06:18:42.000Z"
+    }
+  },
+  {
+    "studentName": "Alan Iyengar",
+    "email": "alan.iyengar@example.edu",
+    "event": "Data Science Bootcamp",
+    "eventId": "E05",
+    "year": 4,
+    "age": 22,
+    "department": "Mechanical",
+    "city": "Chennai",
+    "interests": [
+      "Design",
+      "Data Science"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": true
+    },
+    "status": "pending",
+    "registered": true,
+    "feePaid": 0,
+    "createdAt": {
+      "$date": "2026-09-22T06:41:41.000Z"
+    }
+  },
+  {
+    "studentName": "Devika Iyer",
+    "email": "devika.iyer@example.edu",
+    "event": "Cultural Night",
+    "eventId": "E03",
+    "year": 3,
+    "age": 20,
+    "department": "AI & DS",
+    "city": "Kochi",
+    "interests": [
+      "Mobile Apps"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": true
+    },
+    "status": "pending",
+    "registered": true,
+    "feePaid": 0,
+    "createdAt": {
+      "$date": "2026-09-22T08:22:04.000Z"
+    }
+  },
+  {
+    "studentName": "Aditi Ramesh",
+    "email": "aditi.ramesh@example.edu",
+    "event": "TechFest",
+    "eventId": "E07",
+    "year": 2,
+    "age": 20,
+    "department": "CSE",
+    "city": "Chennai",
+    "interests": [
+      "IoT",
+      "AI",
+      "Gaming"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": false
+    },
+    "status": "pending",
+    "registered": true,
+    "feePaid": 0,
+    "createdAt": {
+      "$date": "2026-09-22T10:50:07.000Z"
+    }
+  },
+  {
+    "studentName": "Maria Iyer",
+    "email": "maria.iyer@example.edu",
+    "event": "Cultural Night",
+    "eventId": "E03",
+    "year": 4,
+    "age": 22,
+    "department": "Mechanical",
+    "city": "Kochi",
+    "interests": [
+      "Gaming"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": false
+    },
+    "status": "confirmed",
+    "registered": true,
+    "feePaid": 100,
+    "createdAt": {
+      "$date": "2026-09-22T10:59:06.000Z"
+    }
+  },
+  {
+    "studentName": "Pranav Reddy",
+    "email": "pranav.reddy@example.edu",
+    "event": "Photography Walk",
+    "eventId": "E06",
+    "year": 3,
+    "age": 20,
+    "department": "EEE",
+    "city": "Bengaluru",
+    "interests": [
+      "Photography",
+      "Entrepreneurship",
+      "Cloud"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": true
+    },
+    "status": "confirmed",
+    "registered": true,
+    "feePaid": 0,
+    "createdAt": {
+      "$date": "2026-09-23T00:32:27.000Z"
+    }
+  },
+  {
+    "studentName": "Pooja Naidu",
+    "email": "pooja.naidu@example.edu",
+    "event": "Hack Night",
+    "eventId": "E08",
+    "year": 4,
+    "age": 21,
+    "department": "AI & DS",
+    "city": "Hyderabad",
+    "interests": [
+      "IoT",
+      "Web"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": false
+    },
+    "status": "confirmed",
+    "registered": true,
+    "feePaid": 100,
+    "createdAt": {
+      "$date": "2026-09-23T09:23:52.000Z"
+    }
+  },
+  {
+    "studentName": "Hari Sharma",
+    "email": "hari.sharma@example.edu",
+    "event": "TechFest",
+    "eventId": "E07",
+    "year": 1,
+    "age": 19,
+    "department": "AI & DS",
+    "city": "Hyderabad",
+    "interests": [
+      "Photography",
+      "Design"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": false
+    },
+    "status": "confirmed",
+    "registered": true,
+    "feePaid": 200,
+    "createdAt": {
+      "$date": "2026-09-23T12:24:48.000Z"
+    }
+  },
+  {
+    "studentName": "Nikhil Pillai",
+    "email": "nikhil.pillai@example.edu",
+    "event": "Hack Night",
+    "eventId": "E08",
+    "year": 1,
+    "age": 18,
+    "department": "CSE",
+    "city": "Chennai",
+    "interests": [
+      "Web",
+      "Cloud"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": false,
+      "allergies": [
+        "Gluten"
+      ]
+    },
+    "status": "confirmed",
+    "registered": true,
+    "feePaid": 100,
+    "createdAt": {
+      "$date": "2026-09-23T17:22:20.000Z"
+    }
+  },
+  {
+    "studentName": "Nandini Naidu",
+    "email": "nandini.naidu@example.edu",
+    "event": "TechFest",
+    "eventId": "E07",
+    "year": 3,
+    "age": 21,
+    "department": "AI & DS",
+    "city": "Thiruvananthapuram",
+    "interests": [
+      "Cybersecurity",
+      "Robotics"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": false
+    },
+    "status": "confirmed",
+    "registered": true,
+    "feePaid": 200,
+    "createdAt": {
+      "$date": "2026-09-23T18:15:42.000Z"
+    }
+  },
+  {
+    "studentName": "Meera Reddy",
+    "email": "meera.reddy@example.edu",
+    "event": "Hack Night",
+    "eventId": "E08",
+    "year": 3,
+    "age": 21,
+    "department": "CSE",
+    "city": "Kochi",
+    "interests": [
+      "Photography",
+      "Web",
+      "Cloud"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": true
+    },
+    "status": "waitlisted",
+    "registered": true,
+    "feePaid": 0,
+    "createdAt": {
+      "$date": "2026-09-23T20:24:34.000Z"
+    }
+  },
+  {
+    "studentName": "Akhil Ramesh",
+    "email": "akhil.ramesh@example.edu",
+    "event": "Robotics Workshop",
+    "eventId": "E02",
+    "year": 3,
+    "age": 20,
+    "department": "CSE",
+    "city": "Chennai",
+    "interests": [
+      "Cloud",
+      "Robotics"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": false
+    },
+    "status": "confirmed",
+    "registered": true,
+    "feePaid": 150,
+    "createdAt": {
+      "$date": "2026-09-23T22:30:17.000Z"
+    }
+  },
+  {
+    "studentName": "Sneha Iyer",
+    "email": "sneha.iyer@example.edu",
+    "event": "Hack Night",
+    "eventId": "E08",
+    "year": 2,
+    "age": 19,
+    "department": "EEE",
+    "city": "Bengaluru",
+    "interests": [
+      "Photography",
+      "Mobile Apps",
+      "Web"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": false
+    },
+    "status": "pending",
+    "registered": true,
+    "feePaid": 0,
+    "createdAt": {
+      "$date": "2026-09-23T22:30:31.000Z"
+    }
+  },
+  {
+    "studentName": "Akhil Chandran",
+    "email": "akhil.chandran@example.edu",
+    "event": "Cultural Night",
+    "eventId": "E03",
+    "year": 3,
+    "age": 21,
+    "department": "EEE",
+    "city": "Hyderabad",
+    "interests": [
+      "IoT",
+      "Gaming"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": false
+    },
+    "status": "confirmed",
+    "registered": true,
+    "feePaid": 100,
+    "createdAt": {
+      "$date": "2026-09-24T00:32:04.000Z"
+    }
+  },
+  {
+    "studentName": "Thomas Hegde",
+    "email": "thomas.hegde@example.edu",
+    "event": "TechFest",
+    "eventId": "E07",
+    "year": 3,
+    "age": 21,
+    "department": "CSE",
+    "city": "Chennai",
+    "interests": [
+      "Mobile Apps",
+      "Photography"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": false
+    },
+    "status": "confirmed",
+    "registered": true,
+    "feePaid": 200,
+    "createdAt": {
+      "$date": "2026-09-24T02:12:25.000Z"
+    }
+  },
+  {
+    "studentName": "Farhan Kurian",
+    "email": "farhan.kurian@example.edu",
+    "event": "Cultural Night",
+    "eventId": "E03",
+    "year": 3,
+    "age": 20,
+    "department": "CSE",
+    "city": "Kochi",
+    "interests": [
+      "Public Speaking",
+      "Data Science",
+      "Cloud"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": false
+    },
+    "status": "confirmed",
+    "registered": true,
+    "feePaid": 100,
+    "createdAt": {
+      "$date": "2026-09-24T04:46:17.000Z"
+    }
+  },
+  {
+    "studentName": "Bhavna George",
+    "email": "bhavna.george@example.edu",
+    "event": "Startup Pitch Day",
+    "eventId": "E04",
+    "year": 2,
+    "age": 19,
+    "department": "AI & DS",
+    "city": "Mysuru",
+    "interests": [
+      "Mobile Apps",
+      "Entrepreneurship",
+      "Design"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": false
+    },
+    "status": "confirmed",
+    "registered": true,
+    "feePaid": 50,
+    "createdAt": {
+      "$date": "2026-09-24T06:38:06.000Z"
+    }
+  },
+  {
+    "studentName": "Priya Kurian",
+    "email": "priya.kurian@example.edu",
+    "event": "Startup Pitch Day",
+    "eventId": "E04",
+    "year": 1,
+    "age": 18,
+    "department": "ECE",
+    "city": "Bengaluru",
+    "interests": [
+      "Entrepreneurship"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": false
+    },
+    "status": "confirmed",
+    "registered": true,
+    "feePaid": 50,
+    "createdAt": {
+      "$date": "2026-09-24T08:55:14.000Z"
+    }
+  },
+  {
+    "studentName": "Ananya Iyer",
+    "email": "ananya.iyer@example.edu",
+    "event": "TechFest",
+    "eventId": "E07",
+    "year": 2,
+    "age": 20,
+    "department": "IT",
+    "city": "Kochi",
+    "interests": [
+      "Public Speaking",
+      "Web"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": true
+    },
+    "status": "confirmed",
+    "registered": true,
+    "feePaid": 200,
+    "createdAt": {
+      "$date": "2026-09-24T18:37:38.000Z"
+    }
+  },
+  {
+    "studentName": "Kavya Iyer",
+    "email": "kavya.iyer@example.edu",
+    "event": "Robotics Workshop",
+    "eventId": "E02",
+    "year": 3,
+    "age": 20,
+    "department": "CSE",
+    "city": "Chennai",
+    "interests": [
+      "Cybersecurity",
+      "Data Science"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": false
+    },
+    "status": "confirmed",
+    "registered": true,
+    "feePaid": 150,
+    "createdAt": {
+      "$date": "2026-09-24T19:08:02.000Z"
+    }
+  },
+  {
+    "studentName": "Sneha Thomas",
+    "email": "sneha.thomas@example.edu",
+    "event": "TechFest",
+    "eventId": "E07",
+    "year": 3,
+    "age": 20,
+    "department": "EEE",
+    "city": "Mysuru",
+    "interests": [
+      "Photography"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": false
+    },
+    "status": "cancelled",
+    "registered": false,
+    "feePaid": 0,
+    "createdAt": {
+      "$date": "2026-09-24T20:03:56.000Z"
+    }
+  },
+  {
+    "studentName": "Shruti Rao",
+    "email": "shruti.rao@example.edu",
+    "event": "Startup Pitch Day",
+    "eventId": "E04",
+    "year": 4,
+    "age": 21,
+    "department": "AI & DS",
+    "city": "Kochi",
+    "interests": [
+      "Cybersecurity"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": false
+    },
+    "status": "confirmed",
+    "registered": true,
+    "feePaid": 50,
+    "createdAt": {
+      "$date": "2026-09-24T22:19:35.000Z"
+    }
+  },
+  {
+    "studentName": "Devika Ramesh",
+    "email": "devika.ramesh@example.edu",
+    "event": "Cultural Night",
+    "eventId": "E03",
+    "year": 1,
+    "age": 18,
+    "department": "CSE",
+    "city": "Madurai",
+    "interests": [
+      "Cybersecurity",
+      "Music",
+      "Design"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": false
+    },
+    "status": "confirmed",
+    "registered": true,
+    "feePaid": 100,
+    "createdAt": {
+      "$date": "2026-09-25T02:59:29.000Z"
+    }
+  },
+  {
+    "studentName": "Anirudh Sharma",
+    "email": "anirudh.sharma@example.edu",
+    "event": "Orientation Mixer",
+    "eventId": "E01",
+    "year": 3,
+    "age": 20,
+    "department": "ECE",
+    "city": "Thiruvananthapuram",
+    "interests": [
+      "Data Science",
+      "Mobile Apps",
+      "Robotics"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": true,
+      "allergies": [
+        "Gluten"
+      ]
+    },
+    "status": "confirmed",
+    "registered": true,
+    "feePaid": 0,
+    "createdAt": {
+      "$date": "2026-09-25T03:36:39.000Z"
+    }
+  },
+  {
+    "studentName": "Pooja Ahmed",
+    "email": "pooja.ahmed@example.edu",
+    "event": "Orientation Mixer",
+    "eventId": "E01",
+    "year": 2,
+    "age": 19,
+    "department": "EEE",
+    "city": "Thiruvananthapuram",
+    "interests": [
+      "Web",
+      "Music"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": false
+    },
+    "status": "pending",
+    "registered": true,
+    "feePaid": 0,
+    "createdAt": {
+      "$date": "2026-09-25T04:11:04.000Z"
+    }
+  },
+  {
+    "studentName": "Vishnu Shetty",
+    "email": "vishnu.shetty@example.edu",
+    "event": "TechFest",
+    "eventId": "E07",
+    "year": 1,
+    "age": 18,
+    "department": "Civil",
+    "city": "Chennai",
+    "interests": [
+      "Robotics",
+      "Design",
+      "Gaming"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": false
+    },
+    "status": "confirmed",
+    "registered": true,
+    "feePaid": 200,
+    "createdAt": {
+      "$date": "2026-09-25T05:14:07.000Z"
+    }
+  },
+  {
+    "studentName": "Naveen Bhat",
+    "email": "naveen.bhat@example.edu",
+    "event": "Orientation Mixer",
+    "eventId": "E01",
+    "year": 4,
+    "age": 22,
+    "department": "Mechanical",
+    "city": "Bengaluru",
+    "interests": [
+      "Entrepreneurship",
+      "Photography"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": true
+    },
+    "status": "confirmed",
+    "registered": true,
+    "feePaid": 0,
+    "createdAt": {
+      "$date": "2026-09-25T05:59:01.000Z"
+    }
+  },
+  {
+    "studentName": "Manoj Reddy",
+    "email": "manoj.reddy@example.edu",
+    "event": "Photography Walk",
+    "eventId": "E06",
+    "year": 2,
+    "age": 20,
+    "department": "ECE",
+    "city": "Madurai",
+    "interests": [
+      "Data Science",
+      "Music",
+      "Robotics"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": true
+    },
+    "status": "confirmed",
+    "registered": true,
+    "feePaid": 0,
+    "createdAt": {
+      "$date": "2026-09-25T09:49:22.000Z"
+    }
+  },
+  {
+    "studentName": "Joseph Fernandez",
+    "email": "joseph.fernandez@example.edu",
+    "event": "Orientation Mixer",
+    "eventId": "E01",
+    "year": 2,
+    "age": 20,
+    "department": "EEE",
+    "city": "Kochi",
+    "interests": [
+      "Entrepreneurship",
+      "Design"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": true,
+      "allergies": [
+        "Gluten"
+      ]
+    },
+    "status": "pending",
+    "registered": true,
+    "feePaid": 0,
+    "createdAt": {
+      "$date": "2026-09-25T17:39:44.000Z"
+    }
+  },
+  {
+    "studentName": "Meera Fernandez",
+    "email": "meera.fernandez@example.edu",
+    "event": "Photography Walk",
+    "eventId": "E06",
+    "year": 2,
+    "age": 20,
+    "department": "ECE",
+    "city": "Kochi",
+    "interests": [
+      "Web",
+      "Music"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": false
+    },
+    "status": "cancelled",
+    "registered": false,
+    "feePaid": 0,
+    "createdAt": {
+      "$date": "2026-09-25T21:49:35.000Z"
+    }
+  },
+  {
+    "studentName": "Akhil Kumar",
+    "email": "akhil.kumar@example.edu",
+    "event": "TechFest",
+    "eventId": "E07",
+    "year": 1,
+    "age": 19,
+    "department": "ECE",
+    "city": "Bengaluru",
+    "interests": [
+      "Photography"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": false
+    },
+    "status": "confirmed",
+    "registered": true,
+    "feePaid": 200,
+    "createdAt": {
+      "$date": "2026-09-26T08:12:13.000Z"
+    }
+  },
+  {
+    "studentName": "Nisha Subramanian",
+    "email": "nisha.subramanian@example.edu",
+    "event": "TechFest",
+    "eventId": "E07",
+    "year": 3,
+    "age": 21,
+    "department": "EEE",
+    "city": "Chennai",
+    "interests": [
+      "Cybersecurity",
+      "Robotics"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": false
+    },
+    "status": "confirmed",
+    "registered": true,
+    "feePaid": 200,
+    "createdAt": {
+      "$date": "2026-09-26T13:29:51.000Z"
+    }
+  },
+  {
+    "studentName": "Varun Bhat",
+    "email": "varun.bhat@example.edu",
+    "event": "Photography Walk",
+    "eventId": "E06",
+    "year": 2,
+    "age": 19,
+    "department": "Civil",
+    "city": "Bengaluru",
+    "interests": [
+      "Gaming",
+      "Mobile Apps"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": true
+    },
+    "status": "pending",
+    "registered": true,
+    "feePaid": 0,
+    "createdAt": {
+      "$date": "2026-09-26T13:44:54.000Z"
+    }
+  },
+  {
+    "studentName": "Aarav Thomas",
+    "email": "aarav.thomas@example.edu",
+    "event": "Orientation Mixer",
+    "eventId": "E01",
+    "year": 2,
+    "age": 19,
+    "department": "IT",
+    "city": "Kochi",
+    "interests": [
+      "Data Science",
+      "Web"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": true
+    },
+    "status": "confirmed",
+    "registered": true,
+    "feePaid": 0,
+    "createdAt": {
+      "$date": "2026-09-26T15:13:28.000Z"
+    }
+  },
+  {
+    "studentName": "Suresh Joseph",
+    "email": "suresh.joseph@example.edu",
+    "event": "Robotics Workshop",
+    "eventId": "E02",
+    "year": 3,
+    "age": 20,
+    "department": "Mechanical",
+    "city": "Bengaluru",
+    "interests": [
+      "Data Science",
+      "IoT",
+      "Public Speaking"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": true
+    },
+    "status": "confirmed",
+    "registered": true,
+    "feePaid": 150,
+    "createdAt": {
+      "$date": "2026-09-26T15:17:31.000Z"
+    }
+  },
+  {
+    "studentName": "Karthik Subramanian",
+    "email": "karthik.subramanian@example.edu",
+    "event": "Orientation Mixer",
+    "eventId": "E01",
+    "year": 3,
+    "age": 20,
+    "department": "Mechanical",
+    "city": "Chennai",
+    "interests": [
+      "Photography"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": false
+    },
+    "status": "confirmed",
+    "registered": true,
+    "feePaid": 0,
+    "createdAt": {
+      "$date": "2026-09-27T02:49:35.000Z"
+    }
+  },
+  {
+    "studentName": "Thomas Krishnan",
+    "email": "thomas.krishnan@example.edu",
+    "event": "Orientation Mixer",
+    "eventId": "E01",
+    "year": 2,
+    "age": 20,
+    "department": "CSE",
+    "city": "Hyderabad",
+    "interests": [
+      "Music",
+      "AI"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": false
+    },
+    "status": "confirmed",
+    "registered": true,
+    "feePaid": 0,
+    "createdAt": {
+      "$date": "2026-09-27T03:21:54.000Z"
+    }
+  },
+  {
+    "studentName": "Irfan Khan",
+    "email": "irfan.khan@example.edu",
+    "event": "Orientation Mixer",
+    "eventId": "E01",
+    "year": 2,
+    "age": 19,
+    "department": "ECE",
+    "city": "Chennai",
+    "interests": [
+      "Gaming"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": false
+    },
+    "status": "pending",
+    "registered": true,
+    "feePaid": 0,
+    "createdAt": {
+      "$date": "2026-09-27T10:55:02.000Z"
+    }
+  },
+  {
+    "studentName": "Aishwarya Mathew",
+    "email": "aishwarya.mathew@example.edu",
+    "event": "TechFest",
+    "eventId": "E07",
+    "year": 2,
+    "age": 19,
+    "department": "CSE",
+    "city": "Bengaluru",
+    "interests": [
+      "IoT",
+      "Robotics"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": true
+    },
+    "status": "confirmed",
+    "registered": true,
+    "feePaid": 200,
+    "createdAt": {
+      "$date": "2026-09-27T13:28:21.000Z"
+    }
+  },
+  {
+    "studentName": "Irfan Khan",
+    "email": "irfan.khan@example.edu",
+    "event": "Data Science Bootcamp",
+    "eventId": "E05",
+    "year": 2,
+    "age": 19,
+    "department": "ECE",
+    "city": "Chennai",
+    "interests": [
+      "Gaming"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": false
+    },
+    "status": "confirmed",
+    "registered": true,
+    "feePaid": 300,
+    "createdAt": {
+      "$date": "2026-09-27T16:58:35.000Z"
+    }
+  },
+  {
+    "studentName": "Lakshmi Patel",
+    "email": "lakshmi.patel@example.edu",
+    "event": "TechFest",
+    "eventId": "E07",
+    "year": 1,
+    "age": 19,
+    "department": "AI & DS",
+    "city": "Chennai",
+    "interests": [
+      "Design",
+      "IoT",
+      "Cloud"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": true
+    },
+    "status": "confirmed",
+    "registered": true,
+    "feePaid": 200,
+    "createdAt": {
+      "$date": "2026-09-27T17:26:39.000Z"
+    }
+  },
+  {
+    "studentName": "Aditi Das",
+    "email": "aditi.das@example.edu",
+    "event": "Orientation Mixer",
+    "eventId": "E01",
+    "year": 4,
+    "age": 21,
+    "department": "CSE",
+    "city": "Coimbatore",
+    "interests": [
+      "IoT",
+      "Public Speaking"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": true
+    },
+    "status": "pending",
+    "registered": true,
+    "feePaid": 0,
+    "createdAt": {
+      "$date": "2026-09-27T18:22:34.000Z"
+    }
+  },
+  {
+    "studentName": "Keerthana Menon",
+    "email": "keerthana.menon@example.edu",
+    "event": "TechFest",
+    "eventId": "E07",
+    "year": 4,
+    "age": 21,
+    "department": "AI & DS",
+    "city": "Hyderabad",
+    "interests": [
+      "Data Science"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": false
+    },
+    "status": "confirmed",
+    "registered": true,
+    "feePaid": 200,
+    "createdAt": {
+      "$date": "2026-09-27T18:43:15.000Z"
+    }
+  },
+  {
+    "studentName": "Maria Narayan",
+    "email": "maria.narayan@example.edu",
+    "event": "Cultural Night",
+    "eventId": "E03",
+    "year": 2,
+    "age": 20,
+    "department": "AI & DS",
+    "city": "Chennai",
+    "interests": [
+      "Cloud"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": true
+    },
+    "status": "confirmed",
+    "registered": true,
+    "feePaid": 100,
+    "createdAt": {
+      "$date": "2026-09-28T00:24:35.000Z"
+    }
+  },
+  {
+    "studentName": "Suresh Kurian",
+    "email": "suresh.kurian@example.edu",
+    "event": "Photography Walk",
+    "eventId": "E06",
+    "year": 3,
+    "age": 20,
+    "department": "Civil",
+    "city": "Kochi",
+    "interests": [
+      "Robotics"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": false
+    },
+    "status": "pending",
+    "registered": true,
+    "feePaid": 0,
+    "createdAt": {
+      "$date": "2026-09-28T02:11:30.000Z"
+    }
+  },
+  {
+    "studentName": "Thomas Krishnan",
+    "email": "thomas.krishnan@example.edu",
+    "event": "Cultural Night",
+    "eventId": "E03",
+    "year": 2,
+    "age": 20,
+    "department": "CSE",
+    "city": "Hyderabad",
+    "interests": [
+      "Music",
+      "AI"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": false
+    },
+    "status": "confirmed",
+    "registered": true,
+    "feePaid": 100,
+    "createdAt": {
+      "$date": "2026-09-28T12:24:44.000Z"
+    }
+  },
+  {
+    "studentName": "Jayanth Bhat",
+    "email": "jayanth.bhat@example.edu",
+    "event": "Orientation Mixer",
+    "eventId": "E01",
+    "year": 2,
+    "age": 20,
+    "department": "Mechanical",
+    "city": "Hyderabad",
+    "interests": [
+      "Cloud"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": false
+    },
+    "status": "confirmed",
+    "registered": true,
+    "feePaid": 0,
+    "createdAt": {
+      "$date": "2026-09-28T14:17:14.000Z"
+    }
+  },
+  {
+    "studentName": "Vishnu Subramanian",
+    "email": "vishnu.subramanian@example.edu",
+    "event": "Cultural Night",
+    "eventId": "E03",
+    "year": 4,
+    "age": 22,
+    "department": "ECE",
+    "city": "Coimbatore",
+    "interests": [
+      "Music",
+      "Robotics",
+      "Gaming"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": true
+    },
+    "status": "confirmed",
+    "registered": true,
+    "feePaid": 100,
+    "createdAt": {
+      "$date": "2026-09-28T15:29:26.000Z"
+    }
+  },
+  {
+    "studentName": "Arun Philip",
+    "email": "arun.philip@example.edu",
+    "event": "Hack Night",
+    "eventId": "E08",
+    "year": 2,
+    "age": 20,
+    "department": "Civil",
+    "city": "Chennai",
+    "interests": [
+      "Design",
+      "Cybersecurity",
+      "AI"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": true
+    },
+    "status": "pending",
+    "registered": true,
+    "feePaid": 0,
+    "createdAt": {
+      "$date": "2026-09-28T17:54:36.000Z"
+    }
+  },
+  {
+    "studentName": "Sanjay Varma",
+    "email": "sanjay.varma@example.edu",
+    "event": "Orientation Mixer",
+    "eventId": "E01",
+    "year": 1,
+    "age": 19,
+    "department": "ECE",
+    "city": "Kochi",
+    "interests": [
+      "Web",
+      "Cybersecurity",
+      "Entrepreneurship"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": true
+    },
+    "status": "confirmed",
+    "registered": true,
+    "feePaid": 0,
+    "createdAt": {
+      "$date": "2026-09-28T20:57:05.000Z"
+    }
+  },
+  {
+    "studentName": "Meera Kurian",
+    "email": "meera.kurian@example.edu",
+    "event": "Orientation Mixer",
+    "eventId": "E01",
+    "year": 4,
+    "age": 22,
+    "department": "ECE",
+    "city": "Kochi",
+    "interests": [
+      "Cybersecurity",
+      "IoT",
+      "Cloud"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": false
+    },
+    "status": "confirmed",
+    "registered": true,
+    "feePaid": 0,
+    "createdAt": {
+      "$date": "2026-09-29T00:35:45.000Z"
+    }
+  },
+  {
+    "studentName": "Keerthana Patel",
+    "email": "keerthana.patel@example.edu",
+    "event": "TechFest",
+    "eventId": "E07",
+    "year": 2,
+    "age": 19,
+    "department": "IT",
+    "city": "Chennai",
+    "interests": [
+      "Data Science"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": false
+    },
+    "status": "confirmed",
+    "registered": true,
+    "feePaid": 200,
+    "createdAt": {
+      "$date": "2026-09-29T04:41:41.000Z"
+    }
+  },
+  {
+    "studentName": "Rohan Chandran",
+    "email": "rohan.chandran@example.edu",
+    "event": "Cultural Night",
+    "eventId": "E03",
+    "year": 2,
+    "age": 20,
+    "department": "IT",
+    "city": "Kochi",
+    "interests": [
+      "Music",
+      "Design",
+      "Public Speaking"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": false
+    },
+    "status": "confirmed",
+    "registered": true,
+    "feePaid": 100,
+    "createdAt": {
+      "$date": "2026-09-29T06:39:17.000Z"
+    }
+  },
+  {
+    "studentName": "Priya Fernandez",
+    "email": "priya.fernandez@example.edu",
+    "event": "Hack Night",
+    "eventId": "E08",
+    "year": 1,
+    "age": 19,
+    "department": "EEE",
+    "city": "Bengaluru",
+    "interests": [
+      "Cloud",
+      "Robotics"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": true
+    },
+    "status": "waitlisted",
+    "registered": true,
+    "feePaid": 0,
+    "createdAt": {
+      "$date": "2026-09-29T23:37:27.000Z"
+    }
+  },
+  {
+    "studentName": "Naveen Menon",
+    "email": "naveen.menon@example.edu",
+    "event": "TechFest",
+    "eventId": "E07",
+    "year": 2,
+    "age": 19,
+    "department": "ECE",
+    "city": "Bengaluru",
+    "interests": [
+      "AI",
+      "Data Science",
+      "Web"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": true
+    },
+    "status": "confirmed",
+    "registered": true,
+    "feePaid": 200,
+    "createdAt": {
+      "$date": "2026-09-30T10:24:54.000Z"
+    }
+  },
+  {
+    "studentName": "Devika Iyer",
+    "email": "devika.iyer@example.edu",
+    "event": "Hack Night",
+    "eventId": "E08",
+    "year": 3,
+    "age": 20,
+    "department": "AI & DS",
+    "city": "Kochi",
+    "interests": [
+      "Mobile Apps"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": true
+    },
+    "status": "cancelled",
+    "registered": false,
+    "feePaid": 0,
+    "createdAt": {
+      "$date": "2026-09-30T16:16:23.000Z"
+    }
+  },
+  {
+    "studentName": "Devika Patel",
+    "email": "devika.patel@example.edu",
+    "event": "Orientation Mixer",
+    "eventId": "E01",
+    "year": 3,
+    "age": 20,
+    "department": "ECE",
+    "city": "Hyderabad",
+    "interests": [
+      "Entrepreneurship",
+      "AI"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": false
+    },
+    "status": "pending",
+    "registered": true,
+    "feePaid": 0,
+    "createdAt": {
+      "$date": "2026-09-30T18:09:54.000Z"
+    }
+  },
+  {
+    "studentName": "Aarav Iyer",
+    "email": "aarav.iyer@example.edu",
+    "event": "Hack Night",
+    "eventId": "E08",
+    "year": 4,
+    "age": 22,
+    "department": "EEE",
+    "city": "Bengaluru",
+    "interests": [
+      "Web",
+      "Gaming",
+      "Public Speaking"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": false
+    },
+    "status": "confirmed",
+    "registered": true,
+    "feePaid": 100,
+    "createdAt": {
+      "$date": "2026-09-30T22:54:52.000Z"
+    }
+  },
+  {
+    "studentName": "Suresh Menon",
+    "email": "suresh.menon@example.edu",
+    "event": "Cultural Night",
+    "eventId": "E03",
+    "year": 4,
+    "age": 21,
+    "department": "CSE",
+    "city": "Thiruvananthapuram",
+    "interests": [
+      "Public Speaking",
+      "Robotics"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": true
+    },
+    "status": "cancelled",
+    "registered": false,
+    "feePaid": 0,
+    "createdAt": {
+      "$date": "2026-10-01T01:40:07.000Z"
+    }
+  },
+  {
+    "studentName": "Harini Joseph",
+    "email": "harini.joseph@example.edu",
+    "event": "TechFest",
+    "eventId": "E07",
+    "year": 1,
+    "age": 18,
+    "department": "CSE",
+    "city": "Madurai",
+    "interests": [
+      "Web",
+      "IoT",
+      "Public Speaking"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": true
+    },
+    "status": "waitlisted",
+    "registered": true,
+    "feePaid": 0,
+    "createdAt": {
+      "$date": "2026-10-01T05:05:27.000Z"
+    }
+  },
+  {
+    "studentName": "Keerthana Kumar",
+    "email": "keerthana.kumar@example.edu",
+    "event": "Orientation Mixer",
+    "eventId": "E01",
+    "year": 1,
+    "age": 18,
+    "department": "IT",
+    "city": "Thiruvananthapuram",
+    "interests": [
+      "Web",
+      "Robotics"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": true
+    },
+    "status": "confirmed",
+    "registered": true,
+    "feePaid": 0,
+    "createdAt": {
+      "$date": "2026-10-01T07:06:38.000Z"
+    }
+  },
+  {
+    "studentName": "Nisha Subramanian",
+    "email": "nisha.subramanian@example.edu",
+    "event": "Hack Night",
+    "eventId": "E08",
+    "year": 3,
+    "age": 21,
+    "department": "EEE",
+    "city": "Chennai",
+    "interests": [
+      "Cybersecurity",
+      "Robotics"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": false
+    },
+    "status": "confirmed",
+    "registered": true,
+    "feePaid": 100,
+    "createdAt": {
+      "$date": "2026-10-01T07:56:26.000Z"
+    }
+  },
+  {
+    "studentName": "Devika Subramanian",
+    "email": "devika.subramanian@example.edu",
+    "event": "Robotics Workshop",
+    "eventId": "E02",
+    "year": 2,
+    "age": 20,
+    "department": "Civil",
+    "city": "Kochi",
+    "interests": [
+      "Entrepreneurship",
+      "Mobile Apps"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": false
+    },
+    "status": "waitlisted",
+    "registered": true,
+    "feePaid": 0,
+    "createdAt": {
+      "$date": "2026-10-01T07:57:36.000Z"
+    }
+  },
+  {
+    "studentName": "Priya Pillai",
+    "email": "priya.pillai@example.edu",
+    "event": "Startup Pitch Day",
+    "eventId": "E04",
+    "year": 2,
+    "age": 20,
+    "department": "IT",
+    "city": "Chennai",
+    "interests": [
+      "Music",
+      "Mobile Apps"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": true
+    },
+    "status": "confirmed",
+    "registered": true,
+    "feePaid": 50,
+    "createdAt": {
+      "$date": "2026-10-01T08:26:35.000Z"
+    }
+  },
+  {
+    "studentName": "Joseph Nair",
+    "email": "joseph.nair@example.edu",
+    "event": "Hack Night",
+    "eventId": "E08",
+    "year": 2,
+    "age": 20,
+    "department": "CSE",
+    "city": "Kochi",
+    "interests": [
+      "Robotics"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": false
+    },
+    "status": "confirmed",
+    "registered": true,
+    "feePaid": 100,
+    "createdAt": {
+      "$date": "2026-10-01T14:30:00.000Z"
+    }
+  },
+  {
+    "studentName": "Aditi George",
+    "email": "aditi.george@example.edu",
+    "event": "TechFest",
+    "eventId": "E07",
+    "year": 2,
+    "age": 19,
+    "department": "Civil",
+    "city": "Mysuru",
+    "interests": [
+      "Photography",
+      "Gaming",
+      "AI"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": false
+    },
+    "status": "pending",
+    "registered": true,
+    "feePaid": 0,
+    "createdAt": {
+      "$date": "2026-10-01T22:52:34.000Z"
+    }
+  },
+  {
+    "studentName": "Janani Shetty",
+    "email": "janani.shetty@example.edu",
+    "event": "Hack Night",
+    "eventId": "E08",
+    "year": 1,
+    "age": 19,
+    "department": "AI & DS",
+    "city": "Bengaluru",
+    "interests": [
+      "Cloud",
+      "Public Speaking",
+      "Design"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": false
+    },
+    "status": "confirmed",
+    "registered": true,
+    "feePaid": 100,
+    "createdAt": {
+      "$date": "2026-10-02T03:23:41.000Z"
+    }
+  },
+  {
+    "studentName": "Priya Philip",
+    "email": "priya.philip@example.edu",
+    "event": "Cultural Night",
+    "eventId": "E03",
+    "year": 1,
+    "age": 19,
+    "department": "ECE",
+    "city": "Chennai",
+    "interests": [
+      "Robotics",
+      "Entrepreneurship"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": true,
+      "allergies": [
+        "Peanuts"
+      ]
+    },
+    "status": "confirmed",
+    "registered": true,
+    "feePaid": 100,
+    "createdAt": {
+      "$date": "2026-10-02T06:05:56.000Z"
+    }
+  },
+  {
+    "studentName": "Hari Krishnan",
+    "email": "hari.krishnan@example.edu",
+    "event": "TechFest",
+    "eventId": "E07",
+    "year": 1,
+    "age": 19,
+    "department": "Civil",
+    "city": "Hyderabad",
+    "interests": [
+      "Cloud",
+      "AI",
+      "Mobile Apps"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": false
+    },
+    "status": "confirmed",
+    "registered": true,
+    "feePaid": 200,
+    "createdAt": {
+      "$date": "2026-10-02T10:51:59.000Z"
+    }
+  },
+  {
+    "studentName": "Anjali Menon",
+    "email": "anjali.menon@example.edu",
+    "event": "Robotics Workshop",
+    "eventId": "E02",
+    "year": 4,
+    "age": 21,
+    "department": "EEE",
+    "city": "Thiruvananthapuram",
+    "interests": [
+      "AI"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": false
+    },
+    "status": "pending",
+    "registered": true,
+    "feePaid": 0,
+    "createdAt": {
+      "$date": "2026-10-02T14:32:13.000Z"
+    }
+  },
+  {
+    "studentName": "Arun Thomas",
+    "email": "arun.thomas@example.edu",
+    "event": "Hack Night",
+    "eventId": "E08",
+    "year": 3,
+    "age": 21,
+    "department": "Civil",
+    "city": "Thiruvananthapuram",
+    "interests": [
+      "Data Science"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": true
+    },
+    "status": "confirmed",
+    "registered": true,
+    "feePaid": 100,
+    "createdAt": {
+      "$date": "2026-10-02T15:07:52.000Z"
+    }
+  },
+  {
+    "studentName": "Anirudh Bhat",
+    "email": "anirudh.bhat@example.edu",
+    "event": "TechFest",
+    "eventId": "E07",
+    "year": 4,
+    "age": 22,
+    "department": "CSE",
+    "city": "Kochi",
+    "interests": [
+      "Design",
+      "Data Science",
+      "Entrepreneurship"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": false
+    },
+    "status": "pending",
+    "registered": true,
+    "feePaid": 0,
+    "createdAt": {
+      "$date": "2026-10-02T17:30:45.000Z"
+    }
+  },
+  {
+    "studentName": "Aarav Varma",
+    "email": "aarav.varma@example.edu",
+    "event": "Robotics Workshop",
+    "eventId": "E02",
+    "year": 3,
+    "age": 20,
+    "department": "Civil",
+    "city": "Bengaluru",
+    "interests": [
+      "IoT",
+      "Music"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": false
+    },
+    "status": "pending",
+    "registered": true,
+    "feePaid": 0,
+    "createdAt": {
+      "$date": "2026-10-02T18:28:35.000Z"
+    }
+  },
+  {
+    "studentName": "Sana Shetty",
+    "email": "sana.shetty@example.edu",
+    "event": "TechFest",
+    "eventId": "E07",
+    "year": 2,
+    "age": 19,
+    "department": "EEE",
+    "city": "Coimbatore",
+    "interests": [
+      "IoT"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": false
+    },
+    "status": "confirmed",
+    "registered": true,
+    "feePaid": 200,
+    "createdAt": {
+      "$date": "2026-10-02T18:43:53.000Z"
+    }
+  },
+  {
+    "studentName": "Arun Menon",
+    "email": "arun.menon@example.edu",
+    "event": "Data Science Bootcamp",
+    "eventId": "E05",
+    "year": 1,
+    "age": 19,
+    "department": "CSE",
+    "city": "Kochi",
+    "interests": [
+      "Data Science"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": true
+    },
+    "status": "pending",
+    "registered": true,
+    "feePaid": 0,
+    "createdAt": {
+      "$date": "2026-10-02T21:15:54.000Z"
+    }
+  },
+  {
+    "studentName": "Varun Reddy",
+    "email": "varun.reddy@example.edu",
+    "event": "TechFest",
+    "eventId": "E07",
+    "year": 2,
+    "age": 19,
+    "department": "AI & DS",
+    "city": "Chennai",
+    "interests": [
+      "IoT",
+      "Music"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": false
+    },
+    "status": "cancelled",
+    "registered": false,
+    "feePaid": 0,
+    "createdAt": {
+      "$date": "2026-10-02T21:50:43.000Z"
+    }
+  },
+  {
+    "studentName": "Aarav Thomas",
+    "email": "aarav.thomas@example.edu",
+    "event": "TechFest",
+    "eventId": "E07",
+    "year": 2,
+    "age": 19,
+    "department": "IT",
+    "city": "Kochi",
+    "interests": [
+      "Data Science",
+      "Web"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": true
+    },
+    "status": "confirmed",
+    "registered": true,
+    "feePaid": 200,
+    "createdAt": {
+      "$date": "2026-10-03T05:41:24.000Z"
+    }
+  },
+  {
+    "studentName": "Maria Narayan",
+    "email": "maria.narayan@example.edu",
+    "event": "Photography Walk",
+    "eventId": "E06",
+    "year": 2,
+    "age": 20,
+    "department": "AI & DS",
+    "city": "Chennai",
+    "interests": [
+      "Cloud"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": true
+    },
+    "status": "waitlisted",
+    "registered": true,
+    "feePaid": 0,
+    "createdAt": {
+      "$date": "2026-10-03T10:18:14.000Z"
+    }
+  },
+  {
+    "studentName": "Sanjay Menon",
+    "email": "sanjay.menon@example.edu",
+    "event": "Hack Night",
+    "eventId": "E08",
+    "year": 4,
+    "age": 22,
+    "department": "Mechanical",
+    "city": "Kochi",
+    "interests": [
+      "Web",
+      "Cloud",
+      "Design"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": false
+    },
+    "status": "pending",
+    "registered": true,
+    "feePaid": 0,
+    "createdAt": {
+      "$date": "2026-10-03T14:13:08.000Z"
+    }
+  },
+  {
+    "studentName": "Sanjay Kurian",
+    "email": "sanjay.kurian@example.edu",
+    "event": "Orientation Mixer",
+    "eventId": "E01",
+    "year": 3,
+    "age": 21,
+    "department": "CSE",
+    "city": "Thiruvananthapuram",
+    "interests": [
+      "Cybersecurity",
+      "Design"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": false
+    },
+    "status": "confirmed",
+    "registered": true,
+    "feePaid": 0,
+    "createdAt": {
+      "$date": "2026-10-03T21:27:19.000Z"
+    }
+  },
+  {
+    "studentName": "Lakshmi Bhat",
+    "email": "lakshmi.bhat@example.edu",
+    "event": "Startup Pitch Day",
+    "eventId": "E04",
+    "year": 3,
+    "age": 21,
+    "department": "CSE",
+    "city": "Coimbatore",
+    "interests": [
+      "Photography",
+      "Robotics",
+      "Gaming"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": false
+    },
+    "status": "confirmed",
+    "registered": true,
+    "feePaid": 50,
+    "createdAt": {
+      "$date": "2026-10-04T01:19:36.000Z"
+    }
+  },
+  {
+    "studentName": "Varun Shetty",
+    "email": "varun.shetty@example.edu",
+    "event": "Robotics Workshop",
+    "eventId": "E02",
+    "year": 1,
+    "age": 18,
+    "department": "ECE",
+    "city": "Chennai",
+    "interests": [
+      "Cloud",
+      "Robotics"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": true
+    },
+    "status": "confirmed",
+    "registered": true,
+    "feePaid": 150,
+    "createdAt": {
+      "$date": "2026-10-04T01:48:34.000Z"
+    }
+  },
+  {
+    "studentName": "Vignesh Philip",
+    "email": "vignesh.philip@example.edu",
+    "event": "Cultural Night",
+    "eventId": "E03",
+    "year": 1,
+    "age": 18,
+    "department": "CSE",
+    "city": "Hyderabad",
+    "interests": [
+      "Music",
+      "Cybersecurity"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": false,
+      "allergies": [
+        "Lactose"
+      ]
+    },
+    "status": "confirmed",
+    "registered": true,
+    "feePaid": 100,
+    "createdAt": {
+      "$date": "2026-10-04T02:47:38.000Z"
+    }
+  },
+  {
+    "studentName": "Thomas Sharma",
+    "email": "thomas.sharma@example.edu",
+    "event": "TechFest",
+    "eventId": "E07",
+    "year": 3,
+    "age": 21,
+    "department": "CSE",
+    "city": "Mysuru",
+    "interests": [
+      "Entrepreneurship",
+      "Gaming",
+      "Cloud"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": true
+    },
+    "status": "cancelled",
+    "registered": false,
+    "feePaid": 0,
+    "createdAt": {
+      "$date": "2026-10-04T11:14:23.000Z"
+    }
+  },
+  {
+    "studentName": "Sreya Iyengar",
+    "email": "sreya.iyengar@example.edu",
+    "event": "TechFest",
+    "eventId": "E07",
+    "year": 1,
+    "age": 18,
+    "department": "Civil",
+    "city": "Kochi",
+    "interests": [
+      "Gaming"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": false
+    },
+    "status": "pending",
+    "registered": true,
+    "feePaid": 0,
+    "createdAt": {
+      "$date": "2026-10-04T13:49:00.000Z"
+    }
+  },
+  {
+    "studentName": "Mohammed Naidu",
+    "email": "mohammed.naidu@example.edu",
+    "event": "Data Science Bootcamp",
+    "eventId": "E05",
+    "year": 3,
+    "age": 20,
+    "department": "ECE",
+    "city": "Kochi",
+    "interests": [
+      "AI",
+      "Gaming"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": false
+    },
+    "status": "confirmed",
+    "registered": true,
+    "feePaid": 300,
+    "createdAt": {
+      "$date": "2026-10-04T20:29:08.000Z"
+    }
+  },
+  {
+    "studentName": "Ananya Rao",
+    "email": "ananya.rao@example.edu",
+    "event": "Photography Walk",
+    "eventId": "E06",
+    "year": 2,
+    "age": 19,
+    "department": "Civil",
+    "city": "Kochi",
+    "interests": [
+      "Photography",
+      "Mobile Apps",
+      "Design"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": true
+    },
+    "status": "confirmed",
+    "registered": true,
+    "feePaid": 0,
+    "createdAt": {
+      "$date": "2026-10-04T22:29:35.000Z"
+    }
+  },
+  {
+    "studentName": "Vivek Ahmed",
+    "email": "vivek.ahmed@example.edu",
+    "event": "TechFest",
+    "eventId": "E07",
+    "year": 3,
+    "age": 21,
+    "department": "Mechanical",
+    "city": "Madurai",
+    "interests": [
+      "Music"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": false
+    },
+    "status": "pending",
+    "registered": true,
+    "feePaid": 0,
+    "createdAt": {
+      "$date": "2026-10-05T22:25:25.000Z"
+    }
+  },
+  {
+    "studentName": "Anirudh Reddy",
+    "email": "anirudh.reddy@example.edu",
+    "event": "Startup Pitch Day",
+    "eventId": "E04",
+    "year": 4,
+    "age": 22,
+    "department": "ECE",
+    "city": "Chennai",
+    "interests": [
+      "Design",
+      "Mobile Apps"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": true,
+      "allergies": [
+        "Peanuts"
+      ]
+    },
+    "status": "pending",
+    "registered": true,
+    "feePaid": 0,
+    "createdAt": {
+      "$date": "2026-10-05T22:52:38.000Z"
+    }
+  },
+  {
+    "studentName": "Sanjay Thomas",
+    "email": "sanjay.thomas@example.edu",
+    "event": "TechFest",
+    "eventId": "E07",
+    "year": 3,
+    "age": 20,
+    "department": "EEE",
+    "city": "Thiruvananthapuram",
+    "interests": [
+      "AI"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": false
+    },
+    "status": "pending",
+    "registered": true,
+    "feePaid": 0,
+    "createdAt": {
+      "$date": "2026-10-06T00:43:37.000Z"
+    }
+  },
+  {
+    "studentName": "Vignesh Patel",
+    "email": "vignesh.patel@example.edu",
+    "event": "Hack Night",
+    "eventId": "E08",
+    "year": 3,
+    "age": 21,
+    "department": "CSE",
+    "city": "Thiruvananthapuram",
+    "interests": [
+      "Mobile Apps",
+      "Music"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": true
+    },
+    "status": "confirmed",
+    "registered": true,
+    "feePaid": 100,
+    "createdAt": {
+      "$date": "2026-10-06T03:56:18.000Z"
+    }
+  },
+  {
+    "studentName": "Keerthana Chandran",
+    "email": "keerthana.chandran@example.edu",
+    "event": "TechFest",
+    "eventId": "E07",
+    "year": 3,
+    "age": 21,
+    "department": "CSE",
+    "city": "Chennai",
+    "interests": [
+      "Web",
+      "Design",
+      "Photography"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": false
+    },
+    "status": "confirmed",
+    "registered": true,
+    "feePaid": 200,
+    "createdAt": {
+      "$date": "2026-10-06T14:23:33.000Z"
+    }
+  },
+  {
+    "studentName": "Sherin Krishnan",
+    "email": "sherin.krishnan@example.edu",
+    "event": "Orientation Mixer",
+    "eventId": "E01",
+    "year": 1,
+    "age": 18,
+    "department": "ECE",
+    "city": "Bengaluru",
+    "interests": [
+      "Photography",
+      "Cybersecurity",
+      "Gaming"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": false
+    },
+    "status": "confirmed",
+    "registered": true,
+    "feePaid": 0,
+    "createdAt": {
+      "$date": "2026-10-06T22:36:10.000Z"
+    }
+  },
+  {
+    "studentName": "Sherin Thomas",
+    "email": "sherin.thomas@example.edu",
+    "event": "TechFest",
+    "eventId": "E07",
+    "year": 2,
+    "age": 20,
+    "department": "CSE",
+    "city": "Kochi",
+    "interests": [
+      "Robotics",
+      "Data Science"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": false
+    },
+    "status": "confirmed",
+    "registered": true,
+    "feePaid": 200,
+    "createdAt": {
+      "$date": "2026-10-06T23:43:34.000Z"
+    }
+  },
+  {
+    "studentName": "Pooja Krishnan",
+    "email": "pooja.krishnan@example.edu",
+    "event": "Robotics Workshop",
+    "eventId": "E02",
+    "year": 1,
+    "age": 18,
+    "department": "IT",
+    "city": "Mysuru",
+    "interests": [
+      "Public Speaking",
+      "Web"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": false
+    },
+    "status": "confirmed",
+    "registered": true,
+    "feePaid": 150,
+    "createdAt": {
+      "$date": "2026-10-07T09:36:20.000Z"
+    }
+  },
+  {
+    "studentName": "Aishwarya Khan",
+    "email": "aishwarya.khan@example.edu",
+    "event": "TechFest",
+    "eventId": "E07",
+    "year": 1,
+    "age": 18,
+    "department": "AI & DS",
+    "city": "Bengaluru",
+    "interests": [
+      "IoT"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": false
+    },
+    "status": "confirmed",
+    "registered": true,
+    "feePaid": 200,
+    "createdAt": {
+      "$date": "2026-10-07T12:49:32.000Z"
+    }
+  },
+  {
+    "studentName": "Harini Iyer",
+    "email": "harini.iyer@example.edu",
+    "event": "Orientation Mixer",
+    "eventId": "E01",
+    "year": 3,
+    "age": 21,
+    "department": "ECE",
+    "city": "Bengaluru",
+    "interests": [
+      "Entrepreneurship",
+      "Data Science"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": false
+    },
+    "status": "confirmed",
+    "registered": true,
+    "feePaid": 0,
+    "createdAt": {
+      "$date": "2026-10-07T20:33:38.000Z"
+    }
+  },
+  {
+    "studentName": "Devika Shetty",
+    "email": "devika.shetty@example.edu",
+    "event": "Hack Night",
+    "eventId": "E08",
+    "year": 2,
+    "age": 20,
+    "department": "CSE",
+    "city": "Bengaluru",
+    "interests": [
+      "Photography",
+      "Public Speaking"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": true
+    },
+    "status": "confirmed",
+    "registered": true,
+    "feePaid": 100,
+    "createdAt": {
+      "$date": "2026-10-07T21:44:43.000Z"
+    }
+  },
+  {
+    "studentName": "Rohan Shetty",
+    "email": "rohan.shetty@example.edu",
+    "event": "TechFest",
+    "eventId": "E07",
+    "year": 3,
+    "age": 20,
+    "department": "EEE",
+    "city": "Hyderabad",
+    "interests": [
+      "Web",
+      "AI",
+      "Public Speaking"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": true
+    },
+    "status": "pending",
+    "registered": true,
+    "feePaid": 0,
+    "createdAt": {
+      "$date": "2026-10-07T23:39:44.000Z"
+    }
+  },
+  {
+    "studentName": "Divya Ahmed",
+    "email": "divya.ahmed@example.edu",
+    "event": "Data Science Bootcamp",
+    "eventId": "E05",
+    "year": 1,
+    "age": 18,
+    "department": "CSE",
+    "city": "Thiruvananthapuram",
+    "interests": [
+      "Music"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": false
+    },
+    "status": "confirmed",
+    "registered": true,
+    "feePaid": 300,
+    "createdAt": {
+      "$date": "2026-10-08T04:04:42.000Z"
+    }
+  },
+  {
+    "studentName": "Anna Kumar",
+    "email": "anna.kumar@example.edu",
+    "event": "Robotics Workshop",
+    "eventId": "E02",
+    "year": 3,
+    "age": 20,
+    "department": "CSE",
+    "city": "Chennai",
+    "interests": [
+      "Gaming"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": false
+    },
+    "status": "pending",
+    "registered": true,
+    "feePaid": 0,
+    "createdAt": {
+      "$date": "2026-10-08T07:08:10.000Z"
+    }
+  },
+  {
+    "studentName": "Lakshmi Bhat",
+    "email": "lakshmi.bhat@example.edu",
+    "event": "Robotics Workshop",
+    "eventId": "E02",
+    "year": 3,
+    "age": 21,
+    "department": "CSE",
+    "city": "Coimbatore",
+    "interests": [
+      "Photography",
+      "Robotics",
+      "Gaming"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": false
+    },
+    "status": "cancelled",
+    "registered": false,
+    "feePaid": 0,
+    "createdAt": {
+      "$date": "2026-10-08T09:46:44.000Z"
+    }
+  },
+  {
+    "studentName": "Nisha Sharma",
+    "email": "nisha.sharma@example.edu",
+    "event": "TechFest",
+    "eventId": "E07",
+    "year": 4,
+    "age": 22,
+    "department": "CSE",
+    "city": "Kochi",
+    "interests": [
+      "Robotics",
+      "Entrepreneurship",
+      "Cloud"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": false
+    },
+    "status": "pending",
+    "registered": true,
+    "feePaid": 0,
+    "createdAt": {
+      "$date": "2026-10-08T12:41:17.000Z"
+    }
+  },
+  {
+    "studentName": "Pooja Joseph",
+    "email": "pooja.joseph@example.edu",
+    "event": "Data Science Bootcamp",
+    "eventId": "E05",
+    "year": 3,
+    "age": 20,
+    "department": "AI & DS",
+    "city": "Chennai",
+    "interests": [
+      "Cloud",
+      "Design"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": false
+    },
+    "status": "confirmed",
+    "registered": true,
+    "feePaid": 300,
+    "createdAt": {
+      "$date": "2026-10-08T20:55:46.000Z"
+    }
+  },
+  {
+    "studentName": "Bhavna Fernandez",
+    "email": "bhavna.fernandez@example.edu",
+    "event": "Photography Walk",
+    "eventId": "E06",
+    "year": 1,
+    "age": 18,
+    "department": "Civil",
+    "city": "Madurai",
+    "interests": [
+      "IoT",
+      "Gaming",
+      "Web"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": false
+    },
+    "status": "pending",
+    "registered": true,
+    "feePaid": 0,
+    "createdAt": {
+      "$date": "2026-10-08T20:57:26.000Z"
+    }
+  },
+  {
+    "studentName": "Rohan Narayan",
+    "email": "rohan.narayan@example.edu",
+    "event": "Robotics Workshop",
+    "eventId": "E02",
+    "year": 4,
+    "age": 21,
+    "department": "AI & DS",
+    "city": "Mysuru",
+    "interests": [
+      "Gaming",
+      "Public Speaking"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": false,
+      "allergies": [
+        "Peanuts"
+      ]
+    },
+    "status": "pending",
+    "registered": true,
+    "feePaid": 0,
+    "createdAt": {
+      "$date": "2026-10-08T22:27:45.000Z"
+    }
+  },
+  {
+    "studentName": "Devika Nair",
+    "email": "devika.nair@example.edu",
+    "event": "TechFest",
+    "eventId": "E07",
+    "year": 2,
+    "age": 20,
+    "department": "CSE",
+    "city": "Coimbatore",
+    "interests": [
+      "Cloud",
+      "Data Science"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": false
+    },
+    "status": "confirmed",
+    "registered": true,
+    "feePaid": 200,
+    "createdAt": {
+      "$date": "2026-10-08T22:56:06.000Z"
+    }
+  },
+  {
+    "studentName": "Mohammed Varma",
+    "email": "mohammed.varma@example.edu",
+    "event": "Cultural Night",
+    "eventId": "E03",
+    "year": 2,
+    "age": 19,
+    "department": "Civil",
+    "city": "Chennai",
+    "interests": [
+      "Data Science",
+      "Gaming"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": true
+    },
+    "status": "pending",
+    "registered": true,
+    "feePaid": 0,
+    "createdAt": {
+      "$date": "2026-10-09T01:38:04.000Z"
+    }
+  },
+  {
+    "studentName": "Tanvi Pillai",
+    "email": "tanvi.pillai@example.edu",
+    "event": "Cultural Night",
+    "eventId": "E03",
+    "year": 4,
+    "age": 22,
+    "department": "CSE",
+    "city": "Bengaluru",
+    "interests": [
+      "IoT",
+      "Mobile Apps"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": true
+    },
+    "status": "pending",
+    "registered": true,
+    "feePaid": 0,
+    "createdAt": {
+      "$date": "2026-10-09T01:52:02.000Z"
+    }
+  },
+  {
+    "studentName": "Keerthana Fernandez",
+    "email": "keerthana.fernandez@example.edu",
+    "event": "Photography Walk",
+    "eventId": "E06",
+    "year": 2,
+    "age": 19,
+    "department": "IT",
+    "city": "Kochi",
+    "interests": [
+      "AI",
+      "Public Speaking"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": false
+    },
+    "status": "pending",
+    "registered": true,
+    "feePaid": 0,
+    "createdAt": {
+      "$date": "2026-10-09T04:59:17.000Z"
+    }
+  },
+  {
+    "studentName": "Abhinav Krishnan",
+    "email": "abhinav.krishnan@example.edu",
+    "event": "Startup Pitch Day",
+    "eventId": "E04",
+    "year": 3,
+    "age": 21,
+    "department": "CSE",
+    "city": "Chennai",
+    "interests": [
+      "AI"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": true
+    },
+    "status": "waitlisted",
+    "registered": true,
+    "feePaid": 0,
+    "createdAt": {
+      "$date": "2026-10-09T06:25:59.000Z"
+    }
+  },
+  {
+    "studentName": "Anna Khan",
+    "email": "anna.khan@example.edu",
+    "event": "Hack Night",
+    "eventId": "E08",
+    "year": 3,
+    "age": 21,
+    "department": "AI & DS",
+    "city": "Mysuru",
+    "interests": [
+      "Music",
+      "Cloud",
+      "Mobile Apps"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": true
+    },
+    "status": "pending",
+    "registered": true,
+    "feePaid": 0,
+    "createdAt": {
+      "$date": "2026-10-09T09:13:27.000Z"
+    }
+  },
+  {
+    "studentName": "Divya Kurian",
+    "email": "divya.kurian@example.edu",
+    "event": "TechFest",
+    "eventId": "E07",
+    "year": 4,
+    "age": 21,
+    "department": "Mechanical",
+    "city": "Thiruvananthapuram",
+    "interests": [
+      "Music"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": false,
+      "allergies": [
+        "Gluten"
+      ]
+    },
+    "status": "confirmed",
+    "registered": true,
+    "feePaid": 200,
+    "createdAt": {
+      "$date": "2026-10-09T16:11:31.000Z"
+    }
+  },
+  {
+    "studentName": "Kavya Mathew",
+    "email": "kavya.mathew@example.edu",
+    "event": "TechFest",
+    "eventId": "E07",
+    "year": 1,
+    "age": 19,
+    "department": "AI & DS",
+    "city": "Thiruvananthapuram",
+    "interests": [
+      "Mobile Apps",
+      "Design",
+      "IoT"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": true
+    },
+    "status": "confirmed",
+    "registered": true,
+    "feePaid": 200,
+    "createdAt": {
+      "$date": "2026-10-09T17:25:41.000Z"
+    }
+  },
+  {
+    "studentName": "Akhil Chandran",
+    "email": "akhil.chandran@example.edu",
+    "event": "TechFest",
+    "eventId": "E07",
+    "year": 3,
+    "age": 21,
+    "department": "EEE",
+    "city": "Hyderabad",
+    "interests": [
+      "IoT",
+      "Gaming"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": false
+    },
+    "status": "confirmed",
+    "registered": true,
+    "feePaid": 200,
+    "createdAt": {
+      "$date": "2026-10-10T00:44:10.000Z"
+    }
+  },
+  {
+    "studentName": "Nikhil Ramesh",
+    "email": "nikhil.ramesh@example.edu",
+    "event": "Cultural Night",
+    "eventId": "E03",
+    "year": 2,
+    "age": 20,
+    "department": "Civil",
+    "city": "Kochi",
+    "interests": [
+      "Music",
+      "AI",
+      "Entrepreneurship"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": true
+    },
+    "status": "waitlisted",
+    "registered": true,
+    "feePaid": 0,
+    "createdAt": {
+      "$date": "2026-10-10T01:34:33.000Z"
+    }
+  },
+  {
+    "studentName": "Naveen Hegde",
+    "email": "naveen.hegde@example.edu",
+    "event": "Data Science Bootcamp",
+    "eventId": "E05",
+    "year": 3,
+    "age": 21,
+    "department": "ECE",
+    "city": "Hyderabad",
+    "interests": [
+      "Design",
+      "Public Speaking",
+      "Music"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": false
+    },
+    "status": "confirmed",
+    "registered": true,
+    "feePaid": 300,
+    "createdAt": {
+      "$date": "2026-10-10T08:35:18.000Z"
+    }
+  },
+  {
+    "studentName": "Nikhil Hegde",
+    "email": "nikhil.hegde@example.edu",
+    "event": "TechFest",
+    "eventId": "E07",
+    "year": 1,
+    "age": 19,
+    "department": "EEE",
+    "city": "Mysuru",
+    "interests": [
+      "AI"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": false
+    },
+    "status": "pending",
+    "registered": true,
+    "feePaid": 0,
+    "createdAt": {
+      "$date": "2026-10-10T15:08:44.000Z"
+    }
+  },
+  {
+    "studentName": "Naveen Patel",
+    "email": "naveen.patel@example.edu",
+    "event": "Orientation Mixer",
+    "eventId": "E01",
+    "year": 4,
+    "age": 21,
+    "department": "Civil",
+    "city": "Coimbatore",
+    "interests": [
+      "Photography",
+      "Cloud"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": false
+    },
+    "status": "pending",
+    "registered": true,
+    "feePaid": 0,
+    "createdAt": {
+      "$date": "2026-10-10T17:28:19.000Z"
+    }
+  },
+  {
+    "studentName": "Anjali Hegde",
+    "email": "anjali.hegde@example.edu",
+    "event": "TechFest",
+    "eventId": "E07",
+    "year": 1,
+    "age": 19,
+    "department": "CSE",
+    "city": "Kochi",
+    "interests": [
+      "Robotics"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": true
+    },
+    "status": "pending",
+    "registered": true,
+    "feePaid": 0,
+    "createdAt": {
+      "$date": "2026-10-11T00:00:53.000Z"
+    }
+  },
+  {
+    "studentName": "Rohan Hegde",
+    "email": "rohan.hegde@example.edu",
+    "event": "Data Science Bootcamp",
+    "eventId": "E05",
+    "year": 1,
+    "age": 19,
+    "department": "ECE",
+    "city": "Kochi",
+    "interests": [
+      "Design",
+      "Cybersecurity"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": false
+    },
+    "status": "confirmed",
+    "registered": true,
+    "feePaid": 300,
+    "createdAt": {
+      "$date": "2026-10-11T01:25:59.000Z"
+    }
+  },
+  {
+    "studentName": "Keerthana Rao",
+    "email": "keerthana.rao@example.edu",
+    "event": "TechFest",
+    "eventId": "E07",
+    "year": 3,
+    "age": 20,
+    "department": "AI & DS",
+    "city": "Bengaluru",
+    "interests": [
+      "Music",
+      "Photography"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": false
+    },
+    "status": "confirmed",
+    "registered": true,
+    "feePaid": 200,
+    "createdAt": {
+      "$date": "2026-10-11T04:09:26.000Z"
+    }
+  },
+  {
+    "studentName": "Zoya Mathew",
+    "email": "zoya.mathew@example.edu",
+    "event": "Data Science Bootcamp",
+    "eventId": "E05",
+    "year": 2,
+    "age": 19,
+    "department": "ECE",
+    "city": "Kochi",
+    "interests": [
+      "Design"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": true
+    },
+    "status": "confirmed",
+    "registered": true,
+    "feePaid": 300,
+    "createdAt": {
+      "$date": "2026-10-11T12:39:56.000Z"
+    }
+  },
+  {
+    "studentName": "Maria Narayan",
+    "email": "maria.narayan@example.edu",
+    "event": "TechFest",
+    "eventId": "E07",
+    "year": 2,
+    "age": 20,
+    "department": "AI & DS",
+    "city": "Chennai",
+    "interests": [
+      "Cloud"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": true
+    },
+    "status": "waitlisted",
+    "registered": true,
+    "feePaid": 0,
+    "createdAt": {
+      "$date": "2026-10-11T13:33:25.000Z"
+    }
+  },
+  {
+    "studentName": "Akhil Nair",
+    "email": "akhil.nair@example.edu",
+    "event": "Hack Night",
+    "eventId": "E08",
+    "year": 2,
+    "age": 19,
+    "department": "ECE",
+    "city": "Thiruvananthapuram",
+    "interests": [
+      "Cybersecurity",
+      "Robotics"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": false
+    },
+    "status": "pending",
+    "registered": true,
+    "feePaid": 0,
+    "createdAt": {
+      "$date": "2026-10-11T19:53:59.000Z"
+    }
+  },
+  {
+    "studentName": "Akhil Ramesh",
+    "email": "akhil.ramesh@example.edu",
+    "event": "Orientation Mixer",
+    "eventId": "E01",
+    "year": 3,
+    "age": 20,
+    "department": "CSE",
+    "city": "Chennai",
+    "interests": [
+      "Cloud",
+      "Robotics"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": false
+    },
+    "status": "waitlisted",
+    "registered": true,
+    "feePaid": 0,
+    "createdAt": {
+      "$date": "2026-10-11T21:54:37.000Z"
+    }
+  },
+  {
+    "studentName": "Shruti Bhat",
+    "email": "shruti.bhat@example.edu",
+    "event": "Data Science Bootcamp",
+    "eventId": "E05",
+    "year": 4,
+    "age": 22,
+    "department": "CSE",
+    "city": "Chennai",
+    "interests": [
+      "Music",
+      "Cybersecurity"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": false
+    },
+    "status": "confirmed",
+    "registered": true,
+    "feePaid": 300,
+    "createdAt": {
+      "$date": "2026-10-12T04:30:30.000Z"
+    }
+  },
+  {
+    "studentName": "Vishnu Krishnan",
+    "email": "vishnu.krishnan@example.edu",
+    "event": "Photography Walk",
+    "eventId": "E06",
+    "year": 2,
+    "age": 19,
+    "department": "CSE",
+    "city": "Coimbatore",
+    "interests": [
+      "Photography",
+      "IoT"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": true
+    },
+    "status": "confirmed",
+    "registered": true,
+    "feePaid": 0,
+    "createdAt": {
+      "$date": "2026-10-12T07:51:43.000Z"
+    }
+  },
+  {
+    "studentName": "Devika Khan",
+    "email": "devika.khan@example.edu",
+    "event": "Startup Pitch Day",
+    "eventId": "E04",
+    "year": 4,
+    "age": 21,
+    "department": "AI & DS",
+    "city": "Chennai",
+    "interests": [
+      "IoT",
+      "Data Science"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": false
+    },
+    "status": "confirmed",
+    "registered": true,
+    "feePaid": 50,
+    "createdAt": {
+      "$date": "2026-10-12T10:23:11.000Z"
+    }
+  },
+  {
+    "studentName": "Zoya Kurian",
+    "email": "zoya.kurian@example.edu",
+    "event": "Orientation Mixer",
+    "eventId": "E01",
+    "year": 1,
+    "age": 19,
+    "department": "Civil",
+    "city": "Kochi",
+    "interests": [
+      "Robotics",
+      "Design"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": false
+    },
+    "status": "confirmed",
+    "registered": true,
+    "feePaid": 0,
+    "createdAt": {
+      "$date": "2026-10-12T12:17:00.000Z"
+    }
+  },
+  {
+    "studentName": "Sneha Khan",
+    "email": "sneha.khan@example.edu",
+    "event": "Cultural Night",
+    "eventId": "E03",
+    "year": 2,
+    "age": 20,
+    "department": "Mechanical",
+    "city": "Chennai",
+    "interests": [
+      "Design"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": false
+    },
+    "status": "confirmed",
+    "registered": true,
+    "feePaid": 100,
+    "createdAt": {
+      "$date": "2026-10-12T13:37:06.000Z"
+    }
+  },
+  {
+    "studentName": "Varun Shetty",
+    "email": "varun.shetty@example.edu",
+    "event": "TechFest",
+    "eventId": "E07",
+    "year": 1,
+    "age": 18,
+    "department": "ECE",
+    "city": "Chennai",
+    "interests": [
+      "Cloud",
+      "Robotics"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": true
+    },
+    "status": "pending",
+    "registered": true,
+    "feePaid": 0,
+    "createdAt": {
+      "$date": "2026-10-12T14:39:01.000Z"
+    }
+  },
+  {
+    "studentName": "Divya Khan",
+    "email": "divya.khan@example.edu",
+    "event": "TechFest",
+    "eventId": "E07",
+    "year": 2,
+    "age": 19,
+    "department": "CSE",
+    "city": "Madurai",
+    "interests": [
+      "Public Speaking",
+      "Music",
+      "Mobile Apps"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": false
+    },
+    "status": "confirmed",
+    "registered": true,
+    "feePaid": 200,
+    "createdAt": {
+      "$date": "2026-10-12T16:49:39.000Z"
+    }
+  },
+  {
+    "studentName": "Lakshmi Bhat",
+    "email": "lakshmi.bhat@example.edu",
+    "event": "Data Science Bootcamp",
+    "eventId": "E05",
+    "year": 3,
+    "age": 21,
+    "department": "CSE",
+    "city": "Coimbatore",
+    "interests": [
+      "Photography",
+      "Robotics",
+      "Gaming"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": false
+    },
+    "status": "pending",
+    "registered": true,
+    "feePaid": 0,
+    "createdAt": {
+      "$date": "2026-10-12T19:32:32.000Z"
+    }
+  },
+  {
+    "studentName": "Meera Bhat",
+    "email": "meera.bhat@example.edu",
+    "event": "Cultural Night",
+    "eventId": "E03",
+    "year": 1,
+    "age": 19,
+    "department": "EEE",
+    "city": "Bengaluru",
+    "interests": [
+      "Cybersecurity",
+      "Photography",
+      "Mobile Apps"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": false
+    },
+    "status": "confirmed",
+    "registered": true,
+    "feePaid": 100,
+    "createdAt": {
+      "$date": "2026-10-12T22:53:31.000Z"
+    }
+  },
+  {
+    "studentName": "Pooja Bhat",
+    "email": "pooja.bhat@example.edu",
+    "event": "Hack Night",
+    "eventId": "E08",
+    "year": 4,
+    "age": 22,
+    "department": "ECE",
+    "city": "Kochi",
+    "interests": [
+      "Cybersecurity"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": true
+    },
+    "status": "confirmed",
+    "registered": true,
+    "feePaid": 100,
+    "createdAt": {
+      "$date": "2026-10-12T23:26:57.000Z"
+    }
+  },
+  {
+    "studentName": "Ananya Kumar",
+    "email": "ananya.kumar@example.edu",
+    "event": "Data Science Bootcamp",
+    "eventId": "E05",
+    "year": 3,
+    "age": 21,
+    "department": "IT",
+    "city": "Chennai",
+    "interests": [
+      "Music"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": false
+    },
+    "status": "confirmed",
+    "registered": true,
+    "feePaid": 300,
+    "createdAt": {
+      "$date": "2026-10-12T23:51:57.000Z"
+    }
+  },
+  {
+    "studentName": "Rohan Rao",
+    "email": "rohan.rao@example.edu",
+    "event": "Data Science Bootcamp",
+    "eventId": "E05",
+    "year": 4,
+    "age": 21,
+    "department": "Mechanical",
+    "city": "Hyderabad",
+    "interests": [
+      "Photography",
+      "Data Science"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": false
+    },
+    "status": "confirmed",
+    "registered": true,
+    "feePaid": 300,
+    "createdAt": {
+      "$date": "2026-10-13T01:36:36.000Z"
+    }
+  },
+  {
+    "studentName": "Zoya Joseph",
+    "email": "zoya.joseph@example.edu",
+    "event": "Data Science Bootcamp",
+    "eventId": "E05",
+    "year": 2,
+    "age": 20,
+    "department": "Mechanical",
+    "city": "Chennai",
+    "interests": [
+      "Cybersecurity",
+      "Robotics",
+      "Design"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": true
+    },
+    "status": "waitlisted",
+    "registered": true,
+    "feePaid": 0,
+    "createdAt": {
+      "$date": "2026-10-13T09:41:24.000Z"
+    }
+  },
+  {
+    "studentName": "Sana Subramanian",
+    "email": "sana.subramanian@example.edu",
+    "event": "Orientation Mixer",
+    "eventId": "E01",
+    "year": 4,
+    "age": 22,
+    "department": "CSE",
+    "city": "Kochi",
+    "interests": [
+      "Robotics",
+      "Photography"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": false,
+      "allergies": [
+        "Gluten"
+      ]
+    },
+    "status": "waitlisted",
+    "registered": true,
+    "feePaid": 0,
+    "createdAt": {
+      "$date": "2026-10-13T16:32:11.000Z"
+    }
+  },
+  {
+    "studentName": "Deepika Das",
+    "email": "deepika.das@example.edu",
+    "event": "Cultural Night",
+    "eventId": "E03",
+    "year": 3,
+    "age": 21,
+    "department": "CSE",
+    "city": "Mysuru",
+    "interests": [
+      "Design",
+      "Cybersecurity"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": true
+    },
+    "status": "confirmed",
+    "registered": true,
+    "feePaid": 100,
+    "createdAt": {
+      "$date": "2026-10-13T19:58:39.000Z"
+    }
+  },
+  {
+    "studentName": "Nikhil Philip",
+    "email": "nikhil.philip@example.edu",
+    "event": "Cultural Night",
+    "eventId": "E03",
+    "year": 1,
+    "age": 19,
+    "department": "Mechanical",
+    "city": "Hyderabad",
+    "interests": [
+      "Music",
+      "IoT"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": false
+    },
+    "status": "confirmed",
+    "registered": true,
+    "feePaid": 100,
+    "createdAt": {
+      "$date": "2026-10-14T03:13:45.000Z"
+    }
+  },
+  {
+    "studentName": "Bhavna Mathew",
+    "email": "bhavna.mathew@example.edu",
+    "event": "Orientation Mixer",
+    "eventId": "E01",
+    "year": 1,
+    "age": 19,
+    "department": "IT",
+    "city": "Kochi",
+    "interests": [
+      "Cloud",
+      "Music"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": true
+    },
+    "status": "confirmed",
+    "registered": true,
+    "feePaid": 0,
+    "createdAt": {
+      "$date": "2026-10-14T10:07:44.000Z"
+    }
+  },
+  {
+    "studentName": "Sana Shetty",
+    "email": "sana.shetty@example.edu",
+    "event": "Photography Walk",
+    "eventId": "E06",
+    "year": 2,
+    "age": 19,
+    "department": "EEE",
+    "city": "Coimbatore",
+    "interests": [
+      "IoT"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": false
+    },
+    "status": "cancelled",
+    "registered": false,
+    "feePaid": 0,
+    "createdAt": {
+      "$date": "2026-10-14T11:06:19.000Z"
+    }
+  },
+  {
+    "studentName": "Jayanth Bhat",
+    "email": "jayanth.bhat@example.edu",
+    "event": "Cultural Night",
+    "eventId": "E03",
+    "year": 2,
+    "age": 20,
+    "department": "Mechanical",
+    "city": "Hyderabad",
+    "interests": [
+      "Cloud"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": false
+    },
+    "status": "confirmed",
+    "registered": true,
+    "feePaid": 100,
+    "createdAt": {
+      "$date": "2026-10-14T18:24:28.000Z"
+    }
+  },
+  {
+    "studentName": "Deepika Varma",
+    "email": "deepika.varma@example.edu",
+    "event": "Hack Night",
+    "eventId": "E08",
+    "year": 4,
+    "age": 22,
+    "department": "Mechanical",
+    "city": "Chennai",
+    "interests": [
+      "Mobile Apps"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": false
+    },
+    "status": "pending",
+    "registered": true,
+    "feePaid": 0,
+    "createdAt": {
+      "$date": "2026-10-14T20:35:53.000Z"
+    }
+  },
+  {
+    "studentName": "Aishwarya Ahmed",
+    "email": "aishwarya.ahmed@example.edu",
+    "event": "Hack Night",
+    "eventId": "E08",
+    "year": 1,
+    "age": 19,
+    "department": "IT",
+    "city": "Hyderabad",
+    "interests": [
+      "Cloud",
+      "Robotics"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": true
+    },
+    "status": "waitlisted",
+    "registered": true,
+    "feePaid": 0,
+    "createdAt": {
+      "$date": "2026-10-15T02:43:21.000Z"
+    }
+  },
+  {
+    "studentName": "Harini Mathew",
+    "email": "harini.mathew@example.edu",
+    "event": "Hack Night",
+    "eventId": "E08",
+    "year": 1,
+    "age": 19,
+    "department": "EEE",
+    "city": "Madurai",
+    "interests": [
+      "Photography"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": true
+    },
+    "status": "pending",
+    "registered": true,
+    "feePaid": 0,
+    "createdAt": {
+      "$date": "2026-10-15T04:30:49.000Z"
+    }
+  },
+  {
+    "studentName": "Akhil Shetty",
+    "email": "akhil.shetty@example.edu",
+    "event": "TechFest",
+    "eventId": "E07",
+    "year": 3,
+    "age": 20,
+    "department": "Mechanical",
+    "city": "Hyderabad",
+    "interests": [
+      "Music",
+      "AI",
+      "Cloud"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": false
+    },
+    "status": "pending",
+    "registered": true,
+    "feePaid": 0,
+    "createdAt": {
+      "$date": "2026-10-15T09:44:58.000Z"
+    }
+  },
+  {
+    "studentName": "Devika Philip",
+    "email": "devika.philip@example.edu",
+    "event": "Hack Night",
+    "eventId": "E08",
+    "year": 3,
+    "age": 21,
+    "department": "ECE",
+    "city": "Chennai",
+    "interests": [
+      "Data Science",
+      "Public Speaking",
+      "AI"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": true
+    },
+    "status": "confirmed",
+    "registered": true,
+    "feePaid": 100,
+    "createdAt": {
+      "$date": "2026-10-15T14:47:06.000Z"
+    }
+  },
+  {
+    "studentName": "Sana Rao",
+    "email": "sana.rao@example.edu",
+    "event": "Hack Night",
+    "eventId": "E08",
+    "year": 1,
+    "age": 19,
+    "department": "CSE",
+    "city": "Thiruvananthapuram",
+    "interests": [
+      "Public Speaking"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": true,
+      "allergies": [
+        "Gluten"
+      ]
+    },
+    "status": "confirmed",
+    "registered": true,
+    "feePaid": 100,
+    "createdAt": {
+      "$date": "2026-10-15T16:31:49.000Z"
+    }
+  },
+  {
+    "studentName": "Manoj Kumar",
+    "email": "manoj.kumar@example.edu",
+    "event": "Hack Night",
+    "eventId": "E08",
+    "year": 3,
+    "age": 21,
+    "department": "AI & DS",
+    "city": "Coimbatore",
+    "interests": [
+      "Music",
+      "Entrepreneurship"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": true
+    },
+    "status": "confirmed",
+    "registered": true,
+    "feePaid": 100,
+    "createdAt": {
+      "$date": "2026-10-16T00:03:18.000Z"
+    }
+  },
+  {
+    "studentName": "Aarav Varma",
+    "email": "aarav.varma@example.edu",
+    "event": "Hack Night",
+    "eventId": "E08",
+    "year": 3,
+    "age": 20,
+    "department": "Civil",
+    "city": "Bengaluru",
+    "interests": [
+      "IoT",
+      "Music"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": false
+    },
+    "status": "confirmed",
+    "registered": true,
+    "feePaid": 100,
+    "createdAt": {
+      "$date": "2026-10-16T02:32:26.000Z"
+    }
+  },
+  {
+    "studentName": "Varun George",
+    "email": "varun.george@example.edu",
+    "event": "Robotics Workshop",
+    "eventId": "E02",
+    "year": 4,
+    "age": 21,
+    "department": "ECE",
+    "city": "Chennai",
+    "interests": [
+      "Robotics",
+      "Data Science"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": false
+    },
+    "status": "confirmed",
+    "registered": true,
+    "feePaid": 150,
+    "createdAt": {
+      "$date": "2026-10-16T13:27:30.000Z"
+    }
+  },
+  {
+    "studentName": "Ananya Iyer",
+    "email": "ananya.iyer@example.edu",
+    "event": "Photography Walk",
+    "eventId": "E06",
+    "year": 2,
+    "age": 20,
+    "department": "IT",
+    "city": "Kochi",
+    "interests": [
+      "Public Speaking",
+      "Web"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": true
+    },
+    "status": "cancelled",
+    "registered": false,
+    "feePaid": 0,
+    "createdAt": {
+      "$date": "2026-10-16T13:49:11.000Z"
+    }
+  },
+  {
+    "studentName": "Anjali Ramesh",
+    "email": "anjali.ramesh@example.edu",
+    "event": "Data Science Bootcamp",
+    "eventId": "E05",
+    "year": 2,
+    "age": 20,
+    "department": "IT",
+    "city": "Kochi",
+    "interests": [
+      "AI",
+      "IoT"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": true
+    },
+    "status": "pending",
+    "registered": true,
+    "feePaid": 0,
+    "createdAt": {
+      "$date": "2026-10-16T19:55:42.000Z"
+    }
+  },
+  {
+    "studentName": "Manoj Sharma",
+    "email": "manoj.sharma@example.edu",
+    "event": "TechFest",
+    "eventId": "E07",
+    "year": 2,
+    "age": 19,
+    "department": "ECE",
+    "city": "Coimbatore",
+    "interests": [
+      "Cloud",
+      "Robotics"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": false,
+      "allergies": [
+        "Peanuts"
+      ]
+    },
+    "status": "confirmed",
+    "registered": true,
+    "feePaid": 200,
+    "createdAt": {
+      "$date": "2026-10-16T19:59:57.000Z"
+    }
+  },
+  {
+    "studentName": "Anna Subramanian",
+    "email": "anna.subramanian@example.edu",
+    "event": "Cultural Night",
+    "eventId": "E03",
+    "year": 2,
+    "age": 19,
+    "department": "Mechanical",
+    "city": "Mysuru",
+    "interests": [
+      "IoT",
+      "Cloud",
+      "Photography"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": true
+    },
+    "status": "confirmed",
+    "registered": true,
+    "feePaid": 100,
+    "createdAt": {
+      "$date": "2026-10-16T22:55:06.000Z"
+    }
+  },
+  {
+    "studentName": "Rahul",
+    "email": "rahul@example.edu",
+    "event": "Hack Night",
+    "eventId": "E08",
+    "year": 3,
+    "age": 20,
+    "department": "ECE",
+    "city": "Chennai",
+    "interests": [
+      "Robotics",
+      "IoT"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": false
+    },
+    "status": "pending",
+    "registered": true,
+    "feePaid": 0,
+    "createdAt": {
+      "$date": "2026-10-17T01:58:02.000Z"
+    }
+  },
+  {
+    "studentName": "Anirudh Thomas",
+    "email": "anirudh.thomas@example.edu",
+    "event": "Orientation Mixer",
+    "eventId": "E01",
+    "year": 2,
+    "age": 20,
+    "department": "EEE",
+    "city": "Chennai",
+    "interests": [
+      "AI",
+      "Entrepreneurship",
+      "Photography"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": true
+    },
+    "status": "confirmed",
+    "registered": true,
+    "feePaid": 0,
+    "createdAt": {
+      "$date": "2026-10-17T03:24:30.000Z"
+    }
+  },
+  {
+    "studentName": "Vishnu Hegde",
+    "email": "vishnu.hegde@example.edu",
+    "event": "Orientation Mixer",
+    "eventId": "E01",
+    "year": 2,
+    "age": 19,
+    "department": "IT",
+    "city": "Bengaluru",
+    "interests": [
+      "IoT",
+      "Music"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": false
+    },
+    "status": "confirmed",
+    "registered": true,
+    "feePaid": 0,
+    "createdAt": {
+      "$date": "2026-10-17T12:51:50.000Z"
+    }
+  },
+  {
+    "studentName": "Dhruv Krishnan",
+    "email": "dhruv.krishnan@example.edu",
+    "event": "Orientation Mixer",
+    "eventId": "E01",
+    "year": 4,
+    "age": 21,
+    "department": "CSE",
+    "city": "Bengaluru",
+    "interests": [
+      "Data Science",
+      "Photography",
+      "Mobile Apps"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": true
+    },
+    "status": "confirmed",
+    "registered": true,
+    "feePaid": 0,
+    "createdAt": {
+      "$date": "2026-10-17T15:28:28.000Z"
+    }
+  },
+  {
+    "studentName": "Lakshmi Fernandez",
+    "email": "lakshmi.fernandez@example.edu",
+    "event": "Data Science Bootcamp",
+    "eventId": "E05",
+    "year": 2,
+    "age": 20,
+    "department": "ECE",
+    "city": "Bengaluru",
+    "interests": [
+      "Gaming",
+      "Photography"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": true
+    },
+    "status": "confirmed",
+    "registered": true,
+    "feePaid": 300,
+    "createdAt": {
+      "$date": "2026-10-17T17:26:39.000Z"
+    }
+  },
+  {
+    "studentName": "Anjali Subramanian",
+    "email": "anjali.subramanian@example.edu",
+    "event": "Robotics Workshop",
+    "eventId": "E02",
+    "year": 4,
+    "age": 22,
+    "department": "Mechanical",
+    "city": "Chennai",
+    "interests": [
+      "Robotics",
+      "Cloud"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": true
+    },
+    "status": "pending",
+    "registered": true,
+    "feePaid": 0,
+    "createdAt": {
+      "$date": "2026-10-17T20:27:01.000Z"
+    }
+  },
+  {
+    "studentName": "Karthik Philip",
+    "email": "karthik.philip@example.edu",
+    "event": "Startup Pitch Day",
+    "eventId": "E04",
+    "year": 4,
+    "age": 22,
+    "department": "EEE",
+    "city": "Mysuru",
+    "interests": [
+      "AI",
+      "Music"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": true
+    },
+    "status": "confirmed",
+    "registered": true,
+    "feePaid": 50,
+    "createdAt": {
+      "$date": "2026-10-17T20:30:18.000Z"
+    }
+  },
+  {
+    "studentName": "Farhan Kurian",
+    "email": "farhan.kurian@example.edu",
+    "event": "TechFest",
+    "eventId": "E07",
+    "year": 3,
+    "age": 20,
+    "department": "CSE",
+    "city": "Kochi",
+    "interests": [
+      "Public Speaking",
+      "Data Science",
+      "Cloud"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": false
+    },
+    "status": "confirmed",
+    "registered": true,
+    "feePaid": 200,
+    "createdAt": {
+      "$date": "2026-10-18T00:28:17.000Z"
+    }
+  },
+  {
+    "studentName": "Vishnu Shetty",
+    "email": "vishnu.shetty@example.edu",
+    "event": "Orientation Mixer",
+    "eventId": "E01",
+    "year": 1,
+    "age": 18,
+    "department": "Civil",
+    "city": "Chennai",
+    "interests": [
+      "Robotics",
+      "Design",
+      "Gaming"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": false
+    },
+    "status": "confirmed",
+    "registered": true,
+    "feePaid": 0,
+    "createdAt": {
+      "$date": "2026-10-18T01:27:02.000Z"
+    }
+  },
+  {
+    "studentName": "Sherin Philip",
+    "email": "sherin.philip@example.edu",
+    "event": "Startup Pitch Day",
+    "eventId": "E04",
+    "year": 4,
+    "age": 21,
+    "department": "ECE",
+    "city": "Bengaluru",
+    "interests": [
+      "Entrepreneurship",
+      "IoT"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": false
+    },
+    "status": "pending",
+    "registered": true,
+    "feePaid": 0,
+    "createdAt": {
+      "$date": "2026-10-18T03:20:24.000Z"
+    }
+  },
+  {
+    "studentName": "Pooja Mathew",
+    "email": "pooja.mathew@example.edu",
+    "event": "Data Science Bootcamp",
+    "eventId": "E05",
+    "year": 4,
+    "age": 21,
+    "department": "CSE",
+    "city": "Chennai",
+    "interests": [
+      "Design",
+      "Data Science"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": false
+    },
+    "status": "confirmed",
+    "registered": true,
+    "feePaid": 300,
+    "createdAt": {
+      "$date": "2026-10-18T11:59:50.000Z"
+    }
+  },
+  {
+    "studentName": "Deepika Patel",
+    "email": "deepika.patel@example.edu",
+    "event": "TechFest",
+    "eventId": "E07",
+    "year": 1,
+    "age": 19,
+    "department": "CSE",
+    "city": "Madurai",
+    "interests": [
+      "Photography",
+      "Mobile Apps",
+      "Robotics"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": false
+    },
+    "status": "pending",
+    "registered": true,
+    "feePaid": 0,
+    "createdAt": {
+      "$date": "2026-10-18T13:16:26.000Z"
+    }
+  },
+  {
+    "studentName": "Alan Kurian",
+    "email": "alan.kurian@example.edu",
+    "event": "Hack Night",
+    "eventId": "E08",
+    "year": 2,
+    "age": 19,
+    "department": "IT",
+    "city": "Bengaluru",
+    "interests": [
+      "AI",
+      "Cloud",
+      "IoT"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": false
+    },
+    "status": "confirmed",
+    "registered": true,
+    "feePaid": 100,
+    "createdAt": {
+      "$date": "2026-10-18T20:32:01.000Z"
+    }
+  },
+  {
+    "studentName": "Irfan Kurian",
+    "email": "irfan.kurian@example.edu",
+    "event": "TechFest",
+    "eventId": "E07",
+    "year": 4,
+    "age": 22,
+    "department": "ECE",
+    "city": "Thiruvananthapuram",
+    "interests": [
+      "Design",
+      "Mobile Apps"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": false
+    },
+    "status": "confirmed",
+    "registered": true,
+    "feePaid": 200,
+    "createdAt": {
+      "$date": "2026-10-19T01:07:52.000Z"
+    }
+  },
+  {
+    "studentName": "Akhil Nair",
+    "email": "akhil.nair@example.edu",
+    "event": "Data Science Bootcamp",
+    "eventId": "E05",
+    "year": 2,
+    "age": 19,
+    "department": "ECE",
+    "city": "Thiruvananthapuram",
+    "interests": [
+      "Cybersecurity",
+      "Robotics"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": false
+    },
+    "status": "waitlisted",
+    "registered": true,
+    "feePaid": 0,
+    "createdAt": {
+      "$date": "2026-10-19T04:31:58.000Z"
+    }
+  },
+  {
+    "studentName": "Rakesh Shetty",
+    "email": "rakesh.shetty@example.edu",
+    "event": "Hack Night",
+    "eventId": "E08",
+    "year": 4,
+    "age": 21,
+    "department": "Civil",
+    "city": "Chennai",
+    "interests": [
+      "Entrepreneurship"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": true
+    },
+    "status": "confirmed",
+    "registered": true,
+    "feePaid": 100,
+    "createdAt": {
+      "$date": "2026-10-19T05:29:39.000Z"
+    }
+  },
+  {
+    "studentName": "Sherin Gowda",
+    "email": "sherin.gowda@example.edu",
+    "event": "Startup Pitch Day",
+    "eventId": "E04",
+    "year": 4,
+    "age": 21,
+    "department": "ECE",
+    "city": "Thiruvananthapuram",
+    "interests": [
+      "Photography"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": false,
+      "allergies": [
+        "Gluten"
+      ]
+    },
+    "status": "pending",
+    "registered": true,
+    "feePaid": 0,
+    "createdAt": {
+      "$date": "2026-10-19T07:57:51.000Z"
+    }
+  },
+  {
+    "studentName": "Vignesh Patel",
+    "email": "vignesh.patel@example.edu",
+    "event": "Cultural Night",
+    "eventId": "E03",
+    "year": 3,
+    "age": 21,
+    "department": "CSE",
+    "city": "Thiruvananthapuram",
+    "interests": [
+      "Mobile Apps",
+      "Music"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": true
+    },
+    "status": "confirmed",
+    "registered": true,
+    "feePaid": 100,
+    "createdAt": {
+      "$date": "2026-10-19T08:36:35.000Z"
+    }
+  },
+  {
+    "studentName": "Sneha Rao",
+    "email": "sneha.rao@example.edu",
+    "event": "Orientation Mixer",
+    "eventId": "E01",
+    "year": 1,
+    "age": 19,
+    "department": "ECE",
+    "city": "Chennai",
+    "interests": [
+      "Cybersecurity",
+      "IoT"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": false
+    },
+    "status": "waitlisted",
+    "registered": true,
+    "feePaid": 0,
+    "createdAt": {
+      "$date": "2026-10-19T08:39:29.000Z"
+    }
+  },
+  {
+    "studentName": "Hari Kumar",
+    "email": "hari.kumar@example.edu",
+    "event": "Robotics Workshop",
+    "eventId": "E02",
+    "year": 2,
+    "age": 19,
+    "department": "AI & DS",
+    "city": "Kochi",
+    "interests": [
+      "Music",
+      "Cybersecurity"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": false
+    },
+    "status": "confirmed",
+    "registered": true,
+    "feePaid": 150,
+    "createdAt": {
+      "$date": "2026-10-19T12:25:18.000Z"
+    }
+  },
+  {
+    "studentName": "Neha Khan",
+    "email": "neha.khan@example.edu",
+    "event": "Hack Night",
+    "eventId": "E08",
+    "year": 1,
+    "age": 19,
+    "department": "Civil",
+    "city": "Hyderabad",
+    "interests": [
+      "Cybersecurity",
+      "IoT"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": false
+    },
+    "status": "confirmed",
+    "registered": true,
+    "feePaid": 100,
+    "createdAt": {
+      "$date": "2026-10-19T14:31:17.000Z"
+    }
+  },
+  {
+    "studentName": "Hari Varma",
+    "email": "hari.varma@example.edu",
+    "event": "TechFest",
+    "eventId": "E07",
+    "year": 2,
+    "age": 20,
+    "department": "AI & DS",
+    "city": "Kochi",
+    "interests": [
+      "Web",
+      "Robotics"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": false
+    },
+    "status": "pending",
+    "registered": true,
+    "feePaid": 0,
+    "createdAt": {
+      "$date": "2026-10-19T18:44:04.000Z"
+    }
+  },
+  {
+    "studentName": "Zoya Kurian",
+    "email": "zoya.kurian@example.edu",
+    "event": "Cultural Night",
+    "eventId": "E03",
+    "year": 1,
+    "age": 19,
+    "department": "Civil",
+    "city": "Kochi",
+    "interests": [
+      "Robotics",
+      "Design"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": false
+    },
+    "status": "confirmed",
+    "registered": true,
+    "feePaid": 100,
+    "createdAt": {
+      "$date": "2026-10-19T21:12:21.000Z"
+    }
+  },
+  {
+    "studentName": "Maria Iyer",
+    "email": "maria.iyer@example.edu",
+    "event": "Orientation Mixer",
+    "eventId": "E01",
+    "year": 4,
+    "age": 22,
+    "department": "Mechanical",
+    "city": "Kochi",
+    "interests": [
+      "Gaming"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": false
+    },
+    "status": "confirmed",
+    "registered": true,
+    "feePaid": 0,
+    "createdAt": {
+      "$date": "2026-10-20T03:05:22.000Z"
+    }
+  },
+  {
+    "studentName": "Arun Menon",
+    "email": "arun.menon@example.edu",
+    "event": "Startup Pitch Day",
+    "eventId": "E04",
+    "year": 1,
+    "age": 19,
+    "department": "CSE",
+    "city": "Kochi",
+    "interests": [
+      "Data Science"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": true
+    },
+    "status": "confirmed",
+    "registered": true,
+    "feePaid": 50,
+    "createdAt": {
+      "$date": "2026-10-20T14:28:58.000Z"
+    }
+  },
+  {
+    "studentName": "Anirudh Fernandez",
+    "email": "anirudh.fernandez@example.edu",
+    "event": "Photography Walk",
+    "eventId": "E06",
+    "year": 1,
+    "age": 18,
+    "department": "IT",
+    "city": "Chennai",
+    "interests": [
+      "Robotics",
+      "Data Science"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": false
+    },
+    "status": "pending",
+    "registered": true,
+    "feePaid": 0,
+    "createdAt": {
+      "$date": "2026-10-20T20:16:32.000Z"
+    }
+  },
+  {
+    "studentName": "Dhruv Reddy",
+    "email": "dhruv.reddy@example.edu",
+    "event": "Cultural Night",
+    "eventId": "E03",
+    "year": 1,
+    "age": 18,
+    "department": "ECE",
+    "city": "Mysuru",
+    "interests": [
+      "Public Speaking"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": true
+    },
+    "status": "confirmed",
+    "registered": true,
+    "feePaid": 100,
+    "createdAt": {
+      "$date": "2026-10-20T23:34:02.000Z"
+    }
+  },
+  {
+    "studentName": "Anna Kumar",
+    "email": "anna.kumar@example.edu",
+    "event": "Startup Pitch Day",
+    "eventId": "E04",
+    "year": 3,
+    "age": 20,
+    "department": "CSE",
+    "city": "Chennai",
+    "interests": [
+      "Gaming"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": false
+    },
+    "status": "confirmed",
+    "registered": true,
+    "feePaid": 50,
+    "createdAt": {
+      "$date": "2026-10-22T09:34:07.000Z"
+    }
+  },
+  {
+    "studentName": "Divya Joseph",
+    "email": "divya.joseph@example.edu",
+    "event": "Cultural Night",
+    "eventId": "E03",
+    "year": 4,
+    "age": 21,
+    "department": "AI & DS",
+    "city": "Coimbatore",
+    "interests": [
+      "Mobile Apps"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": false
+    },
+    "status": "pending",
+    "registered": true,
+    "feePaid": 0,
+    "createdAt": {
+      "$date": "2026-10-22T16:53:55.000Z"
+    }
+  },
+  {
+    "studentName": "Keerthana Ahmed",
+    "email": "keerthana.ahmed@example.edu",
+    "event": "TechFest",
+    "eventId": "E07",
+    "year": 1,
+    "age": 19,
+    "department": "AI & DS",
+    "city": "Chennai",
+    "interests": [
+      "IoT",
+      "Design"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": true
+    },
+    "status": "confirmed",
+    "registered": true,
+    "feePaid": 200,
+    "createdAt": {
+      "$date": "2026-10-22T21:33:40.000Z"
+    }
+  },
+  {
+    "studentName": "Priya Reddy",
+    "email": "priya.reddy@example.edu",
+    "event": "TechFest",
+    "eventId": "E07",
+    "year": 2,
+    "age": 20,
+    "department": "AI & DS",
+    "city": "Chennai",
+    "interests": [
+      "AI",
+      "Cybersecurity"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": false
+    },
+    "status": "confirmed",
+    "registered": true,
+    "feePaid": 200,
+    "createdAt": {
+      "$date": "2026-10-22T22:16:34.000Z"
+    }
+  },
+  {
+    "studentName": "Sana Thomas",
+    "email": "sana.thomas@example.edu",
+    "event": "Cultural Night",
+    "eventId": "E03",
+    "year": 1,
+    "age": 18,
+    "department": "Civil",
+    "city": "Coimbatore",
+    "interests": [
+      "Robotics",
+      "Data Science"
+    ],
+    "dietaryNeeds": {
+      "vegetarian": false
+    },
+    "status": "confirmed",
+    "registered": true,
+    "feePaid": 100,
+    "createdAt": {
+      "$date": "2026-10-23T06:18:10.000Z"
+    }
+  }
+]

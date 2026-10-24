@@ -1,0 +1,131 @@
+[
+  {
+    "eventId": "E01",
+    "name": "Orientation Mixer",
+    "category": "Social",
+    "venue": "Main Auditorium",
+    "date": {
+      "$date": "2026-11-07T04:30:00.000Z"
+    },
+    "fee": 0,
+    "capacity": 300,
+    "organizer": "Student Council",
+    "tags": [
+      "freshers",
+      "networking"
+    ]
+  },
+  {
+    "eventId": "E02",
+    "name": "Robotics Workshop",
+    "category": "Workshop",
+    "venue": "Robotics Lab",
+    "date": {
+      "$date": "2026-11-12T08:30:00.000Z"
+    },
+    "fee": 150,
+    "capacity": 60,
+    "organizer": "Robotics Club",
+    "tags": [
+      "robotics",
+      "hands-on"
+    ]
+  },
+  {
+    "eventId": "E03",
+    "name": "Cultural Night",
+    "category": "Cultural",
+    "venue": "Open Air Theatre",
+    "date": {
+      "$date": "2026-11-14T12:30:00.000Z"
+    },
+    "fee": 100,
+    "capacity": 400,
+    "organizer": "Cultural Committee",
+    "tags": [
+      "music",
+      "dance"
+    ]
+  },
+  {
+    "eventId": "E04",
+    "name": "Startup Pitch Day",
+    "category": "Entrepreneurship",
+    "venue": "Seminar Hall B",
+    "date": {
+      "$date": "2026-11-18T05:30:00.000Z"
+    },
+    "fee": 50,
+    "capacity": 150,
+    "organizer": "E-Cell",
+    "tags": [
+      "startups",
+      "pitching"
+    ]
+  },
+  {
+    "eventId": "E05",
+    "name": "Data Science Bootcamp",
+    "category": "Workshop",
+    "venue": "Computer Lab 3",
+    "date": {
+      "$date": "2026-11-19T04:00:00.000Z"
+    },
+    "fee": 300,
+    "capacity": 80,
+    "organizer": "Data Science Club",
+    "tags": [
+      "python",
+      "machine-learning"
+    ]
+  },
+  {
+    "eventId": "E06",
+    "name": "Photography Walk",
+    "category": "Club",
+    "venue": "Campus Gardens",
+    "date": {
+      "$date": "2026-11-20T10:30:00.000Z"
+    },
+    "fee": 0,
+    "capacity": 50,
+    "organizer": "Photography Club",
+    "tags": [
+      "outdoors",
+      "photography"
+    ]
+  },
+  {
+    "eventId": "E07",
+    "name": "TechFest",
+    "category": "Technical",
+    "venue": "Innovation Block",
+    "date": {
+      "$date": "2026-11-21T03:30:00.000Z"
+    },
+    "fee": 200,
+    "capacity": 500,
+    "organizer": "Tech Council",
+    "tags": [
+      "hackathon",
+      "expo",
+      "tech"
+    ]
+  },
+  {
+    "eventId": "E08",
+    "name": "Hack Night",
+    "category": "Technical",
+    "venue": "Computer Lab 1",
+    "date": {
+      "$date": "2026-11-28T14:30:00.000Z"
+    },
+    "fee": 100,
+    "capacity": 120,
+    "organizer": "Coding Club",
+    "tags": [
+      "hackathon",
+      "coding"
+    ]
+  }
+]

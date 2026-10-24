@@ -1,0 +1,618 @@
+/* ============================================================================
+   public/style.css
+   Clean, responsive layout using a MongoDB-inspired green & dark navy palette.
+   Works completely offline with system fonts.
+   ============================================================================ */
+
+:root {
+  --navy-900: #0a192f;
+  --navy-800: #112240;
+  --navy-700: #1d3557;
+  --green-600: #00684a;
+  --green-500: #00a35c;
+  --green-400: #00ed64;
+  --green-100: #e3fcf7;
+  --bg-page: #f4f7f9;
+  --bg-card: #ffffff;
+  --text-main: #1e293b;
+  --text-muted: #64748b;
+  --border-color: #e2e8f0;
+  --danger-600: #dc2626;
+  --danger-100: #fee2e2;
+  --warning-600: #d97706;
+  --warning-100: #fef3c7;
+  --info-600: #2563eb;
+  --info-100: #dbeafe;
+  --shadow-soft: 0 4px 12px rgba(10, 25, 47, 0.06);
+  --radius: 10px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  background-color: var(--bg-page);
+  color: var(--text-main);
+  line-height: 1.5;
+  padding-bottom: 3rem;
+}
+
+code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 0.85em;
+  background: #eef2f6;
+  padding: 0.15rem 0.35rem;
+  border-radius: 4px;
+  color: var(--navy-800);
+}
+
+.container {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 1.25rem;
+}
+
+/* ----------------------------------------------------------------------------
+   1. Header & Status Pill
+   ---------------------------------------------------------------------------- */
+.site-header {
+  background-color: var(--navy-900);
+  color: #ffffff;
+  padding: 1.25rem 0;
+  border-bottom: 3px solid var(--green-500);
+}
+
+.header-inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.site-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.site-subtitle {
+  color: #94a3b8;
+  font-size: 0.9rem;
+  margin-top: 0.15rem;
+}
+
+.status-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.4rem 0.85rem;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  background-color: var(--navy-800);
+  border: 1px solid #334155;
+}
+
+.status-dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background-color: #94a3b8;
+}
+
+.status-connected {
+  border-color: var(--green-500);
+  color: var(--green-400);
+}
+
+.status-connected .status-dot {
+  background-color: var(--green-400);
+  box-shadow: 0 0 8px var(--green-400);
+}
+
+.status-disconnected {
+  border-color: #f59e0b;
+  color: #fcd34d;
+}
+
+.status-disconnected .status-dot {
+  background-color: #f59e0b;
+}
+
+/* ----------------------------------------------------------------------------
+   2. Data-Flow Strip
+   ---------------------------------------------------------------------------- */
+.flow-strip {
+  background-color: var(--navy-800);
+  color: #cbd5e1;
+  padding: 0.65rem 0;
+  font-size: 0.85rem;
+  border-bottom: 1px solid #1e293b;
+}
+
+.flow-inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.flow-label {
+  font-weight: 600;
+  color: #94a3b8;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  letter-spacing: 0.05em;
+}
+
+.flow-steps {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.45rem;
+}
+
+.flow-step {
+  background: rgba(255, 255, 255, 0.08);
+  padding: 0.2rem 0.6rem;
+  border-radius: 5px;
+  font-weight: 500;
+  color: #f8fafc;
+}
+
+.flow-step-db {
+  background: var(--green-600);
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.flow-arrow {
+  color: var(--green-400);
+  font-weight: bold;
+}
+
+/* ----------------------------------------------------------------------------
+   Grid & Cards
+   ---------------------------------------------------------------------------- */
+.main-grid {
+  display: grid;
+  grid-template-columns: 380px 1fr;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+@media (max-width: 960px) {
+  .main-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.left-col,
+.right-col {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.card {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-soft);
+  padding: 1.35rem;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 0.75rem;
+  margin-bottom: 1.1rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.card-header h2 {
+  font-size: 1.15rem;
+  color: var(--navy-900);
+}
+
+.card-subtitle {
+  display: block;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  margin-top: 0.15rem;
+}
+
+.card-badge {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 0.75rem;
+  background-color: var(--green-100);
+  color: var(--green-600);
+  padding: 0.2rem 0.5rem;
+  border-radius: 5px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+/* ----------------------------------------------------------------------------
+   3. Registration Form
+   ---------------------------------------------------------------------------- */
+.form-group {
+  margin-bottom: 0.95rem;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.75rem;
+}
+
+label {
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--navy-800);
+  margin-bottom: 0.3rem;
+}
+
+.required {
+  color: var(--danger-600);
+}
+
+.optional {
+  font-weight: 400;
+  color: var(--text-muted);
+  font-size: 0.8rem;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="search"],
+select {
+  width: 100%;
+  padding: 0.55rem 0.75rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  color: var(--text-main);
+  background-color: #ffffff;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+input:focus,
+select:focus {
+  outline: none;
+  border-color: var(--green-500);
+  box-shadow: 0 0 0 3px rgba(0, 163, 92, 0.15);
+}
+
+.fallback-input {
+  margin-top: 0.45rem;
+}
+
+.field-hint {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  margin-top: 0.3rem;
+}
+
+.checkbox-group {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  margin-top: 0.25rem;
+}
+
+.checkbox-group input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  accent-color: var(--green-600);
+  cursor: pointer;
+}
+
+.checkbox-group label {
+  margin-bottom: 0;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.field-error {
+  color: var(--danger-600);
+  font-size: 0.8rem;
+  margin-top: 0.25rem;
+  min-height: 1.1rem;
+}
+
+.feedback-banner {
+  padding: 0.7rem 0.9rem;
+  border-radius: 6px;
+  font-size: 0.875rem;
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+
+.feedback-success {
+  background-color: var(--green-100);
+  color: var(--green-600);
+  border: 1px solid #99f6e4;
+}
+
+.feedback-error {
+  background-color: var(--danger-100);
+  color: var(--danger-600);
+  border: 1px solid #fecaca;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.6rem 1rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.15s ease, opacity 0.15s ease;
+}
+
+.btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.btn-primary {
+  background-color: var(--green-600);
+  color: #ffffff;
+}
+
+.btn-primary:hover:not(:disabled) {
+  background-color: var(--green-500);
+}
+
+.btn-block {
+  width: 100%;
+}
+
+.btn-sm {
+  padding: 0.3rem 0.6rem;
+  font-size: 0.78rem;
+  border-radius: 5px;
+}
+
+.btn-confirm {
+  background-color: var(--green-100);
+  color: var(--green-600);
+  border: 1px solid #a7f3d0;
+}
+
+.btn-confirm:hover:not(:disabled) {
+  background-color: #d1fae5;
+}
+
+.btn-delete {
+  background-color: var(--danger-100);
+  color: var(--danger-600);
+  border: 1px solid #fecaca;
+}
+
+.btn-delete:hover:not(:disabled) {
+  background-color: #fee2e2;
+}
+
+/* ----------------------------------------------------------------------------
+   4. Registrations Table & Status Badges
+   ---------------------------------------------------------------------------- */
+.table-card-header {
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.search-box {
+  min-width: 230px;
+}
+
+.table-responsive {
+  overflow-x: auto;
+}
+
+.reg-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.875rem;
+}
+
+.reg-table th,
+.reg-table td {
+  text-align: left;
+  padding: 0.7rem 0.65rem;
+  border-bottom: 1px solid var(--border-color);
+  vertical-align: middle;
+}
+
+.reg-table th {
+  font-weight: 600;
+  color: var(--navy-800);
+  background-color: #f8fafc;
+  white-space: nowrap;
+}
+
+.reg-table tbody tr:hover {
+  background-color: #f8fafc;
+}
+
+.badge {
+  display: inline-block;
+  padding: 0.2rem 0.55rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  border-radius: 999px;
+  text-transform: capitalize;
+}
+
+.badge-pending {
+  background-color: var(--warning-100);
+  color: var(--warning-600);
+}
+
+.badge-confirmed {
+  background-color: var(--green-100);
+  color: var(--green-600);
+}
+
+.badge-waitlisted {
+  background-color: var(--info-100);
+  color: var(--info-600);
+}
+
+.badge-cancelled {
+  background-color: var(--danger-100);
+  color: var(--danger-600);
+}
+
+.actions-cell {
+  display: flex;
+  gap: 0.4rem;
+  white-space: nowrap;
+}
+
+/* ----------------------------------------------------------------------------
+   5. Insights Horizontal Bars
+   ---------------------------------------------------------------------------- */
+.total-counter {
+  font-size: 0.9rem;
+  background: #f1f5f9;
+  padding: 0.3rem 0.7rem;
+  border-radius: 6px;
+  color: var(--navy-800);
+}
+
+.insights-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.insight-row {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.insight-label-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--navy-800);
+}
+
+.insight-bar-track {
+  width: 100%;
+  height: 10px;
+  background-color: #e2e8f0;
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.insight-bar-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--green-600), var(--green-500));
+  border-radius: 999px;
+  transition: width 0.3s ease;
+}
+
+/* ----------------------------------------------------------------------------
+   6. API Activity Panel
+   ---------------------------------------------------------------------------- */
+.api-log-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+  max-height: 290px;
+  overflow-y: auto;
+}
+
+.api-log-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  padding: 0.45rem 0.6rem;
+  background-color: #f8fafc;
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 0.78rem;
+}
+
+.api-log-left {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  overflow: hidden;
+}
+
+.api-method {
+  font-weight: 700;
+  padding: 0.1rem 0.35rem;
+  border-radius: 4px;
+  font-size: 0.7rem;
+  background-color: var(--navy-800);
+  color: #ffffff;
+}
+
+.api-url {
+  color: var(--navy-900);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.api-log-right {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  white-space: nowrap;
+}
+
+.api-status-ok {
+  color: var(--green-600);
+  font-weight: 700;
+}
+
+.api-status-err {
+  color: var(--danger-600);
+  font-weight: 700;
+}
+
+.api-time {
+  color: var(--text-muted);
+}
+
+/* ----------------------------------------------------------------------------
+   Empty & Loading States
+   ---------------------------------------------------------------------------- */
+.empty-state,
+.loading-state,
+.empty-log {
+  text-align: center;
+  padding: 1.5rem 1rem;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  background-color: #f8fafc;
+  border: 1px dashed #cbd5e1;
+  border-radius: 8px;
+}
+
+.hidden {
+  display: none !important;
+}

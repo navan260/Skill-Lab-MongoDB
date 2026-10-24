@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CampusConnect: Event Registrations</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- 1. Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <div>
+        <h1 class="site-title">CampusConnect: Event Registrations</h1>
+        <p class="site-subtitle">College MongoDB Workshop — Full-Stack Data Flow Demo</p>
+      </div>
+      <div id="db-status-pill" class="status-pill status-disconnected" aria-live="polite">
+        <span class="status-dot"></span>
+        <span id="db-status-text">Database: checking...</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- 2. Data-Flow Strip -->
+  <section class="flow-strip" aria-label="Architecture Data Flow">
+    <div class="container flow-inner">
+      <span class="flow-label">Request Path:</span>
+      <div class="flow-steps">
+        <span class="flow-step">Browser Form</span>
+        <span class="flow-arrow">&rarr;</span>
+        <span class="flow-step">Express API</span>
+        <span class="flow-arrow">&rarr;</span>
+        <span class="flow-step flow-step-db">MongoDB</span>
+        <span class="flow-arrow">&rarr;</span>
+        <span class="flow-step">JSON</span>
+        <span class="flow-arrow">&rarr;</span>
+        <span class="flow-step">Page Update</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Workspace -->
+  <main class="container main-grid">
+    <!-- Left Column: Registration Form & API Activity -->
+    <div class="left-col">
+      <!-- 3. Registration Form Card -->
+      <section class="card">
+        <div class="card-header">
+          <h2>Register for an Event</h2>
+          <span class="card-badge">POST /api/registrations</span>
+        </div>
+
+        <form id="registration-form" novalidate>
+          <!-- Student Name -->
+          <div class="form-group">
+            <label for="studentName">Student Name <span class="required">*</span></label>
+            <input
+              type="text"
+              id="studentName"
+              name="studentName"
+              placeholder="e.g. Aarav Sharma"
+              autocomplete="name"
+            />
+            <p class="field-error" id="error-studentName"></p>
+          </div>
+
+          <!-- Email -->
+          <div class="form-group">
+            <label for="email">College Email <span class="required">*</span></label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="e.g. aarav@college.edu"
+              autocomplete="email"
+            />
+            <p class="field-error" id="error-email"></p>
+          </div>
+
+          <!-- Event Dropdown -->
+          <div class="form-group">
+            <label for="event">Event <span class="required">*</span></label>
+            <select id="event" name="event">
+              <option value="">Loading events...</option>
+            </select>
+            <p class="field-hint" id="event-hint">
+              Tip: While <code>getEvents()</code> is a placeholder, you can also type an event name below if none are loaded.
+            </p>
+            <input
+              type="text"
+              id="eventFallback"
+              name="eventFallback"
+              class="fallback-input hidden"
+              placeholder="Or type an event name to test POST validation..."
+            />
+            <p class="field-error" id="error-event"></p>
+          </div>
+
+          <!-- Year & City Row -->
+          <div class="form-row">
+            <div class="form-group">
+              <label for="year">Year (1–4)</label>
+              <select id="year" name="year">
+                <option value="">Select year (optional)</option>
+                <option value="1">1st Year</option>
+                <option value="2">2nd Year</option>
+                <option value="3">3rd Year</option>
+                <option value="4">4th Year</option>
+              </select>
+              <p class="field-error" id="error-year"></p>
+            </div>
+
+            <div class="form-group">
+              <label for="city">City</label>
+              <input
+                type="text"
+                id="city"
+                name="city"
+                placeholder="e.g. Bengaluru"
+              />
+            </div>
+          </div>
+
+          <!-- Interests -->
+          <div class="form-group">
+            <label for="interests">Interests <span class="optional">(comma-separated)</span></label>
+            <input
+              type="text"
+              id="interests"
+              name="interests"
+              placeholder="e.g. databases, backend, cloud"
+            />
+          </div>
+
+          <!-- Vegetarian Checkbox -->
+          <div class="form-group checkbox-group">
+            <input type="checkbox" id="vegetarian" name="vegetarian" />
+            <label for="vegetarian">Dietary need: Vegetarian meal preference</label>
+          </div>
+
+          <!-- Form Feedback Banner -->
+          <div id="form-feedback" class="feedback-banner hidden" role="alert"></div>
+
+          <button type="submit" id="submit-btn" class="btn btn-primary btn-block">
+            Submit Registration
+          </button>
+        </form>
+      </section>
+
+      <!-- 6. API Activity Panel -->
+      <section class="card">
+        <div class="card-header">
+          <h2>API Activity Log</h2>
+          <span class="card-subtitle">Last 10 requests (newest first)</span>
+        </div>
+        <ul id="api-log-list" class="api-log-list">
+          <li class="empty-log">No API requests logged yet.</li>
+        </ul>
+      </section>
+    </div>
+
+    <!-- Right Column: Insights & Registrations Table -->
+    <div class="right-col">
+      <!-- 5. Insights Card -->
+      <section class="card">
+        <div class="card-header">
+          <div>
+            <h2>Registrations by Event</h2>
+            <span class="card-subtitle">Aggregated via <code>GET /api/stats/by-event</code></span>
+          </div>
+          <div class="total-counter">
+            Total: <strong id="insights-total-count">0</strong>
+          </div>
+        </div>
+        <div id="insights-container" class="insights-container">
+          <p class="empty-state">No aggregation data yet. Implement <code>getRegistrationCountsByEvent()</code> to see live bars.</p>
+        </div>
+      </section>
+
+      <!-- 4. Registrations Table Card -->
+      <section class="card">
+        <div class="card-header table-card-header">
+          <div>
+            <h2>Registrations</h2>
+            <span class="card-subtitle">Live documents from <code>GET /api/registrations</code></span>
+          </div>
+          <div class="search-box">
+            <input
+              type="search"
+              id="event-search"
+              placeholder="Filter by event name..."
+              aria-label="Filter registrations by event"
+            />
+          </div>
+        </div>
+
+        <div id="table-loading" class="loading-state hidden">Loading registrations...</div>
+
+        <div id="table-empty" class="empty-state">
+          No registrations yet. Once <code>getRegistrations()</code> and <code>insertRegistration()</code> are implemented, rows will appear here.
+        </div>
+
+        <div id="table-wrapper" class="table-responsive hidden">
+          <table class="reg-table">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Event</th>
+                <th>Year</th>
+                <th>City</th>
+                <th>Status</th>
+                <th>Registered at</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+            <tbody id="registrations-tbody"></tbody>
+          </table>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
