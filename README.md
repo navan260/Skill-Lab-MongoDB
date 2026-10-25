@@ -1,98 +1,51 @@
-# CampusConnect: Event Registrations
-## MongoDB & Full-Stack Integration — 3-Hour College Skill Lab Workshop
+# CampusConnect — College Event Registration Portal
+## RVCE Skill Lab: MongoDB & Full-Stack Integration
 
-A complete, production-grade full-stack workshop repository designed for conducting a **3-Hour Skill Lab** on **MongoDB and Full-Stack Integration** with Node.js and Express.
+A clean, minimal full-stack event registration portal built with **Node.js, Express, and MongoDB Native Driver (v6)** for the RVCE Skill Lab workshop.
 
 ```
-Browser Form ──(HTTP JSON)──> Express API ──(MongoDB Driver v6)──> MongoDB Database
-     ▲                                                                   │
-     └─────────────────────────(Live Updates)────────────────────────────┘
+Browser UI (public/) ──(HTTP JSON)──> Express REST API (server.js) ──(MongoDB Driver)──> MongoDB (db/queries.js)
 ```
 
 ---
 
-## 🚀 Workshop Materials & Presentation
+## Quick Start
 
-| Resource | File / Link | Description |
-| :--- | :--- | :--- |
-| **PowerPoint Presentation (.pptx)** | [**`MongoDB_FullStack_Workshop.pptx`**](./MongoDB_FullStack_Workshop.pptx) | **40-slide light-themed PowerPoint deck** ready for presentation in Microsoft PowerPoint, Google Slides, or Keynote. |
-| **Interactive Slide Deck** | [`workshop-presentation.html`](./workshop-presentation.html) | Standalone browser presentation deck with timer, speaker notes (`N`), and fullscreen (`F`). |
-| **Speaker Script & Guide** | [`WORKSHOP_SPEAKER_SCRIPT.md`](./WORKSHOP_SPEAKER_SCRIPT.md) | 180-minute dual-presenter playbook with exact minute-by-minute talking points and live demos. |
-| **Markdown Slides** | [`slides.md`](./slides.md) | Marp / Slidev / PowerPoint formatted slides for printing or exporting. |
-| **Reference Solutions** | [`db/queries.solution.js`](./db/queries.solution.js) | Complete, tested implementation of all 6 workshop queries for instructors. |
-
----
-
-## 🛠️ Quick Start (4 Steps for Students)
-
-### 1. Install Dependencies
 ```bash
+# 1. Install dependencies
 npm install
-```
 
-### 2. Configure Environment & Seed Database
-Ensure `.env` exists (default points to local MongoDB on port 27017):
-```env
-MONGODB_URI=mongodb://localhost:27017
-DB_NAME=campusconnect
-PORT=3000
-```
-
-Seed the database with sample events, registrations, and performance indexes:
-```bash
+# 2. Seed sample events & registrations into MongoDB
 npm run seed
-```
 
-### 3. Start the Server
-```bash
+# 3. Start the server (auto-reloads when you edit db/queries.js)
 npm run dev
 ```
-*(Runs with `--watch` so any code changes automatically restart the server!)*
 
-### 4. Open the Web Application
-Visit **[http://localhost:3000](http://localhost:3000)** in your browser.
-- The UI, status indicator, form validation, and live API Activity panel work out of the box!
-- Open `db/queries.js` and implement the 6 workshop queries live.
+Open **[http://localhost:3000](http://localhost:3000)** in your browser.
 
 ---
 
-## 📂 Project Architecture
+## Workshop Materials
 
+| File | Purpose |
+| :--- | :--- |
+| **[`STUDENT_MANUAL.md`](./STUDENT_MANUAL.md)** | **Step-by-step Student Hands-On Manual** with instructions and code hints for completing `db/queries.js`. |
+| **[`db/queries.js`](./db/queries.js)** | **Student Workspace:** Task 1 (`getEvents`) is done as a live example; Tasks 2–6 have boilerplate written and `TODO` blocks for the MongoDB queries. |
+| **[`db/queries.solution.js`](./db/queries.solution.js)** | **Instructor Reference Solution** with all 6 MongoDB functions completed. |
+| **[`MongoDB_FullStack_Workshop.pptx`](./MongoDB_FullStack_Workshop.pptx)** | **40-Slide PowerPoint Presentation** covering Foundations, Setup, Querying, Aggregation, and Full-Stack Integration. |
+
+---
+
+## Instructor Helper Commands
+
+Want to switch between the **Student Starter Template** (only Task 1 implemented) and the **Full Working Solution** (all 6 tasks implemented) during your demo?
+
+```bash
+# Switch db/queries.js to the FULL WORKING SOLUTION (all 6 queries working):
+npm run solve-lab
+
+# Reset db/queries.js back to the STUDENT STARTER TEMPLATE (Task 1 done, Tasks 2-6 TODO):
+npm run reset-lab
 ```
-Skill-Lab-MongoDB/
-├── .env                       # Environment variables (Mongo URI, Port)
-├── package.json               # Node.js dependencies & scripts
-├── server.js                  # Express REST API & input validation
-├── events.json                # College event dataset
-├── registrations.json         # Student registration dataset
-├── db/
-│   ├── connection.js          # Resilient MongoClient connection lifecycle
-│   ├── seed.js                # Database seeder & index creator (npm run seed)
-│   ├── queries.js             # ⭐ Workshop coding workspace (fill in TODOs)
-│   └── queries.solution.js    # Instructor reference solutions
-├── public/
-│   ├── index.html             # Two-column interactive dashboard
-│   ├── style.css              # Responsive, modern styling
-│   └── app.js                 # Frontend fetch calls & real-time UI rendering
-├── workshop-presentation.html # Master 24-slide keynote presentation deck
-├── slides.md                  # Marp markdown slide deck
-└── WORKSHOP_SPEAKER_SCRIPT.md # Minute-by-minute speaker guide
-```
-
----
-
-## 💻 The 6 Hands-On Workshop Queries (`db/queries.js`)
-
-1. **`getEvents()`**: Fetch all events sorted by date (`find({}).sort({ date: 1 })`).
-2. **`getRegistrations({ eventSearch, limit })`**: Query with dynamic case-insensitive regex search and pagination.
-3. **`insertRegistration(doc)`**: Insert a student registration into the collection.
-4. **`updateRegistrationStatus(id, status)`**: Safe mutation using `new ObjectId(id)` and `$set`.
-5. **`deleteRegistration(id)`**: Delete document by `ObjectId`.
-6. **`getRegistrationCountsByEvent()`**: Real-time aggregation pipeline using `$group` and `$sort` for live analytics bars.
-
----
-
-## 💡 Key Architectural Highlights to Show Juniors
-- **Graceful Offline Mode**: If MongoDB is not running, the Express server stays up and displays a helpful warning badge instead of crashing.
-- **Unique Compound Indexing**: Enforces `{ email: 1, event: 1 }` unique constraint in MongoDB; triggers error code `11000` which Express maps cleanly to `409 Conflict`.
-- **Live API Activity Panel**: Real-time logging of HTTP methods, endpoints, status codes, and execution times directly in the UI.
+*(Because `npm run dev` runs with `--watch`, the server will automatically reload the moment you run either command!)*

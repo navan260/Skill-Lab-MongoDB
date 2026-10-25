@@ -8,6 +8,8 @@
     "start": "node server.js",
     "dev": "node --watch server.js",
     "seed": "node db/seed.js",
+    "reset-lab": "node -e \"require('fs').copyFileSync('db/queries.template.js', 'db/queries.js'); console.log('Reset db/queries.js to student starter template.');\"",
+    "solve-lab": "node -e \"require('fs').copyFileSync('db/queries.solution.js', 'db/queries.js'); console.log('Copied full solution into db/queries.js.');\"",
     "build:ppt": "node generate_pptx.js"
   },
   "engines": {

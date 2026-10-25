@@ -1,22 +1,25 @@
 // ============================================================================
 // db/queries.solution.js
-// COMPLETED REFERENCE IMPLEMENTATION for CampusConnect Workshop.
-// Instructors/Presenters can use this during live coding or for verification.
+// COMPLETED INSTRUCTOR SOLUTION for CampusConnect Workshop.
+// Run `npm run solve-lab` to copy this into db/queries.js at any time.
 // ============================================================================
 
 const { ObjectId } = require("mongodb");
 const { getDb } = require("./connection");
 
+// Helper: Escapes special regex characters in user search text
 function escapeRegex(text) {
   return text.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
 }
 
-/**
- * 1. Get all events sorted by date ascending.
- */
+// ----------------------------------------------------------------------------
+// TASK 1 (DEMO TOGETHER): Get all upcoming events sorted by date ascending
+// Route: GET /api/events
+// ----------------------------------------------------------------------------
 async function getEvents() {
   const db = getDb();
   if (!db) return [];
+
   return await db
     .collection("events")
     .find({})
@@ -24,16 +27,22 @@ async function getEvents() {
     .toArray();
 }
 
-/**
- * 2. Get registrations with optional case-insensitive event search and limit.
- */
-async function getRegistrations({ eventSearch = "", limit = 50 } = {}) {
+// ----------------------------------------------------------------------------
+// TASK 2: Get registrations with optional search & status filter
+// Route: GET /api/registrations?event=<search>&status=<status>
+// ----------------------------------------------------------------------------
+async function getRegistrations({ eventSearch = "", status = "", limit = 50 } = {}) {
   const db = getDb();
   if (!db) return [];
 
+  // Filter object is already built for you based on search bar & dropdown
   const filter = {};
   if (eventSearch) {
-    filter.event = { $regex: escapeRegex(eventSearch), $options: "i" };
+    const regex = { $regex: escapeRegex(eventSearch), $options: "i" };
+    filter.$or = [{ event: regex }, { studentName: regex }, { email: regex }];
+  }
+  if (status) {
+    filter.status = status.toLowerCase();
   }
 
   return await db
@@ -44,9 +53,10 @@ async function getRegistrations({ eventSearch = "", limit = 50 } = {}) {
     .toArray();
 }
 
-/**
- * 3. Insert a single registration document.
- */
+// ----------------------------------------------------------------------------
+// TASK 3: Insert a new student registration document
+// Route: POST /api/registrations
+// ----------------------------------------------------------------------------
 async function insertRegistration(doc) {
   const db = getDb();
   if (!db) return { insertedId: null };
@@ -56,9 +66,10 @@ async function insertRegistration(doc) {
     .insertOne(doc);
 }
 
-/**
- * 4. Update registration status by ObjectId.
- */
+// ----------------------------------------------------------------------------
+// TASK 4: Update a registration's status by its ObjectId
+// Route: PATCH /api/registrations/:id/status
+// ----------------------------------------------------------------------------
 async function updateRegistrationStatus(id, status) {
   const db = getDb();
   if (!db) return { matchedCount: 0, modifiedCount: 0 };
@@ -71,9 +82,10 @@ async function updateRegistrationStatus(id, status) {
     );
 }
 
-/**
- * 5. Delete registration by ObjectId.
- */
+// ----------------------------------------------------------------------------
+// TASK 5: Delete a registration document by its ObjectId
+// Route: DELETE /api/registrations/:id
+// ----------------------------------------------------------------------------
 async function deleteRegistration(id) {
   const db = getDb();
   if (!db) return { deletedCount: 0 };
@@ -83,9 +95,10 @@ async function deleteRegistration(id) {
     .deleteOne({ _id: new ObjectId(id) });
 }
 
-/**
- * 6. Aggregate registration counts grouped by event.
- */
+// ----------------------------------------------------------------------------
+// TASK 6: Aggregate registration counts grouped by event
+// Route: GET /api/stats/by-event
+// ----------------------------------------------------------------------------
 async function getRegistrationCountsByEvent() {
   const db = getDb();
   if (!db) return [];
@@ -94,7 +107,7 @@ async function getRegistrationCountsByEvent() {
     .collection("registrations")
     .aggregate([
       { $group: { _id: "$event", total: { $sum: 1 } } },
-      { $sort: { total: -1 } }
+      { $sort: { total: -1 } },
     ])
     .toArray();
 
