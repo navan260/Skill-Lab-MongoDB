@@ -14,10 +14,6 @@
 const { ObjectId } = require("mongodb");
 const { getDb } = require("./connection");
 
-// Helper for escaping user search input before building a RegExp
-function escapeRegex(text) {
-  return text.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
-}
 
 // ----------------------------------------------------------------------------
 // 1. Get all events (sorted by date ascending)

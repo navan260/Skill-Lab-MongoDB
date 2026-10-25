@@ -1,11 +1,11 @@
 // ============================================================================
 // server.js
-// Express application, API routes, and input validation.
+// Express application and API routes.
 // Routes only call functions from db/queries.js — never the MongoDB driver directly.
 // ============================================================================
 
-require("dotenv").config();
 const path = require("path");
+require("dotenv").config({ path: path.join(__dirname, ".env") });
 const express = require("express");
 const { connectToDatabase, getDb } = require("./db/connection");
 const queries = require("./db/queries");
@@ -13,139 +13,63 @@ const queries = require("./db/queries");
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-// Parse JSON request bodies and serve static frontend files from public/
 app.use(express.json());
 app.use(express.static(path.join(__dirname, "public")));
 
-// ----------------------------------------------------------------------------
-// Validation Helpers
-// ----------------------------------------------------------------------------
-const HEX_24_REGEX = /^[0-9a-fA-F]{24}$/;
-const EMAIL_REGEX = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-const ALLOWED_STATUSES = ["pending", "confirmed", "waitlisted", "cancelled"];
-
-function isValidObjectIdString(id) {
-  return typeof id === "string" && HEX_24_REGEX.test(id);
-}
-
-function cleanString(val) {
-  return typeof val === "string" ? val.trim() : "";
-}
-
-// ----------------------------------------------------------------------------
-// API Routes
-// ----------------------------------------------------------------------------
-
-/**
- * GET /api/health
- * Returns server and database connection status.
- */
-app.get("/api/health", async (req, res) => {
-  try {
-    const db = getDb();
-    res.json({
-      ok: true,
-      database: db ? "connected" : "not connected",
-    });
-  } catch (err) {
-    res.status(500).json({ error: "Something went wrong" });
-  }
+// 1. GET /api/health — Check server and database connection status
+app.get("/api/health", (req, res) => {
+  const db = getDb();
+  res.json({
+    ok: true,
+    database: db ? "connected" : "not connected",
+  });
 });
 
-/**
- * GET /api/events
- * Returns the list of events for the registration dropdown.
- */
+// 2. GET /api/events — Fetch events for dropdown
 app.get("/api/events", async (req, res) => {
   try {
     const events = await queries.getEvents();
     res.json(events);
   } catch (err) {
-    res.status(500).json({ error: "Something went wrong" });
+    res.status(500).json({ error: "Failed to fetch events" });
   }
 });
 
-/**
- * GET /api/registrations?event=<text>
- * Lists registrations, optionally filtered by partial event name.
- */
+// 3. GET /api/registrations?event=<text> — Fetch registrations
 app.get("/api/registrations", async (req, res) => {
   try {
-    const eventSearch = cleanString(req.query.event || "");
-    const registrations = await queries.getRegistrations({
-      eventSearch,
-      limit: 50,
-    });
+    const eventSearch = (req.query.event || "").trim();
+    const registrations = await queries.getRegistrations({ eventSearch, limit: 50 });
     res.json(registrations);
   } catch (err) {
-    res.status(500).json({ error: "Something went wrong" });
+    res.status(500).json({ error: "Failed to fetch registrations" });
   }
 });
 
-/**
- * POST /api/registrations
- * Validates input, constructs the registration document, and inserts it.
- */
+// 4. POST /api/registrations — Insert a new registration document
 app.post("/api/registrations", async (req, res) => {
   try {
-    const body = req.body || {};
+    const { studentName, email, event, year, city, interests, dietaryNeeds } = req.body;
 
-    const studentName = cleanString(body.studentName);
-    const email = cleanString(body.email).toLowerCase();
-    const event = cleanString(body.event);
-    const eventId = cleanString(body.eventId);
-    const city = cleanString(body.city);
-
-    // 1. Check required fields
     if (!studentName || !email || !event) {
-      return res.status(400).json({ error: "Required fields missing" });
+      return res.status(400).json({ error: "Student name, email, and event are required" });
     }
 
-    // 2. Validate email format
-    if (!EMAIL_REGEX.test(email)) {
-      return res.status(400).json({ error: "Please provide a valid email address" });
-    }
+    const parsedInterests =
+      typeof interests === "string"
+        ? interests.split(",").map((s) => s.trim()).filter(Boolean)
+        : Array.isArray(interests)
+        ? interests
+        : [];
 
-    // 3. Validate optional year (must be an integer 1 to 4 if provided)
-    let parsedYear;
-    if (body.year !== undefined && body.year !== null && String(body.year).trim() !== "") {
-      const numYear = Number(body.year);
-      if (!Number.isInteger(numYear) || numYear < 1 || numYear > 4) {
-        return res.status(400).json({ error: "Year must be an integer between 1 and 4" });
-      }
-      parsedYear = numYear;
-    }
-
-    // 4. Parse interests (accepts array of strings or comma-separated string)
-    let interests = [];
-    if (Array.isArray(body.interests)) {
-      interests = body.interests.map((item) => cleanString(String(item))).filter(Boolean);
-    } else if (typeof body.interests === "string" && body.interests.trim() !== "") {
-      interests = body.interests
-        .split(",")
-        .map((item) => item.trim())
-        .filter(Boolean);
-    }
-
-    // 5. Parse dietaryNeeds.vegetarian boolean
-    const vegetarian = Boolean(
-      body.dietaryNeeds && typeof body.dietaryNeeds === "object"
-        ? body.dietaryNeeds.vegetarian
-        : body.vegetarian
-    );
-
-    // 6. Build the document matching the sample schema
     const doc = {
-      studentName,
-      email,
-      event,
-      ...(eventId ? { eventId } : {}),
-      ...(parsedYear !== undefined ? { year: parsedYear } : {}),
-      ...(city ? { city } : {}),
-      interests,
-      dietaryNeeds: {
-        vegetarian,
-      },
+      studentName: studentName.trim(),
+      email: email.trim().toLowerCase(),
+      event: event.trim(),
+      ...(year ? { year: Number(year) } : {}),
+      ...(city ? { city: city.trim() } : {}),
+      interests: parsedInterests,
+      dietaryNeeds: { vegetarian: Boolean(dietaryNeeds?.vegetarian) },
       status: "pending",
       registered: true,
       feePaid: 0,
@@ -153,89 +77,58 @@ app.post("/api/registrations", async (req, res) => {
     };
 
     const result = await queries.insertRegistration(doc);
-    return res.status(201).json({ id: result.insertedId });
+    res.status(201).json({ id: result.insertedId });
   } catch (err) {
-    if (err && err.code === 11000) {
-      return res.status(409).json({ error: "Already registered for this event" });
-    }
-    return res.status(500).json({ error: "Something went wrong" });
+    res.status(500).json({ error: "Failed to create registration" });
   }
 });
 
-/**
- * PATCH /api/registrations/:id/status
- * Updates the status of an existing registration.
- */
+// 5. PATCH /api/registrations/:id/status — Update registration status
 app.patch("/api/registrations/:id/status", async (req, res) => {
   try {
     const { id } = req.params;
-    if (!isValidObjectIdString(id)) {
-      return res.status(400).json({ error: "Invalid registration ID format" });
-    }
-
-    const status = cleanString(req.body && req.body.status);
-    if (!ALLOWED_STATUSES.includes(status)) {
-      return res.status(400).json({
-        error: "Status must be one of: pending, confirmed, waitlisted, cancelled",
-      });
-    }
+    const { status } = req.body;
 
     const result = await queries.updateRegistrationStatus(id, status);
     if (!result || result.matchedCount === 0) {
       return res.status(404).json({ error: "Registration not found" });
     }
 
-    return res.json({
-      id,
-      status,
-      modifiedCount: result.modifiedCount,
-    });
+    res.json({ id, status, modifiedCount: result.modifiedCount });
   } catch (err) {
-    return res.status(500).json({ error: "Something went wrong" });
+    res.status(500).json({ error: "Failed to update status" });
   }
 });
 
-/**
- * DELETE /api/registrations/:id
- * Deletes a registration by ID.
- */
+// 6. DELETE /api/registrations/:id — Delete a registration
 app.delete("/api/registrations/:id", async (req, res) => {
   try {
     const { id } = req.params;
-    if (!isValidObjectIdString(id)) {
-      return res.status(400).json({ error: "Invalid registration ID format" });
-    }
-
     const result = await queries.deleteRegistration(id);
+
     if (!result || result.deletedCount === 0) {
       return res.status(404).json({ error: "Registration not found" });
     }
 
-    return res.json({ id, deleted: true });
+    res.json({ id, deleted: true });
   } catch (err) {
-    return res.status(500).json({ error: "Something went wrong" });
+    res.status(500).json({ error: "Failed to delete registration" });
   }
 });
 
-/**
- * GET /api/stats/by-event
- * Returns aggregated counts of registrations per event.
- */
+// 7. GET /api/stats/by-event — Aggregation count per event
 app.get("/api/stats/by-event", async (req, res) => {
   try {
     const stats = await queries.getRegistrationCountsByEvent();
     res.json(stats);
   } catch (err) {
-    res.status(500).json({ error: "Something went wrong" });
+    res.status(500).json({ error: "Failed to fetch statistics" });
   }
 });
 
-// ----------------------------------------------------------------------------
-// Server Startup
-// ----------------------------------------------------------------------------
+// Start Server
 async function startServer() {
   await connectToDatabase();
-
   app.listen(PORT, () => {
     console.log(`[server] CampusConnect running at http://localhost:${PORT}`);
   });
