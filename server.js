@@ -1,7 +1,7 @@
 // ============================================================================
 // server.js
-// Express application and API routes.
-// Routes only call functions from db/queries.js — never the MongoDB driver directly.
+// Express Backend API for CampusConnect: Event Registrations.
+// Routes validate incoming HTTP requests and call functions in db/queries.js.
 // ============================================================================
 
 const path = require("path");
@@ -13,19 +13,28 @@ const queries = require("./db/queries");
 const app = express();
 const PORT = process.env.PORT || 3000;
 
+// Middleware: Parse JSON request bodies & serve frontend files from public/
 app.use(express.json());
 app.use(express.static(path.join(__dirname, "public")));
 
-// 1. GET /api/health — Check server and database connection status
+const ALLOWED_STATUSES = ["pending", "confirmed", "waitlisted", "cancelled"];
+const OBJECT_ID_REGEX = /^[0-9a-fA-F]{24}$/;
+
+// ----------------------------------------------------------------------------
+// 1. GET /api/health — Database connection status
+// ----------------------------------------------------------------------------
 app.get("/api/health", (req, res) => {
   const db = getDb();
   res.json({
     ok: true,
     database: db ? "connected" : "not connected",
+    dbName: process.env.DB_NAME || "campusconnect",
   });
 });
 
-// 2. GET /api/events — Fetch events for dropdown
+// ----------------------------------------------------------------------------
+// 2. GET /api/events — List all upcoming college events
+// ----------------------------------------------------------------------------
 app.get("/api/events", async (req, res) => {
   try {
     const events = await queries.getEvents();
@@ -35,29 +44,55 @@ app.get("/api/events", async (req, res) => {
   }
 });
 
-// 3. GET /api/registrations?event=<text> — Fetch registrations
+// ----------------------------------------------------------------------------
+// 3. GET /api/registrations?event=<search>&status=<status> — List registrations
+// ----------------------------------------------------------------------------
 app.get("/api/registrations", async (req, res) => {
   try {
     const eventSearch = (req.query.event || "").trim();
-    const registrations = await queries.getRegistrations({ eventSearch, limit: 50 });
+    const status = (req.query.status || "").trim();
+    const limit = Number(req.query.limit) || 100;
+
+    const registrations = await queries.getRegistrations({
+      eventSearch,
+      status,
+      limit,
+    });
     res.json(registrations);
   } catch (err) {
     res.status(500).json({ error: "Failed to fetch registrations" });
   }
 });
 
-// 4. POST /api/registrations — Insert a new registration document
+// ----------------------------------------------------------------------------
+// 4. POST /api/registrations — Create a new student registration
+// ----------------------------------------------------------------------------
 app.post("/api/registrations", async (req, res) => {
   try {
-    const { studentName, email, event, year, city, interests, dietaryNeeds } = req.body;
+    const {
+      studentName,
+      email,
+      event,
+      eventId,
+      year,
+      department,
+      city,
+      interests,
+      dietaryNeeds,
+    } = req.body || {};
 
     if (!studentName || !email || !event) {
-      return res.status(400).json({ error: "Student name, email, and event are required" });
+      return res.status(400).json({
+        error: "Student name, email, and event are required",
+      });
     }
 
     const parsedInterests =
       typeof interests === "string"
-        ? interests.split(",").map((s) => s.trim()).filter(Boolean)
+        ? interests
+            .split(",")
+            .map((s) => s.trim())
+            .filter(Boolean)
         : Array.isArray(interests)
         ? interests
         : [];
@@ -66,7 +101,9 @@ app.post("/api/registrations", async (req, res) => {
       studentName: studentName.trim(),
       email: email.trim().toLowerCase(),
       event: event.trim(),
+      ...(eventId ? { eventId: String(eventId).trim() } : {}),
       ...(year ? { year: Number(year) } : {}),
+      ...(department ? { department: String(department).trim() } : {}),
       ...(city ? { city: city.trim() } : {}),
       interests: parsedInterests,
       dietaryNeeds: { vegetarian: Boolean(dietaryNeeds?.vegetarian) },
@@ -77,46 +114,71 @@ app.post("/api/registrations", async (req, res) => {
     };
 
     const result = await queries.insertRegistration(doc);
-    res.status(201).json({ id: result.insertedId });
+    return res.status(201).json({ id: result.insertedId, document: doc });
   } catch (err) {
-    res.status(500).json({ error: "Failed to create registration" });
+    // Handle MongoDB unique index violation (same email + event)
+    if (err && err.code === 11000) {
+      return res.status(409).json({
+        error: "Already registered: This email is already signed up for this event",
+      });
+    }
+    return res.status(500).json({ error: "Failed to create registration" });
   }
 });
 
+// ----------------------------------------------------------------------------
 // 5. PATCH /api/registrations/:id/status — Update registration status
+// ----------------------------------------------------------------------------
 app.patch("/api/registrations/:id/status", async (req, res) => {
   try {
     const { id } = req.params;
-    const { status } = req.body;
+    const status = (req.body?.status || "").trim().toLowerCase();
+
+    if (!OBJECT_ID_REGEX.test(id)) {
+      return res.status(400).json({ error: "Invalid ObjectId format" });
+    }
+
+    if (!ALLOWED_STATUSES.includes(status)) {
+      return res.status(400).json({
+        error: `Status must be one of: ${ALLOWED_STATUSES.join(", ")}`,
+      });
+    }
 
     const result = await queries.updateRegistrationStatus(id, status);
     if (!result || result.matchedCount === 0) {
       return res.status(404).json({ error: "Registration not found" });
     }
 
-    res.json({ id, status, modifiedCount: result.modifiedCount });
+    return res.json({ id, status, modifiedCount: result.modifiedCount });
   } catch (err) {
-    res.status(500).json({ error: "Failed to update status" });
+    return res.status(500).json({ error: "Failed to update status" });
   }
 });
 
+// ----------------------------------------------------------------------------
 // 6. DELETE /api/registrations/:id — Delete a registration
+// ----------------------------------------------------------------------------
 app.delete("/api/registrations/:id", async (req, res) => {
   try {
     const { id } = req.params;
-    const result = await queries.deleteRegistration(id);
+    if (!OBJECT_ID_REGEX.test(id)) {
+      return res.status(400).json({ error: "Invalid ObjectId format" });
+    }
 
+    const result = await queries.deleteRegistration(id);
     if (!result || result.deletedCount === 0) {
       return res.status(404).json({ error: "Registration not found" });
     }
 
-    res.json({ id, deleted: true });
+    return res.json({ id, deleted: true });
   } catch (err) {
-    res.status(500).json({ error: "Failed to delete registration" });
+    return res.status(500).json({ error: "Failed to delete registration" });
   }
 });
 
+// ----------------------------------------------------------------------------
 // 7. GET /api/stats/by-event — Aggregation count per event
+// ----------------------------------------------------------------------------
 app.get("/api/stats/by-event", async (req, res) => {
   try {
     const stats = await queries.getRegistrationCountsByEvent();

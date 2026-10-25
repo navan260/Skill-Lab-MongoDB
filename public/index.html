@@ -3,145 +3,208 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CampusConnect: Event Registrations</title>
+  <title>CampusConnect | Event Registration Portal</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <!-- Header -->
   <header class="site-header">
     <div class="container header-inner">
-      <div>
-        <h1 class="site-title">CampusConnect: Event Registrations</h1>
-        <p class="site-subtitle">College MongoDB Workshop — Full-Stack Data Flow Demo</p>
+      <div class="brand-group">
+        <div class="brand-logo">CC</div>
+        <div>
+          <h1 class="site-title">CampusConnect</h1>
+          <p class="site-subtitle">Campus Event Registration &amp; Management Portal</p>
+        </div>
       </div>
-      <div id="db-status-pill" class="status-pill status-disconnected">
-        <span class="status-dot"></span>
-        <span id="db-status-text">Database: checking...</span>
-      </div>
+
+      <nav class="header-nav">
+        <button type="button" class="tab-btn active" data-tab="register" onclick="switchTab('register', this)">
+          Events &amp; Registration
+        </button>
+        <button type="button" class="tab-btn" data-tab="registrations" onclick="switchTab('registrations', this)">
+          Registrations
+          <span class="tab-count" id="tab-regs-badge">0</span>
+        </button>
+        <button type="button" class="tab-btn" data-tab="analytics" onclick="switchTab('analytics', this)">
+          Analytics
+        </button>
+      </nav>
     </div>
   </header>
 
-  <!-- Tab Navigation Bar -->
-  <nav class="tab-nav">
-    <div class="container tab-nav-inner">
-      <button type="button" class="tab-btn active" onclick="switchTab('register', this)">
-        Register Student
-      </button>
-      <button type="button" class="tab-btn" onclick="switchTab('registrations', this)">
-        View Registrations
-      </button>
-      <button type="button" class="tab-btn" onclick="switchTab('analytics', this)">
-        Event Analytics
-      </button>
+  <!-- Summary Metrics -->
+  <section class="kpi-strip">
+    <div class="container kpi-grid">
+      <div class="kpi-card">
+        <span class="kpi-label">Upcoming Events</span>
+        <strong class="kpi-value" id="kpi-events-count">0</strong>
+      </div>
+
+      <div class="kpi-card">
+        <span class="kpi-label">Total Registrations</span>
+        <strong class="kpi-value" id="kpi-total-registrations">0</strong>
+      </div>
+
+      <div class="kpi-card">
+        <span class="kpi-label">Confirmed Participants</span>
+        <strong class="kpi-value" id="kpi-confirmed-count">0</strong>
+      </div>
+
+      <div class="kpi-card">
+        <span class="kpi-label">Pending Approval</span>
+        <strong class="kpi-value" id="kpi-pending-count">0</strong>
+      </div>
     </div>
-  </nav>
+  </section>
 
   <!-- Main Workspace -->
   <main class="container workspace">
-    <!-- TAB 1: Registration Form -->
-    <section id="tab-register" class="tab-panel panel-narrow">
-      <div class="card">
-        <div class="card-header">
-          <div>
-            <h2>Register for an Event</h2>
-            <span class="card-subtitle">Inserts a new document into the <code>registrations</code> collection</span>
-          </div>
-          <span class="card-badge">POST /api/registrations</span>
-        </div>
 
-        <form id="registration-form">
-          <div class="form-group">
-            <label for="studentName">Student Name <span class="required">*</span></label>
-            <input type="text" id="studentName" required placeholder="e.g. Aarav Sharma" />
+    <!-- TAB 1: REGISTER & UPCOMING EVENTS -->
+    <section id="tab-register" class="tab-panel">
+      <div class="two-col-layout">
+
+        <!-- Left Column: Registration Form -->
+        <div class="card">
+          <div class="card-header">
+            <div>
+              <h2>Event Registration</h2>
+              <span class="card-subtitle">Fill in your details below to register for an upcoming campus event.</span>
+            </div>
           </div>
 
-          <div class="form-group">
-            <label for="email">College Email <span class="required">*</span></label>
-            <input type="email" id="email" required placeholder="e.g. aarav@college.edu" />
-          </div>
+          <form id="registration-form">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="studentName">Full Name <span class="required">*</span></label>
+                <input type="text" id="studentName" required placeholder="Enter full name" />
+              </div>
 
-          <div class="form-group">
-            <label for="event">Event <span class="required">*</span></label>
-            <select id="event" required>
-              <option value="">-- Select an event --</option>
-              <option value="Orientation Mixer">Orientation Mixer</option>
-              <option value="Robotics Workshop">Robotics Workshop</option>
-              <option value="Cultural Night">Cultural Night</option>
-              <option value="Startup Pitch Day">Startup Pitch Day</option>
-              <option value="Data Science Bootcamp">Data Science Bootcamp</option>
-              <option value="Photography Walk">Photography Walk</option>
-              <option value="TechFest">TechFest</option>
-              <option value="Hack Night">Hack Night</option>
-            </select>
-          </div>
+              <div class="form-group">
+                <label for="email">College Email <span class="required">*</span></label>
+                <input type="email" id="email" required placeholder="name@college.edu" />
+              </div>
+            </div>
 
-          <div class="form-row">
             <div class="form-group">
-              <label for="year">Year (1–4)</label>
-              <select id="year">
-                <option value="">Select year</option>
-                <option value="1">1st Year</option>
-                <option value="2">2nd Year</option>
-                <option value="3">3rd Year</option>
-                <option value="4">4th Year</option>
+              <label for="event">Event <span class="required">*</span></label>
+              <select id="event" required>
+                <option value="">Select an event</option>
               </select>
             </div>
 
+            <div class="form-row-3">
+              <div class="form-group">
+                <label for="year">Academic Year</label>
+                <select id="year">
+                  <option value="">Select year</option>
+                  <option value="1">1st Year</option>
+                  <option value="2">2nd Year</option>
+                  <option value="3">3rd Year</option>
+                  <option value="4">4th Year</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="department">Department</label>
+                <select id="department">
+                  <option value="">Select department</option>
+                  <option value="CSE">CSE</option>
+                  <option value="ISE">ISE</option>
+                  <option value="ECE">ECE</option>
+                  <option value="AIML">AIML</option>
+                  <option value="EEE">EEE</option>
+                  <option value="MECH">MECH</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="city">City</label>
+                <input type="text" id="city" placeholder="e.g. Bengaluru" />
+              </div>
+            </div>
+
             <div class="form-group">
-              <label for="city">City</label>
-              <input type="text" id="city" placeholder="e.g. Bengaluru" />
+              <label for="interests">Areas of Interest <span class="optional">(optional, comma-separated)</span></label>
+              <input type="text" id="interests" placeholder="e.g. Robotics, Cloud, Design" />
+            </div>
+
+            <div class="form-group checkbox-group">
+              <input type="checkbox" id="vegetarian" />
+              <label for="vegetarian">Vegetarian meal preference</label>
+            </div>
+
+            <div id="form-feedback" class="feedback-banner hidden"></div>
+
+            <button type="submit" id="submit-btn" class="btn btn-primary btn-block">
+              Complete Registration
+            </button>
+          </form>
+        </div>
+
+        <!-- Right Column: Upcoming Events -->
+        <div class="card">
+          <div class="card-header">
+            <div>
+              <h2>Upcoming Events</h2>
+              <span class="card-subtitle">Browse scheduled campus events and select one to register.</span>
             </div>
           </div>
 
-          <div class="form-group">
-            <label for="interests">Interests <span class="optional">(comma-separated)</span></label>
-            <input type="text" id="interests" placeholder="e.g. databases, backend, cloud" />
+          <div id="events-grid" class="events-grid">
+            <p class="empty-state">Loading events...</p>
           </div>
+        </div>
 
-          <div class="form-group checkbox-group">
-            <input type="checkbox" id="vegetarian" />
-            <label for="vegetarian">Dietary need: Vegetarian meal preference</label>
-          </div>
-
-          <div id="form-feedback" class="feedback-banner hidden"></div>
-
-          <button type="submit" id="submit-btn" class="btn btn-primary btn-block">
-            Submit Registration
-          </button>
-        </form>
       </div>
     </section>
 
-    <!-- TAB 2: Registrations Table -->
+    <!-- TAB 2: REGISTRATIONS DIRECTORY -->
     <section id="tab-registrations" class="tab-panel hidden">
       <div class="card">
         <div class="card-header table-card-header">
           <div>
-            <h2>Registrations</h2>
-            <span class="card-subtitle">Live documents from <code>GET /api/registrations</code></span>
+            <h2>Registered Participants</h2>
+            <span class="card-subtitle">View and manage participant registrations across all events.</span>
           </div>
-          <div class="search-box">
-            <input
-              type="search"
-              id="event-search"
-              placeholder="Filter by event name..."
-            />
+
+          <div class="filter-controls">
+            <div class="search-box">
+              <input
+                type="search"
+                id="event-search"
+                placeholder="Search by participant, email, or event..."
+              />
+            </div>
+
+            <select id="status-filter" class="status-select-filter">
+              <option value="">All Statuses</option>
+              <option value="pending">Pending</option>
+              <option value="confirmed">Confirmed</option>
+              <option value="waitlisted">Waitlisted</option>
+              <option value="cancelled">Cancelled</option>
+            </select>
+
+            <button type="button" class="btn btn-outline btn-sm" onclick="resetFilters()">
+              Reset
+            </button>
           </div>
         </div>
 
-        <div id="table-empty" class="empty-state">
-          No registrations found.
+        <div id="table-empty" class="empty-state hidden">
+          No matching registrations found.
         </div>
 
-        <div id="table-wrapper" class="table-responsive hidden">
+        <div id="table-wrapper" class="table-responsive">
           <table class="reg-table">
             <thead>
               <tr>
-                <th>Name</th>
-                <th>Email</th>
+                <th>Participant</th>
                 <th>Event</th>
-                <th>Year</th>
+                <th>Year &amp; Dept</th>
                 <th>City</th>
+                <th>Preferences</th>
                 <th>Status</th>
                 <th>Actions</th>
               </tr>
@@ -152,23 +215,25 @@
       </div>
     </section>
 
-    <!-- TAB 3: Event Analytics -->
+    <!-- TAB 3: ANALYTICS -->
     <section id="tab-analytics" class="tab-panel panel-medium hidden">
       <div class="card">
         <div class="card-header">
           <div>
             <h2>Registrations by Event</h2>
-            <span class="card-subtitle">Aggregated via <code>GET /api/stats/by-event</code></span>
+            <span class="card-subtitle">Distribution of participant signups across scheduled events.</span>
           </div>
           <div class="total-counter">
             Total Registrations: <strong id="insights-total-count">0</strong>
           </div>
         </div>
+
         <div id="insights-container" class="insights-container">
-          <p class="empty-state">No aggregation data yet.</p>
+          <p class="empty-state">Loading statistics...</p>
         </div>
       </div>
     </section>
+
   </main>
 
   <script src="app.js"></script>
