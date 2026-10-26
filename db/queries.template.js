@@ -31,7 +31,7 @@ async function getEvents() {
 // TASK 2: Get registrations with optional search & status filter
 // Route: GET /api/registrations?event=<search>&status=<status>
 // ----------------------------------------------------------------------------
-async function getRegistrations({ eventSearch = "", status = "", limit = 50 } = {}) {
+async function getRegistrations({ eventSearch = "", status = "", limit = 1000 } = {}) {
   const db = getDb();
   if (!db) return [];
 
@@ -48,8 +48,7 @@ async function getRegistrations({ eventSearch = "", status = "", limit = 50 } = 
   // TODO (Task 2): Query the "registrations" collection:
   //   1. Pass `filter` into .find(filter)
   //   2. Sort newest first using .sort({ createdAt: -1 })
-  //   3. Limit results using .limit(limit)
-  //   4. Convert cursor to array using .toArray()
+  //   3. Convert cursor to array using .toArray()
   return [];
 }
 

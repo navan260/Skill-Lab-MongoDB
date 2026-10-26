@@ -16,6 +16,7 @@ const eventsGrid = document.getElementById("events-grid");
 
 const eventSearchInput = document.getElementById("event-search");
 const statusFilterSelect = document.getElementById("status-filter");
+const tableFeedback = document.getElementById("table-feedback");
 const tableEmpty = document.getElementById("table-empty");
 const tableWrapper = document.getElementById("table-wrapper");
 const registrationsTbody = document.getElementById("registrations-tbody");
@@ -123,13 +124,16 @@ async function loadRegistrations() {
   const params = new URLSearchParams();
   if (search) params.set("event", search);
   if (status) params.set("status", status);
-  params.set("limit", "100");
+  params.set("limit", "1000");
 
   try {
     const res = await fetch(`/api/registrations?${params.toString()}`);
     const rows = await res.json();
 
     tabRegsBadge.textContent = rows.length;
+    if (!search && !status) {
+      kpiTotalRegistrations.textContent = rows.length;
+    }
 
     const confirmed = rows.filter((r) => r.status === "confirmed").length;
     const pending = rows.filter((r) => r.status === "pending").length;
@@ -251,18 +255,50 @@ form.addEventListener("submit", async (e) => {
 
 // 4. Update Status
 async function changeRegistrationStatus(id, newStatus) {
-  await fetch(`/api/registrations/${id}/status`, {
-    method: "PATCH",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({ status: newStatus }),
-  });
+  if (tableFeedback) tableFeedback.className = "feedback-banner hidden";
+  try {
+    const res = await fetch(`/api/registrations/${id}/status`, {
+      method: "PATCH",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ status: newStatus }),
+    });
+    const data = await res.json();
+    if (res.ok && tableFeedback) {
+      tableFeedback.textContent = `Status updated to "${newStatus}".`;
+      tableFeedback.className = "feedback-banner feedback-success";
+    } else if (!res.ok && tableFeedback) {
+      tableFeedback.textContent = data.error || "Unable to update status.";
+      tableFeedback.className = "feedback-banner feedback-error";
+    }
+  } catch {
+    if (tableFeedback) {
+      tableFeedback.textContent = "Unable to connect to the server.";
+      tableFeedback.className = "feedback-banner feedback-error";
+    }
+  }
   loadRegistrations();
   loadInsights();
 }
 
 // 5. Delete Registration
 async function deleteRegistration(id) {
-  await fetch(`/api/registrations/${id}`, { method: "DELETE" });
+  if (tableFeedback) tableFeedback.className = "feedback-banner hidden";
+  try {
+    const res = await fetch(`/api/registrations/${id}`, { method: "DELETE" });
+    const data = await res.json();
+    if (res.ok && tableFeedback) {
+      tableFeedback.textContent = "Registration removed successfully.";
+      tableFeedback.className = "feedback-banner feedback-success";
+    } else if (!res.ok && tableFeedback) {
+      tableFeedback.textContent = data.error || "Unable to remove registration.";
+      tableFeedback.className = "feedback-banner feedback-error";
+    }
+  } catch {
+    if (tableFeedback) {
+      tableFeedback.textContent = "Unable to connect to the server.";
+      tableFeedback.className = "feedback-banner feedback-error";
+    }
+  }
   loadRegistrations();
   loadInsights();
 }
@@ -275,7 +311,6 @@ async function loadInsights() {
 
     if (!stats.length) {
       insightsTotalCount.textContent = "0";
-      kpiTotalRegistrations.textContent = "0";
       insightsContainer.innerHTML = `<p class="empty-state">No registration statistics available.</p>`;
       return;
     }

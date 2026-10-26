@@ -8,10 +8,16 @@ const path = require("path");
 require("dotenv").config({ path: path.join(__dirname, ".env") });
 const express = require("express");
 const { connectToDatabase, getDb } = require("./db/connection");
-const queries = require("./db/queries");
 
 const app = express();
 const PORT = process.env.PORT || 3000;
+
+// Hot-reload db/queries.js on every request so saving db/queries.js works immediately
+function getQueries() {
+  const queriesPath = require.resolve("./db/queries");
+  delete require.cache[queriesPath];
+  return require(queriesPath);
+}
 
 // Middleware: Parse JSON request bodies & serve frontend files from public/
 app.use(express.json());
@@ -37,8 +43,8 @@ app.get("/api/health", (req, res) => {
 // ----------------------------------------------------------------------------
 app.get("/api/events", async (req, res) => {
   try {
-    const events = await queries.getEvents();
-    res.json(events);
+    const events = await getQueries().getEvents();
+    res.json(Array.isArray(events) ? events : []);
   } catch (err) {
     res.status(500).json({ error: "Failed to fetch events" });
   }
@@ -51,14 +57,19 @@ app.get("/api/registrations", async (req, res) => {
   try {
     const eventSearch = (req.query.event || "").trim();
     const status = (req.query.status || "").trim();
-    const limit = Number(req.query.limit) || 100;
+    const limit = Number(req.query.limit) || 1000;
 
-    const registrations = await queries.getRegistrations({
+    const registrations = await getQueries().getRegistrations({
       eventSearch,
       status,
       limit,
     });
-    res.json(registrations);
+
+    const list = Array.isArray(registrations) ? registrations : [];
+    // Ensure newest registrations appear at the very top even if student omitted .sort({ createdAt: -1 })
+    list.sort((a, b) => new Date(b.createdAt || 0) - new Date(a.createdAt || 0));
+
+    res.json(list);
   } catch (err) {
     res.status(500).json({ error: "Failed to fetch registrations" });
   }
@@ -113,7 +124,13 @@ app.post("/api/registrations", async (req, res) => {
       createdAt: new Date(),
     };
 
-    const result = await queries.insertRegistration(doc);
+    const result = await getQueries().insertRegistration(doc);
+    if (!result || !result.insertedId) {
+      return res.status(501).json({
+        error: "insertRegistration() in db/queries.js did not insert the document. Check your Task 3 code.",
+      });
+    }
+
     return res.status(201).json({ id: result.insertedId, document: doc });
   } catch (err) {
     // Handle MongoDB unique index violation (same email + event)
@@ -144,9 +161,9 @@ app.patch("/api/registrations/:id/status", async (req, res) => {
       });
     }
 
-    const result = await queries.updateRegistrationStatus(id, status);
+    const result = await getQueries().updateRegistrationStatus(id, status);
     if (!result || result.matchedCount === 0) {
-      return res.status(404).json({ error: "Registration not found" });
+      return res.status(404).json({ error: "Registration not found (or Task 4 not implemented yet)" });
     }
 
     return res.json({ id, status, modifiedCount: result.modifiedCount });
@@ -165,9 +182,9 @@ app.delete("/api/registrations/:id", async (req, res) => {
       return res.status(400).json({ error: "Invalid ObjectId format" });
     }
 
-    const result = await queries.deleteRegistration(id);
+    const result = await getQueries().deleteRegistration(id);
     if (!result || result.deletedCount === 0) {
-      return res.status(404).json({ error: "Registration not found" });
+      return res.status(404).json({ error: "Registration not found (or Task 5 not implemented yet)" });
     }
 
     return res.json({ id, deleted: true });
@@ -181,8 +198,8 @@ app.delete("/api/registrations/:id", async (req, res) => {
 // ----------------------------------------------------------------------------
 app.get("/api/stats/by-event", async (req, res) => {
   try {
-    const stats = await queries.getRegistrationCountsByEvent();
-    res.json(stats);
+    const stats = await getQueries().getRegistrationCountsByEvent();
+    res.json(Array.isArray(stats) ? stats : []);
   } catch (err) {
     res.status(500).json({ error: "Failed to fetch statistics" });
   }
